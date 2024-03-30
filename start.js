@@ -111,7 +111,7 @@ console.log(student1);
  
 //   document.querySelector(".items").children[1].innerHTML="<h1>sam</h1>";
 // });
-const form=document.querySelector("#my-form");
+/* const form=document.querySelector("#my-form");
 const inputusername=document.querySelector("#name");
 const msage=document.querySelector(".msg");
 const emmail=document.querySelector("#email")
@@ -144,10 +144,33 @@ else{
 }
 
 
+*/
+
+
+// start learen
+function muobject(myage,mysalary)
+{
+  
+}
 
 
 
 
 
-    }
-]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
