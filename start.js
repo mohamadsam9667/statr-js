@@ -144,21 +144,59 @@ else{
 }
 
 
-*/
-
-
-// start learen
 function muobject(myage,mysalary)
 {
   
 }
+// start learen
+const courses =[
+  { 
+    id:1,
+    Name:'html',
+    time:19,
+    Iscomplate:true
+
+  },
+  { 
+    id:2,
+    Name:'css',
+    time:12,
+     Iscomplate:false
+
+  }
+]
+
+const courses=[
+  {
+    id:1,
+    name:'sam',
+    time:10,
+    Iscomplate:true
+  },
+  {
+    id:2,
+    name:'abolfazle',
+    time:12,
+    Iscomplate:false
+  }
+] ;
+courses.forEach(x=> console.log(x));
+
+*/
 
 
 
 
-
-
-
+class Person{
+  constructor(firstname , lastname , birthDate)
+  {
+    this.firstname=firstname;
+    this.lastname=lastname;
+    this.birthDate=birthDate;
+  }
+}
+const samy=new Person('sam', 'irani ','1930');
+console.log(samy.firstname)
 
 
 
