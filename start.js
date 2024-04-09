@@ -295,13 +295,14 @@ const courses=[
 
 // console.log(student1.getfullname())
 
-const ul=document.querySelector(".items")
-//ul.children[1].remove();
-ul.children[1].innerText="last item";
+// const ul=document.querySelector(".items")
+// //ul.children[1].remove();
+// ul.children[1].innerText="last item";
 
-console.log(ul);
-
-
+// console.log(ul);
+const btn=document.querySelector(".btn")
+btn.computedStyleMap.color="red"
+console.log(btn)
 
 
 
