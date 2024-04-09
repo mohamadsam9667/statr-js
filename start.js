@@ -187,16 +187,16 @@ courses.forEach(x=> console.log(x));
 
 
 
-class Person{
-  constructor(firstname , lastname , birthDate)
-  {
-    this.firstname=firstname;
-    this.lastname=lastname;
-    this.birthDate=birthDate;
-  }
-}
-const samy=new Person('sam', 'irani ','1930');
-console.log(samy.firstname)
+// class Person{
+//   constructor(firstname , lastname , birthDate)
+//   {
+//     this.firstname=firstname;
+//     this.lastname=lastname;
+//     this.birthDate=birthDate;
+//   }
+// }
+// const samy=new Person('sam', 'irani ','1930');
+// console.log(samy.firstname)
 /*
 { <script>
 document.addEventListener('DOMContentLoaded', function(){
@@ -213,6 +213,25 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 });
 </script> }*/
+
+
+
+
+
+
+
+
+  class Person {
+    constructor(firstName, lastName ,birthDate)
+    {
+      this.firstName=firstName;
+      this.lastName=lastName;
+      this.birthDate=birthDate;
+    }
+  }
+const student1=new Person('sam','rezazadeh',2002)
+console.log('student')
+console.log(student1)
 
 
 
