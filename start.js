@@ -274,24 +274,39 @@ const courses=[
 // var transformed =names.map((name)=>{return `andy ${name}`})
 // console.log(transformed)
 
-class Person
-{
-  constructor(firsName,lastName,birthDate)
-  {
-    this.firsName=firsName;
-    this.lastName=lastName;
-    this.birthDate=birthDate;
-  }
-  getfullname()
-  {
-    return `${this.firsName}\t${this.lastName}\t${this.birthDate}`;
-  }
+// class Person
+// {
+//   constructor(firsName,lastName,birthDate)
+//   {
+//     this.firsName=firsName;
+//     this.lastName=lastName;
+//     this.birthDate=birthDate;
+//   }
+//   getfullname()
+//   {
+//     return `${this.firsName}\t${this.lastName}\t${this.birthDate}`;
+//   }
 
 
-}
-const student=new Person('sam','rezazadeh',2002)
-console.log(student.getfullname())
-const student1=new Person('amir','haripater',2021)
+// }
+// const student=new Person('sam','rezazadeh',2002)
+// console.log(student.getfullname())
+// const student1=new Person('amir','haripater',2021)
 
-console.log(student1.getfullname())
+// console.log(student1.getfullname())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
