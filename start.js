@@ -292,5 +292,6 @@ class Person
 const student=new Person('sam','rezazadeh',2002)
 console.log(student.getfullname())
 const student1=new Person('amir','haripater',2021)
+
 console.log(student1.getfullname())
 
