@@ -221,28 +221,76 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-  class Person {
-    constructor(firstName, lastName ,birthDate)
-    {
-      this.firstName=firstName;
-      this.lastName=lastName;
-      this.birthDate=birthDate;
-    }
+//   class Person {
+//     constructor(firstName, lastName ,birthDate)
+//     {
+//       this.firstName=firstName;
+//       this.lastName=lastName;
+//       this.birthDate=birthDate;
+//     }
+//   }
+// const student1=new Person('sam','rezazadeh',2002)
+// console.log('student');
+// console.log(student1);
+
+// const color='yello';
+      /////switch
+// switch(color)
+// {
+//   case 'red' :
+//     console.log("it is red")
+//     break;
+//   case 'blue' :
+//     console.log("it is blue")
+//     break;
+//   case 'yellow' :
+//     console.log("it is green")
+//     break;
+//   default:
+//     console.log("it is undefined")
+// }
+const courses=[
+  {
+    id1:1,
+    name1:'sam',
+    type1:'css'
+  },
+  {
+    id2:2,
+    name1:'ilya',
+    type2:'html'
   }
-const student1=new Person('sam','rezazadeh',2002)
-console.log('student')
-console.log(student1)
+];
+// const addNum=(num1=12,num2=10)=>num1+num2
+// console.log(addNum(3,19))
+//courses.forEach(x=>console.log(x))
+// let hi=(sam)=>{console.log(`hony \t ${sam}`)}
+// // hi('ilia')
+// // let i=0;
+// let names=['davod ','esmail', 'yazdan','alireza','hasan'];
+// // names.map((name)=>{console.log(`hady ${name}`)})
+// // let types=['css','html','java scripte','ruby','go'];
+// // types.map((type)=>{i++,console.log(`language ${type} ${i}`)})
+// var transformed =names.map((name)=>{return `andy ${name}`})
+// console.log(transformed)
+
+class Person
+{
+  constructor(firsName,lastName,birthDate)
+  {
+    this.firsName=firsName;
+    this.lastName=lastName;
+    this.birthDate=birthDate;
+  }
+  getfullname()
+  {
+    return `${this.firsName}\t${this.lastName}\t${this.birthDate}`;
+  }
 
 
-
-
-
-
-
-
-
-
-
-
-
+}
+const student=new Person('sam','rezazadeh',2002)
+console.log(student.getfullname())
+const student1=new Person('amir','haripater',2021)
+console.log(student1.getfullname())
 
