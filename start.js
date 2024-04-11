@@ -302,11 +302,12 @@ const courses=[
 // // console.log(ul);
 // const btn=document.querySelector(".btn")
 // btn.computedStyleMap.color="red"
-// console.log(btn)
-const ui=document.querySelector(".items")
-ui.children[1].innerHTML="sam is one god"
-console.log(ui)
-
+// // console.log(btn)
+// const ui=document.querySelector(".items")
+// ui.children[1].innerHTML="sam is one god"
+// console.log(ui)
+const bottun=document.querySelector(".btn")
+bottun.style.background="red"
 
 
 
