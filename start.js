@@ -307,7 +307,7 @@ const courses=[
 // ui.children[1].innerHTML="sam is one god"
 // console.log(ui)
 const bottun=document.querySelector(".btn")
-BigInt.addEventListener("click",)
+BigInt.addEventListener("click",(e=>))
 
 
 
