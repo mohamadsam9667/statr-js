@@ -304,7 +304,7 @@ const courses=[
 // btn.computedStyleMap.color="red"
 // console.log(btn)
 const ui=document.querySelector(".items")
-ui.children[1].innerText=("sam is god")
+ui.children[1].innerHTML="sam is one god"
 console.log(ui)
 
 
