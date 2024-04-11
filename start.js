@@ -296,16 +296,16 @@ const courses=[
 // console.log(student1.getfullname())
 
 // const ul=document.querySelector(".items")
-// //ul.children[1].remove();
+// //ul.children[1].remove();-
 // ul.children[1].innerText="last item";
 
-// console.log(ul);
-const btn=document.querySelector(".btn")
-btn.computedStyleMap.color="red"
-console.log(btn)
-
-
-
+// // console.log(ul);
+// const btn=document.querySelector(".btn")
+// btn.computedStyleMap.color="red"
+// console.log(btn)
+const ui=document.querySelector(".items")
+ui.children[1].innerText=("sam is god")
+console.log(ui)
 
 
 
