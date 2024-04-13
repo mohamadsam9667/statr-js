@@ -306,14 +306,15 @@ const courses=[
 // const ui=document.querySelector(".items")
 // ui.children[1].innerHTML="sam is one god"
 // console.log(ui)
+// console.log(e.target.className)
+// e.target.className="error"
+//document.querySelector("#my-form").style.background='#ccc'
 const bottun=document.querySelector(".btn")
+const items=document.querySelector(".items")
 bottun.addEventListener("click",(e)=>
 {
   e.preventDefault();
-  console.log(e.target.className)
-  e.target.className="error"
-  //document.querySelector("#my-form").style.background='#ccc'
-  document.querySelector("body").classList.add('bg-dark')
+  items.remove.className(".items")
 })
 
 
