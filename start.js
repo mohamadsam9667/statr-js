@@ -310,7 +310,10 @@ const bottun=document.querySelector(".btn")
 bottun.addEventListener("click",(e)=>
 {
   e.preventDefault();
-  console.log("clicked")
+  console.log(e.target.className)
+  e.target.className="error"
+  
+
 })
 
 
