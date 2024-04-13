@@ -312,7 +312,7 @@ bottun.addEventListener("click",(e)=>
   e.preventDefault();
   console.log(e.target.className)
   e.target.className="error"
-  
+  document.querySelector("#my-form").style.background='#ccc'
 
 })
 
