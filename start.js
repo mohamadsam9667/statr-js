@@ -314,7 +314,7 @@ const items=document.querySelector(".items")
 bottun.addEventListener("click",(e)=>
 {
   e.preventDefault();
-  items.remove()
+  //items.remove()
 })
 
 
