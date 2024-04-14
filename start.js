@@ -315,7 +315,7 @@ bottun.addEventListener("click",(e)=>
 {
   e.preventDefault();
   console.log(e.target.className)
-    
+  document.querySelector("#my-form").style.color="red"  
 
 })
 
