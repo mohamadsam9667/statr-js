@@ -315,7 +315,7 @@ bottun.addEventListener("click",(e)=>
 {
   e.preventDefault();
   //items.remove()
-  console.log()  
+  console.log(e.target.className)  
 })
 
 
