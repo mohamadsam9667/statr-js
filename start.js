@@ -310,12 +310,13 @@ const courses=[
 // e.target.className="error"
 //document.querySelector("#my-form").style.background='#ccc'
 const bottun=document.querySelector(".btn")
-const items=document.querySelector(".items")
+//const items=document.querySelector(".items")
 bottun.addEventListener("click",(e)=>
 {
   e.preventDefault();
-  //items.remove()
-  console.log(e.target.className)  
+  console.log(e.target.className)
+  e.target.className="error"  
+  
 })
 
 
