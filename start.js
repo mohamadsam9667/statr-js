@@ -326,7 +326,7 @@ btn.addEventListener( "mouseout" ,(e)=>
   e.preventDefault();
   console.log("mouseout")
   document.querySelector(".items").children[1].innerHTML="<h2>sam</h2>"    
-
+  document.querySelector("#my-form").style.color="red"
 
 })
 
