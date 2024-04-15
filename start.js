@@ -308,18 +308,24 @@ const courses=[
 // console.log(ui)
 // console.log(e.target.className)
 // e.target.className="error"
-//document.querySelector("#my-form").style.background='#ccc'
-const bottun=document.querySelector(".btn")
-//const items=document.querySelector(".items")
-bottun.addEventListener("click",(e)=>
+// //document.querySelector("#my-form").style.background='#ccc'
+// const bottun=document.querySelector(".btn")
+// //const items=document.querySelector(".items")
+// bottun.addEventListener("click",(e)=>
+// {
+//   e.preventDefault();
+//   console.log(e.target.className)
+//   document.querySelector("i").classList.add('bg-dark')  
+
+// })
+
+const btn=querySelector(".btn")
+
+btn.addEventListener( "click" ,(e)=>
 {
-  e.preventDefault();
-  console.log(e.target.className)
-  document.querySelector("#my-form").style.color="red"  
 
+  
 })
-
-
 
 
 
