@@ -334,10 +334,19 @@ const nameinput=document.querySelector("#name")
 const emailinput=document.querySelector("#email")
 const msg=document.querySelector(".msg")
 const users=document.querySelector("#users")
+//const btn=document.querySelector(".btn")
 
 
 
 
+myform.addEventListener("submit",onSubmit)
+function onSubmit(e)
+{
+  e.preventDefault();
+  console.log("name:") ;console.log(nameinput.value)
+  console.log("email:");console.log(emailinput.value)
+
+}
 
 
 
