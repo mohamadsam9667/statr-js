@@ -329,8 +329,11 @@ document.addEventListener('DOMContentLoaded', function(){
 //  // document.querySelector("#my-form").style.color="red"
 
 // })
-
-
+const myform=document.querySelector("#my-form")
+const nameinput=document.querySelector("#name")
+const emailinput=document.querySelector("#email")
+const msg=document.querySelector(".msg")
+const users=document.querySelector("#users")
 
 
 
