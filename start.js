@@ -249,18 +249,18 @@ document.addEventListener('DOMContentLoaded', function(){
 //   default:
 //     console.log("it is undefined")
 // }
-const courses=[
-  {
-    id1:1,
-    name1:'sam',
-    type1:'css'
-  },
-  {
-    id2:2,
-    name1:'ilya',
-    type2:'html'
-  }
-];
+// const courses=[
+//   {
+//     id1:1,
+//     name1:'sam',
+//     type1:'css'
+//   },
+//   {
+//     id2:2,
+//     name1:'ilya',
+//     type2:'html'
+//   }
+// ];
 // const addNum=(num1=12,num2=10)=>num1+num2
 // console.log(addNum(3,19))
 //courses.forEach(x=>console.log(x))
@@ -325,7 +325,7 @@ btn.addEventListener( "mouseout" ,(e)=>
 {
   e.preventDefault();
   console.log("mouseout")
-    
+  document.querySelector(".items").children[1].innerHTML="<h2>sam</h2>"    
 
 
 })
