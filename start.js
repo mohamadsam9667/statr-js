@@ -319,12 +319,15 @@ const courses=[
 
 // })
 
-const btn=querySelector(".btn")
+const btn=document.querySelector(".btn");
 
-btn.addEventListener( "click" ,(e)=>
+btn.addEventListener( "mouseout" ,(e)=>
 {
+  e.preventDefault();
+  console.log("mouseout")
+    
 
-  
+
 })
 
 
