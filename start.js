@@ -329,23 +329,32 @@ document.addEventListener('DOMContentLoaded', function(){
 //  // document.querySelector("#my-form").style.color="red"
 
 // })
-const myform=document.querySelector("#my-form")
-const nameinput=document.querySelector("#name")
-const emailinput=document.querySelector("#email")
-const msg=document.querySelector(".msg")
-const users=document.querySelector("#users")
-//const btn=document.querySelector(".btn")
+const myform = document.querySelector("#my-form");
+const nameinput = document.querySelector("#name");
+const emailinput = document.querySelector("#email");
+const msg = document.querySelector(".msg");
+const users = document.querySelector("#users");
 
+myform.addEventListener("submit", onSubmit);
 
-
-
-myform.addEventListener("submit",onSubmit)
-function onSubmit(e)
-{
+function onSubmit(e) {
   e.preventDefault();
-  console.log("name:") ;console.log(nameinput.value)
-  console.log("email:");console.log(emailinput.value)
-
+  
+  // Create a new list item
+  const li = document.createElement('li');
+  const il=document.createElement('li');
+  // Set the text content of the list item to the entered name
+  li.textContent = nameinput.value;
+  il.textContent=emailinput.value;
+  // Append the new list item to the users list
+  users.appendChild(li);
+  users.appendChild(il);
+  
+  // Clear input fields
+  console.log(nameinput.value)
+  console.log(emailinput.value)
+  nameinput.value = '';
+  emailinput.value = '';
 }
 
 
