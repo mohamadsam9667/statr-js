@@ -327,13 +327,8 @@ document.addEventListener('DOMContentLoaded', function(){
 //  // console.log("mouseout")
 //  // document.querySelector(".items").children[1].innerHTML="<h2>sam</h2>"    
 //  // document.querySelector("#my-form").style.color="red"
+/*
 
-// })
-const myform = document.querySelector("#my-form");
-const nameinput = document.querySelector("#name");
-const emailinput = document.querySelector("#email");
-const msg = document.querySelector(".msg");
-const users = document.querySelector("#users");
 
 myform.addEventListener("submit", onSubmit);
 
@@ -355,7 +350,37 @@ function onSubmit(e) {
   console.log(emailinput.value)
   nameinput.value = '';
   emailinput.value = '';
-}
+}*/ 
+// })
+
+
+const myform = document.querySelector("#my-form");
+const nameinput = document.querySelector("#name");
+const emailinput = document.querySelector("#email");
+const msg = document.querySelector(".msg");
+const users = document.querySelector("#users");
+
+myform.addEventListener('submit',onSubmit)
+  function onSubmit(e){
+    e.preventDefault();
+    console.log(nameinput.value)
+    if(nameinput.value===''&&emailinput.value==='')
+    {
+      msg.innerHTML="error not found";
+      msg.classList.add("error")
+    }
+    else {
+      msg.innerTexxt="";
+      msg.classList.remove("error");
+    }
+
+  
+  }
+
+
+
+
+
 
 
 
