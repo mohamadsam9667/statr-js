@@ -368,11 +368,19 @@ myform.addEventListener('submit',onSubmit)
     {
       msg.innerHTML="<h5>error not found<h5>";
       msg.classList.add("error")
+      setTimeout(()=>{
+        msg.remove();
+      },3000)
     }
-    setTimeout(()=>{
-      msg.remove();
-    },3000)
-  
+    else{
+      const li=document.createElement("li")
+      li.appendChild(document.createTextNode(nameinput.value," : ",emailinput.value))
+      users.appendChild(li)
+      nameinput.value=""
+      emailinput.value=""
+
+    
+    }
   }
 
 
