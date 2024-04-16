@@ -354,34 +354,35 @@ function onSubmit(e) {
 // })
 
 
-const myform = document.querySelector("#my-form");
-const nameinput = document.querySelector("#name");
-const emailinput = document.querySelector("#email");
-const msg = document.querySelector(".msg");
-const users = document.querySelector("#users");
+// const myform = document.querySelector("#my-form");
+// const nameinput = document.querySelector("#name");
+// const emailinput = document.querySelector("#email");
+// const msg = document.querySelector(".msg");
+// const users = document.querySelector("#users");
 
-myform.addEventListener('submit',onSubmit)
-  function onSubmit(e){
-    e.preventDefault();
-    console.log(nameinput.value)
-    if(nameinput.value===''||emailinput.value==='')
-    {
-      msg.innerHTML="<h5>error not found<h5>";
-      msg.classList.add("error")
-      setTimeout(()=>{
-        msg.remove();
-      },3000)
-    }
-    else{
-      const li=document.createElement("li")
-      li.appendChild(document.createTextNode(nameinput.value," : ",emailinput.value))
-      users.appendChild(li)
-      nameinput.value=""
-      emailinput.value=""
+// myform.addEventListener('submit',onSubmit)
+//   function onSubmit(e){
+//     e.preventDefault();
+//     console.log(nameinput.value)
+//     if(nameinput.value===''||emailinput.value==='')
+//     {
+//       msg.innerHTML="<h5>error not found<h5>";
+//       msg.classList.add("error")
+//       setTimeout(()=>{
+//         msg.remove();
+//       },3000)
+//     }
+//     else{
+//       const li=document.createElement("li")
+//       li.appendChild(document.createTextNode(nameinput.value," : ",emailinput.value))
+//       users.appendChild(li)
+//       nameinput.value=""
+//       emailinput.value=""
 
     
-    }
-  }
+//     }
+//   }
+
 
 
 
