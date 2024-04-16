@@ -364,16 +364,14 @@ myform.addEventListener('submit',onSubmit)
   function onSubmit(e){
     e.preventDefault();
     console.log(nameinput.value)
-    if(nameinput.value===''&&emailinput.value==='')
+    if(nameinput.value===''||emailinput.value==='')
     {
-      msg.innerHTML="error not found";
+      msg.innerHTML="<h5>error not found<h5>";
       msg.classList.add("error")
     }
-    else {
-      msg.innerTexxt="";
-      msg.classList.remove("error");
-    }
-
+    setTimeout(()=>{
+      
+    },3000)
   
   }
 
