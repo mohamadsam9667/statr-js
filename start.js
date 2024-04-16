@@ -370,7 +370,7 @@ myform.addEventListener('submit',onSubmit)
       msg.classList.add("error")
     }
     setTimeout(()=>{
-      
+      msg.remove();
     },3000)
   
   }
