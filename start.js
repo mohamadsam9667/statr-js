@@ -1,15 +1,15 @@
 
 
-        /*var a=2;
+var a=2;
 var b=3;
 var c="i am";
 a=a+3;
 b=b+5;
 c=c+" string";
 console.log(a,b,c);
-//var برای تعریف همه متغیر ها 
-//let برای جاهای خاص برای یه قسمت 
-//const یه عدد ثابت کلا     
+var برای تعریف همه متغیر ها 
+let برای جاهای خاص برای یه قسمت 
+const یه عدد ثابت کلا     
 var FristName=0;
 var FristName1="محمد سام ";
 FristName=FristName1.length;
@@ -45,7 +45,7 @@ while(j<9)
 // {
 //   console.log(c);
 
-// // }
+ }
 // courses.forEach(function(c){
 //   console.log(c);
 // const newcours=courses.filter(function(two){
