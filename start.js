@@ -1,41 +1,41 @@
 
 
-var a=2;
-var b=3;
-var c="i am";
-a=a+3;
-b=b+5;
-c=c+" string";
-console.log(a,b,c);
-var برای تعریف همه متغیر ها 
-let برای جاهای خاص برای یه قسمت 
-const یه عدد ثابت کلا     
-var FristName=0;
-var FristName1="محمد سام ";
-FristName=FristName1.length;
-console.log(FristName);
-var firsLetterOflast="";
-var last="sam";
-firsLetterOflast=last[2];
-console.log(firsLetterOflast);
-var Myarray=["sam1","sam","dog"]; تابع  pop برای حذف عنصر اخر 
-  Myarray.pop();
-console.log(Myarray); 
-var Array=["novamber","septamber","pleas"]    برای حذف shift تابع 
-myDelet=Array.shift();
-console.log(Array);
-const variable=true;
-console.log(typeof variable);
-let  j=0;
-while(j<9)
-{
-  console.log(j)
-  j++;
-}
+// var a=2;
+// var b=3;
+// var c="i am";
+// a=a+3;
+// b=b+5;
+// c=c+" string";
+// console.log(a,b,c);
+// var برای تعریف همه متغیر ها 
+// let برای جاهای خاص برای یه قسمت 
+// const یه عدد ثابت کلا     
+// var FristName=0;
+// var FristName1="محمد سام ";
+// FristName=FristName1.length;
+// console.log(FristName);
+// var firsLetterOflast="";
+// var last="sam";
+// firsLetterOflast=last[2];
+// console.log(firsLetterOflast);
+// var Myarray=["sam1","sam","dog"]; تابع  pop برای حذف عنصر اخر 
+//   Myarray.pop();
+// console.log(Myarray); 
+// var Array=["novamber","septamber","pleas"]    برای حذف shift تابع 
+// myDelet=Array.shift();
+// console.log(Array);
+// const variable=true;
+// console.log(typeof variable);
+// let  j=0;
+// while(j<9)
+// {
+//   console.log(j)
+//   j++;
+// }
 
-// => Hello world!// => Hello QuickRef.ME
-// Prints error message to stderr
-*/
+// // => Hello world!// => Hello QuickRef.ME
+// // Prints error message to stderr
+// */
  
 // console.log(courses[1].Name);
 // const resault=JSON.stringify(courses);
@@ -45,7 +45,6 @@ while(j<9)
 // {
 //   console.log(c);
 
- }
 // courses.forEach(function(c){
 //   console.log(c);
 // const newcours=courses.filter(function(two){
