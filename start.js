@@ -381,9 +381,9 @@ function onSubmit(e) {
     
 //     }
 //   }
-// const form=document.querySelector("")
-const array=[1,2,3,,4,5,6];
-console.log(array.map[0])
+// // const form=document.querySelector("")
+// const array=[1,2,3,,4,5,6];
+// console.log(array.map[0])
 
 
 
