@@ -385,9 +385,18 @@ function onSubmit(e) {
 // const array=[1,2,3,,4,5,6];
 // console.log(array.map[0])
 
+let person=[
+  {nomber:"20" ,hobby:"palay" , salario:"silent " },
+  {nomber:"41" ,hobby:"football" , salario:" atack" },
+  {nomber:"60" ,hobby:"voliball" , salario:"lose " },
+  {nomber:"20" ,hobby:"tenis" , salario:"win" }
+];
 
+person.filter(function(person,index){
+  console.log(person.nomber==="20",index);
+});
 
-
+console.log (person.nomber)
 
 
 
