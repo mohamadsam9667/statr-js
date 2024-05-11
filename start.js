@@ -397,14 +397,28 @@ function onSubmit(e) {
 // });
 
 // console.log (person.nomber)
-const massMark=78;
-const highMark=1.69;
-const massJohn=92;
-const highJohn=1.95;
 
-const BMImark=(massMark/highMark**2);
-const BMIjohn=(massJohn/(highJohn*highJohn));
-console.log(BMImark>BMIjohn);
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const massMark=78;
+// const highMark=1.69;
+// const massJohn=92;
+// const highJohn=1.95;
+
+// const BMImark=(massMark/highMark**2);
+// const BMIjohn=(massJohn/(highJohn*highJohn));
+// console.log(BMImark>BMIjohn);
 
 
 
