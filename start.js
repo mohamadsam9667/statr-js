@@ -436,14 +436,20 @@ function onSubmit(e) {
 // alert(`name is ${user_info} space ${typeof user_info}`);
 
 
-let string=+"123";
-alert(typeof string);
-let number=+Number(string);
-alert(typeof number);
+// let string=+"123";
+// alert(typeof string);
+// let number=+Number(string);
 
-
-
-
+// // alert(typeof number);
+// var number1=prompt("enter number one:",1)
+// let number_one=Number(number1)
+// var number2=prompt("enter number two",2)
+// let number_two=Number(number2)
+// var number3=prompt ("enter number three",3)
+// let number_three=Number(number3)
+// var sum =number_one+number_two+number_three;
+// var average=sum/3;
+// alert(average);
 
 
 
