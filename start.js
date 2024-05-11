@@ -400,23 +400,23 @@ function onSubmit(e) {
 
 
 
-const courses=[
-  {
-    id:1,
-    name:"sam",
-    core:"i3",
-    isComplate:false
-  },
-  {
-    id:2,
-    name:"sara",
-    core:"i7",
-    isComplate:true
-  }
-];
+// const courses=[
+//   {
+//     id:1,
+//     name:"sam",
+//     core:"i3",
+//     isComplate:false
+//   },
+//   {
+//     id:2,
+//     name:"sara",
+//     core:"i7",
+//     isComplate:true
+//   }
+// ];
 
 
-courses.forEach(x=>console.log(x.id>1))
+// courses.forEach(x=>console.log(x.id>1))
 
 
 
