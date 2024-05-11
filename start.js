@@ -432,15 +432,14 @@ function onSubmit(e) {
 // const BMImark=(massMark/highMark**2);
 // const BMIjohn=(massJohn/(highJohn*highJohn));
 // console.log(BMImark>BMIjohn);
+// const user_info=
+// alert(`name is ${user_info} space ${typeof user_info}`);
 
 
-
-
-
-
-
-
-
+let string=+"123";
+alert(typeof string);
+let number=+Number(string);
+alert(typeof number);
 
 
 
