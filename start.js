@@ -453,6 +453,23 @@ function onSubmit(e) {
 
 
 
+var age_user=Number(prompt("enter your age : ", 15));
+  if(age_user>20)
+  {
+    alert("شما مجاز به وردو در سایت هستید")
+  }
+  else {
+    alret("شما مجاز به ورود در این وب سایت نیستید")
+  }
+
+
+
+
+
+
+
+
+
 
 
 
