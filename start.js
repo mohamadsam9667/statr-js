@@ -494,26 +494,26 @@ function onSubmit(e) {
 
 
 
-const age=Number(prompt("سن خود را وارد کنید:",15))
-const gender=String(prompt("جنسیت خود را وارد کنید","مرد"));
+// const age=Number(prompt("سن خود را وارد کنید:",15))
+// const gender=String(prompt("جنسیت خود را وارد کنید","مرد"));
 
-if(isNaN(age && gender==="")){
-  alert("مشکل در هنگام وارد کردن اطلاعات ")
-}
-else{
+// if(isNaN(age && gender==="")){
+//   alert("مشکل در هنگام وارد کردن اطلاعات ")
+// }
+// else{
   
-if(age>18 || gender==="مونث")
-  {
-   alert("ورود شما مجاز می باشد ");
-  }
-  else {
-    alert("ورود شما غیر مجاز است");
-  }
-}
+// if(age>18 || gender==="مونث")
+//   {
+//    alert("ورود شما مجاز می باشد ");
+//   }
+//   else {
+//     alert("ورود شما غیر مجاز است");
+//   }
+// }
 
 
-
-
+let num1=3,num2=4;
+let num=(num1*num2===12)? alert("بله 12 هست"): alert("نه 12 نیست");
 
 
 
