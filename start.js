@@ -475,25 +475,41 @@ function onSubmit(e) {
 // }
 // alert(answer)
 
-const min =Number(prompt("enter your age user:" ,1380))
+// const min =Number(prompt("enter your age user:" ,1380))
 
-const hour=min/60;
+// const hour=min/60;
 
 
 
-if(isNaN(min))
+// if(isNaN(min))
+//   {
+//     alert(`رکب خوردی کیومرث عدد وارد کن`)
+//   }
+//   else{
+
+//     alert(`hour=${hour}`);
+//   }
+
+
+
+
+
+const age=Number(prompt("سن خود را وارد کنید:",15))
+const gender=String(prompt("جنسیت خود را وارد کنید","مرد"));
+
+if(isNaN(age && gender==="")){
+  alert("مشکل در هنگام وارد کردن اطلاعات ")
+}
+else{
+  
+if(age>18 || gender==="مونث")
   {
-    alert(`رکب خوردی کیومرث عدد وارد کن`)
+   alert("ورود شما مجاز می باشد ");
   }
-  else{
-
-    alert(`hour=${hour}`);
+  else {
+    alert("ورود شما غیر مجاز است");
   }
-
-
-
-
-
+}
 
 
 
