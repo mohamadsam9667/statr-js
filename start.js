@@ -465,19 +465,30 @@ function onSubmit(e) {
 
 
 
-var number1=Number(prompt("enter number1:",1));
-var pow=Number(prompt("enter pow :",1)); 
-var answer=1;
-for(var i=1;i<=pow;i++)
-{
+// var number1=Number(prompt("enter number1:",1));
+// var pow=Number(prompt("enter pow :",1)); 
+// var answer=1;
+// for(var i=1;i<=pow;i++)
+// {
 
-  answer=answer*number1;
-}
-alert(answer)
+//   answer=answer*number1;
+// }
+// alert(answer)
+
+const min =Number(prompt("enter your age user:" ,1380))
+
+const hour=min/60;
 
 
 
+if(isNaN(min))
+  {
+    alert(`رکب خوردی کیومرث عدد وارد کن`)
+  }
+  else{
 
+    alert(`hour=${hour}`);
+  }
 
 
 
