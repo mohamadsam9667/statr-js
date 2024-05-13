@@ -603,6 +603,26 @@ function onSubmit(e) {
 //   alert(pow)
 
 
+alert("form register");
+
+var user_name=prompt('userName=','sam');
+var password=prompt('password=','sam12qwxakd');
+
+if (user_name.length<3 ){
+  alert("یوزر نیم شما باید شامل 3 حرف باشد");
+}
+else if(password.length<8)
+  {
+    alert("پسورد شما باید حداقل شامل 8 حرف باشد");
+  }
+else{
+  alert("ثبت نام با موفقیت انجام شد")
+}
+
+
+
+
+
 
 
 
