@@ -641,9 +641,14 @@ function onSubmit(e) {
 
 
 
+var user_name=prompt(":یوزر نیم خود را وارد کنید ",'sam_12');
+if (user_name.toLowerCase()==('ali')){
+  alert("خوش آمدید")
+}
 
-
-
+else{
+  alert("error")
+}
 
 
 
