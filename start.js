@@ -582,6 +582,37 @@ function onSubmit(e) {
 
 
 
+// function sumNumbers(num1,num2){
+//   var resault=num1+num2;
+//   alert(`resault=${resault}`);
+// }
+
+// var sumresault=sumNumbers(2,8);
+// alert(`sum=${sumresault}`)
+
+
+// var number1=prompt('enter first number:');
+// var number2=prompt('enter secound number:');
+  
+// function showpow(num1,num2)
+// {
+//   return num1**num2
+// }
+
+//   var pow=showpow(number1,number2)
+//   alert(pow)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
