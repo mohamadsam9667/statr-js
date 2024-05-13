@@ -515,29 +515,50 @@ function onSubmit(e) {
 // let num1=3,num2=4;
 // let num=(num1*num2===12)? alert("بله 12 هست"): alert("نه 12 نیست");
 
-let score=prompt("وارد کنید نمره خود را",10);
+// let score=prompt("وارد کنید نمره خود را",10);
 
-switch(score){
-  case 19:      
-  case 18:
-    case 20:  
-    alert("A");
-    break;
-    case 15:
-    case 16:
-    case 17:
-      alert("B");
-      break;
-    case 12:
-    case 13:
-    case 14:  
-    alert("C");
-   break;
-    default :
-    alert("بدبخت شدی");
-    break;
+// switch(score){
+//   case 19:      
+//   case 18:
+//     case 20:  
+//     alert("A");
+//     break;
+//     case 15:
+//     case 16:
+//     case 17:
+//       alert("B");
+//       break;
+//     case 12:
+//     case 13:
+//     case 14:  
+//     alert("C");
+//    break;
+//     default :
+//     alert("بدبخت شدی");
+//     break;
 
-    }
+//     }
+
+
+
+var Showvalue=function() {
+  var num1=2;
+  var num2=3;
+  var resaultname=num1+num2;
+  alert(resaultname);
+}
+
+Showvalue()
+
+
+
+
+
+
+
+
+
+
 
 
 
