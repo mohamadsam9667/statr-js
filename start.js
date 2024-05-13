@@ -541,14 +541,37 @@ function onSubmit(e) {
 
 
 
-var Showvalue=function() {
-  var num1=2;
-  var num2=3;
-  var resaultname=num1+num2;
-  alert(resaultname); 
-}
+// var Showvalue=function() {
+//   var num1=2;
+//   var num2=3;
+//   var resaultname=num1+num2;
+//   alert(resaultname); 
+// }
 
-Showvalue()
+// Showvalue()
+
+// const number=Number(prompt("عدد مورد نظر را برای تشخیص زوج یا فرد بودن وارد کنید",1));
+// if(isNaN(number))
+//   {
+//     alert("error")
+//   }
+//   else{
+//     odd_or_even(number);
+//       }
+
+//     function odd_or_even(number){
+//     if(number%2==0)
+//       {
+//         alert("عدد مورد نظر شما  زوج است");
+//       }
+//       else{
+//         alert("عدد مورد نظر شما فرده");
+//       }
+//     }
+
+
+
+
 
 
 
