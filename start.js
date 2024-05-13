@@ -569,6 +569,16 @@ function onSubmit(e) {
 //       }
 //     }
 
+// let num1=1;
+// var num2=3;
+// var num3=4;
+
+// function sum(num1,num2,num3){
+//   let average=0;
+//   average=(num1+num2+num3)/3;
+//   alert(average)
+//   }
+// sum(3,3,1);
 
 
 
