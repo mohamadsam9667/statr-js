@@ -639,13 +639,16 @@ function onSubmit(e) {
 
 // console.log(text.includes("si"));//boolean=> true || false
 
-
+5
 
 var user_name=prompt(":یوزر نیم خود را وارد کنید ",'sam_12');
 if (user_name.toLowerCase()==('ali')){
   alert("خوش آمدید")
 
 }
+
+// start after two day
+
 
 else{
   alert("error")
