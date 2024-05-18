@@ -640,21 +640,16 @@ function onSubmit(e) {
 
 
 
-var text="Am sigma         ";
-var counter=text.charCodeAt(0);
-var counter=text.concat("i'm sam");
-
-
-  // console.log(text.trim());
-
+var text="Am sigma realy is java         ";
+// var counter=text.charCodeAt(0);
+// var counter=text.concat("i'm sam");
+  // console.log(text.trim()); 
   // console.log(text.search("m"));
-
   // console.log(text.indexOf("si"))
-
   // console.log(text.includes("si"));//boolean=> true || false
-
-
-
+  console.log(text.slice(2,9));
+  
+  
 
 
 
