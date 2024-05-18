@@ -623,36 +623,36 @@ function onSubmit(e) {
 
 
 
+// 5
+
+// var user_name=prompt(":یوزر نیم خود را وارد کنید ",'sam_12');
+// if (user_name.toLowerCase()==('ali')){
+//   alert("خوش آمدید")
+
+// }
+
+// // start after two day
+
+
+// else{
+//   alert("error")
+// }
 
 
 
-// var text="Am sigma         ";
-// var counter=text.charCodeAt(0);
-// var counter=text.concat("i'm sam");
+var text="Am sigma         ";
+var counter=text.charCodeAt(0);
+var counter=text.concat("i'm sam");
 
 
-// console.log(text.trim());
+  // console.log(text.trim());
 
-// console.log(text.search("m"));
+  // console.log(text.search("m"));
 
-// console.log(text.indexOf("si"))
+  // console.log(text.indexOf("si"))
 
-// console.log(text.includes("si"));//boolean=> true || false
+  // console.log(text.includes("si"));//boolean=> true || false
 
-5
-
-var user_name=prompt(":یوزر نیم خود را وارد کنید ",'sam_12');
-if (user_name.toLowerCase()==('ali')){
-  alert("خوش آمدید")
-
-}
-
-// start after two day
-
-
-else{
-  alert("error")
-}
 
 
 
