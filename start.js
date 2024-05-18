@@ -647,8 +647,9 @@ var text="Am sigma realy is java         ";
   // console.log(text.search("m"));
   // console.log(text.indexOf("si"))
   // console.log(text.includes("si"));//boolean=> true || false
-  console.log(text.slice(2,9));
-  
+  // console.log(text.slice(2,9));  از 7 شروع میکنه و تا 9 میره
+  // console.log(text.substr(8,13));از 8 شورع مینه و تا 13 تا بعد اونو میره
+  console.log(text.substring(7,17))
   
 
 
