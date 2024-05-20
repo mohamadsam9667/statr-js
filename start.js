@@ -651,8 +651,9 @@ function onSubmit(e) {
   // console.log(text.substr(8,13));از 8 شورع مینه و تا 13 تا بعد اونو میره
   // console.log(text.substring(7,17))
 // console.log(Math.PI)
-console.log(2**3)
-
+// console.log(2**3)
+console.log(Math.pow(2,4))
+console.log(Math.sqrt(16))
 
 
 
