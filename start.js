@@ -654,7 +654,7 @@ function onSubmit(e) {
 // console.log(2**3)
 // console.log(Math.pow(2,4))
 // console.log(Math.sqrt(16))
-console.log(Math.abs(-10))
+// console.log(Math.abs(-10))
 
 
 
