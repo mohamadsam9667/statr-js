@@ -640,7 +640,7 @@ function onSubmit(e) {
 
 
 
-var text="Am sigma realy is java         ";
+// var text="Am sigma realy is java         ";
 // var counter=text.charCodeAt(0);
 // var counter=text.concat("i'm sam");
   // console.log(text.trim()); 
@@ -649,8 +649,8 @@ var text="Am sigma realy is java         ";
   // console.log(text.includes("si"));//boolean=> true || false
   // console.log(text.slice(2,9));  از 7 شروع میکنه و تا 9 میره
   // console.log(text.substr(8,13));از 8 شورع مینه و تا 13 تا بعد اونو میره
-  console.log(text.substring(7,17))
-  
+  // console.log(text.substring(7,17))
+console.log(Math)  
 
 
 
