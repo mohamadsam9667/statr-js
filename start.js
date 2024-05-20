@@ -652,8 +652,11 @@ function onSubmit(e) {
   // console.log(text.substring(7,17))
 // console.log(Math.PI)
 // console.log(2**3)
-console.log(Math.pow(2,4))
-console.log(Math.sqrt(16))
+// console.log(Math.pow(2,4))
+// console.log(Math.sqrt(16))
+console.log(Math.abs(-10))
+
+
 
 
 
