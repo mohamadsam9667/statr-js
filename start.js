@@ -650,7 +650,8 @@ function onSubmit(e) {
   // console.log(text.slice(2,9));  از 7 شروع میکنه و تا 9 میره
   // console.log(text.substr(8,13));از 8 شورع مینه و تا 13 تا بعد اونو میره
   // console.log(text.substring(7,17))
-console.log(Math)  
+// console.log(Math.PI)
+console.log(2**3)
 
 
 
