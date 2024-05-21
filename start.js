@@ -664,7 +664,7 @@ function onSubmit(e) {
 // alert (Math.floor(capcha));
 
 //assignment
-number+=1;||number=number+1;||number ++
+// number+=1;|| number=number+1;||number ++
 
 
 
