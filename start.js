@@ -773,7 +773,7 @@ function onSubmit(e) {
   
 var counter_input=Number(prompt("enter counter inpute",3));
 var input_number=0;
-var sum=0 ;
+var sum=0 ; 
 for(var i=0;i<counter_input;i++)
   {
     input_number=Number(prompt("enter number",10));
