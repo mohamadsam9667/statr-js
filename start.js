@@ -707,18 +707,16 @@ function onSubmit(e) {
 
 
 var number_user=Number(prompt("enter your number:",20));
-var partusern=0;
+let  partusern=0;
 var sum=0;
-for (let i=0;i=(number_user/10)!=0;i++)
+for (let i=0;(number_user/10)!=0;i++)
   {
-    sum=sum+(number_user%10)
-    number_user=Math.floor(number_user/10)
+   number_user=Math(number_user/10);
 
+  partusern=partusern+1;
   }
-console.log(sum)
 
-
-
+console.log(partusern);
 
 
 
