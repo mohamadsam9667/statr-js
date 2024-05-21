@@ -656,7 +656,7 @@ function onSubmit(e) {
 // console.log(Math.sqrt(16))
 // console.log(Math.abs(-10))
 
-
+console.log(Math.min(20,30,10,50,1,2,3,-1,0))
 
 
 
