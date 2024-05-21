@@ -694,8 +694,14 @@ function onSubmit(e) {
 //       console.log(`number[${i+1}]=`,i)
 //   }
 
-
-
+let commodity=0;
+let sum=0;
+for (let i=0;i<5;i++)
+  {
+   commodity=Number(prompt("price your commodity:",10))
+    sum=sum+commodity;
+  }
+console.log(sum)
 
 
 
