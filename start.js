@@ -658,8 +658,8 @@ function onSubmit(e) {
 
 // console.log(Math.min(20,30,10,50,1,2,3,-1,0))
 // console.log(Math.max(20,30,10,50,1,2,3,-1,0))
-console.log(Math.trunc(12.8 ))
-
+// console.log(Math.trunc(12.8 ))
+console.log(Math.round(12.6))
 
 
 
