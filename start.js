@@ -694,20 +694,28 @@ function onSubmit(e) {
 //       console.log(`number[${i+1}]=`,i)
 //   }
 
-let commodity=0;
-let sum=0;
-let average=0;
-for (let i=0;i<5;i++)
+// let commodity=0;
+// let sum=0;
+// let average=0;
+// for (let i=0;i<5;i++)
+//   {
+//    commodity=Number(prompt("price your commodity:",10))
+//     sum=sum+commodity;
+//   }
+//   average=sum/5;
+// console.log(average)
+
+
+var number_user=Number(prompt("enter your number:",20));
+var partusern=0;
+var sum=0;
+for (let i=0;i=(number_user/10)!=0;i++)
   {
-   commodity=Number(prompt("price your commodity:",10))
-    sum=sum+commodity;
+    sum=sum+(number_user%10)
+    number_user=Math.floor(number_user/10)
+
   }
-  average=sum/5;
-console.log(average)
-
-
-
-
+console.log(sum)
 
 
 
