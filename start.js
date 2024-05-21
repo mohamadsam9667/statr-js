@@ -666,17 +666,24 @@ function onSubmit(e) {
 //assignment
 // number+=1;|| number=number+1;||number ++
 
- var number1=2;
+//  var number1=2;
 //  number2=--number1;
 
 //  console.log("number1:",number1)
 //  console.log("number2:",number2)
-var number2;
- number2=number1++;
- console.log("number1:",number1)
- console.log("number2:",number2)
+// var number2;
+//  number2=number1++;
+//  console.log("number1:",number1)
+//  console.log("number2:",number2)
 
 
+
+for(var i=0;i<5;i++)
+
+  {
+    alert('YES')
+
+  }
 
 
 
