@@ -678,15 +678,21 @@ function onSubmit(e) {
 
 
 
-for(var i=0;i<5;i++)
+// for(var i=0;i<5;i++)
 
+//   {
+//     alert('YES')
+
+//   }
+
+
+
+
+for (let i=0;i<=100;i++)
   {
-    alert('YES')
-
+    if( i %2===0)
+      console.log(`number[${i+1}]=`,i)
   }
-
-
-
 
 
 
