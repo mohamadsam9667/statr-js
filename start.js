@@ -1,3 +1,4 @@
+
 // @ -1,718 +1,726 @@
 
 
@@ -728,17 +729,25 @@ function onSubmit(e) {
 
 //   }
 // console.log(sum)
+
+
+var number_user=Number(prompt("enter number :",20));
+var counter=0;
+var sum=0;
 var i=0;
-while(i<100)
+if (number_user==0)
   {
-    if(i%2===0)
-      {
-        console.log(i)
-      }
+    console.log("1");
   }
-
-
-
-
-
-
+  else{
+   
+while(number_user/10!=0)
+  {
+    sum=sum+number_user%10;
+    number_user=Math.floor(number_user/10);
+    // counter++; 
+  }
+  console.log(sum);
+  // console.log(counter)  
+   
+  }
