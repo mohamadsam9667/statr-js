@@ -660,11 +660,15 @@ function onSubmit(e) {
 // console.log(Math.max(20,30,10,50,1,2,3,-1,0))
 // console.log(Math.trunc(12.8 ))
 // console.log(Math.round(12.6))
-var capcha=Math.random()*100000;
-alert (Math.floor(capcha));
+// var capcha=Math.random()*100000;
+// alert (Math.floor(capcha));
 
+//assignment
 
+var number=12;
+number+=10;
 
+console.log(number);
 
 
 
