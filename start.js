@@ -728,26 +728,55 @@ function onSubmit(e) {
 //     number_user=Math.floor(number_user/10)
 
 //   }
-// console.log(sum)
+// // console.log(sum)
 
 
-var number_user=Number(prompt("enter number :",20));
-var counter=0;
-var sum=0;
-var i=0;
-if (number_user==0)
-  {
-    console.log("1");
-  }
-  else{
+// var number_user=Number(prompt("enter number :",20));
+// var counter=0;
+// var sum=0;
+// var i=0;
+// if (number_user==0)
+//   {
+//     console.log("1");
+//   }
+//   else{
    
-while(number_user/10!=0)
-  {
-    sum=sum+number_user%10;
-    number_user=Math.floor(number_user/10);
-    // counter++; 
-  }
-  console.log(sum);
+// while(number_user/10!=0)
+//   {
+//     sum=sum+number_user%10;
+//     number_user=Math.floor(number_user/10);
+//     // counter++; 
+//   }
+//   console.log(sum);
   // console.log(counter)  
    
+  // }
+// var number1=Number (prompt("enter number start bound"),1);
+// var number2=Number (prompt("enter number end bound"),1);
+// var i=0;
+// if(number1%2!=0)
+//   {
+//   number1=number1+1;
+    
+
+//     while((number1<number2)){
+//       console.log(number1)
+//       number1=number1+2;
+//       i++;
+//     }
+//   }
+
+
+
+
+// اعدادی را به تعداد دلخواه از کاربر دریافت کند و میانگین آن را محاسبه کرده و نمایش دهد
+  
+var counter_input=Number(prompt("enter counter inpute",3));
+var input_number=0;
+var sum=0 ;
+for(var i=0;i<counter_input;i++)
+  {
+    input_number=Number(prompt("enter number",10));
+    sum=sum+input_number;
   }
+  console.log("average=",sum/counter_input);
