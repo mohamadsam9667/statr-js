@@ -845,12 +845,12 @@ function onSubmit(e) {
 
 
 
-var scores=[10,9,8,7,6,45];
-console.log(scores);
-
-// scores.push(2);
+// var scores=[10,9,8,7,6,45];
 // console.log(scores);
-scores.unshift(123);
-// scores.pop();
-console.log(scores);
+
+//  scores.push(2);
+// console.log(scores);
+// scores.unshift(123);
+//  scores.pop();
+// console.log(scores);
 
