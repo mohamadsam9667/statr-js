@@ -803,15 +803,33 @@ function onSubmit(e) {
 // console.log(average);
 
 
-var pow=1;
-var number=Number( prompt("enter number botom power:",2));
+// var pow=1;
+// var number=Number( prompt("enter number botom power:",2));
+// var power=Number (prompt("enter ypur power:",3));
+// for(var i=0;i<power;i++)
+//   {
+//     pow=pow*number;
+//   }
+
+// console.log(pow);
+
+var number=Number( prompt("enter number bottom power:",2));
 var power=Number (prompt("enter ypur power:",3));
-for(var i=0;i<power;i++)
+var i=0;
+var pow=1;
+while(i<power)
   {
-    pow=pow*number;
+    pow*=number;
+    i++;
   }
 
-console.log(pow);
+console.log(pow)
+
+
+
+
+
+
 
 
 
