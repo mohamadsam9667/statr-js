@@ -771,12 +771,29 @@ function onSubmit(e) {
 
 // اعدادی را به تعداد دلخواه از کاربر دریافت کند و میانگین آن را محاسبه کرده و نمایش دهد
   
-var counter_input=Number(prompt("enter counter inpute",3));
-var input_number=0;
-var sum=0 ; 
-for(var i=0;i<counter_input;i++)
-  {
-    input_number=Number(prompt("enter number",10));
-    sum=sum+input_number;
-  }
-  console.log("average=",sum/counter_input);
+// var counter_input=Number(prompt("enter counter inpute",3));
+// var input_number=0;
+// var sum=0 ; 
+// for(var i=0;i<counter_input;i++)
+//   {
+//     input_number=Number(prompt("enter number",10));
+//     sum=sum+input_number;
+//   }
+//   console.log("average=",sum/counter_input);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
