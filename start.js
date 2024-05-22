@@ -825,17 +825,16 @@ function onSubmit(e) {
 
 // console.log(pow)
 
-var number=Number( prompt("enter number bottom power:",2));
-var power=Number (prompt("enter ypur power:",3));
-var pow=1; 
-i=0;
-do{
-  i++;
-  pow*=number;
+// var power=Number (prompt("enter ypur power:",3));var number=Number( prompt("enter number bottom power:",2));
+// var pow=1; 
+// i=0;
+// do{
+//   i++;
+//   pow*=number;
 
-}while(i<power)
+// }while(i<power)
 
-console.log(pow)
+// console.log(pow)
 
 
 
