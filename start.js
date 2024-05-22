@@ -784,23 +784,23 @@ function onSubmit(e) {
 //اعدادی را به تعداد دلخواه کاربر دریافت کنید ومیانگین آنها را حساب کرده و نمایش دهید
 
 
-var number=0;
-var counter=-1;
-var sum=0;
-var average=0;
-while(number!=-1)
-  {
-    sum=sum+number;
-    counter++;
-    number=Number(prompt("enter your number:"));
-  } 
+// var number=0;
+// var counter=-1;
+// var sum=0;
+// var average=0;
+// while(number!=-1)
+//   {
+//     sum=sum+number;
+//     counter++;
+//     number=Number(prompt("enter your number:"));
+//   } 
   
-  console.log(counter)
-  console.log(sum)
+//   console.log(counter)
+//   console.log(sum)
 
 
-average= sum/counter
-console.log(average);
+// average= sum/counter
+// console.log(average);
 
 
 
