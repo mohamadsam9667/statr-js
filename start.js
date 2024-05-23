@@ -854,16 +854,68 @@ function onSubmit(e) {
 //  scores.pop();
 // console.log(scores);
 
-let object={
-    name:"sam",
-    age:20,
-    family:"rezai"
-};
+// let object={
+//     name:"sam",
+//     age:20,
+//     family:"rezai"
+// };
 
 
-console.log(object['family'])
-console.log(object.age)
+// console.log(object['family'])
+// console.log(object.age)
+
+var object =[
+  {
+  id:1,
+  name:"sam",
+  lastname:"reazazade",
+  age:21,
+  email:"@ali2frt.ir@gmail.com"
+  },
+  {
+    id:2,
+    name:"ilia",
+    lastname:"rezazad",
+    age:16,
+    email:"ilia@gmail.com"
+  },
+  {
+    id:3,
+  name:"sara",
+  lastname:"javado",
+  age:22,
+  email:"sara@gmail.com"
+  }
+];
+
+
+
+var user_name=prompt("enter User_name:");
+var Age=(prompt("enter AGE"));
+var Last_name=prompt("enter last_name:");
+var Email=prompt("enter your email adress:");
+
+if (user_name.length<3  || user_name.length>10)
+  {
+    alert("نام حداقل سه حرف و حداکثر 10 حرف می باشد.");
+  }else if(Last_name.length<3||Last_name.length>15){
+    alert("نام خانوادگی حداقل دارای  3 حرف و حداکثر دارای 15 حرف باشد.");
+  }else if(Age.length>4||isNaN(Age))
+  {
+    alert("سن حد اکثر سه رقم است");
+  }
 
 
 
 
+var user_register=[
+  {
+    name:user_name,
+    lastname:Last_name,
+    age:Age,
+    email:Email
+
+  }
+];
+object.push(user_register);
+console.log(object)
