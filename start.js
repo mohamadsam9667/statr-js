@@ -854,3 +854,16 @@ function onSubmit(e) {
 //  scores.pop();
 // console.log(scores);
 
+let object={
+    name:"sam",
+    age:20,
+    family:"rezai"
+};
+
+
+console.log(object['family'])
+console.log(object.age)
+
+
+
+
