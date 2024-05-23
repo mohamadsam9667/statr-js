@@ -1029,3 +1029,74 @@ function onSubmit(e) {
 //و در غیر این صورت به کاربر پیغام اتمام موجودی را نمایش دهید نکات قابل توجه :
 //بعد از اضافه کردن محصول به سبد خرید کاربر سبد را در کنسول نمایش دهید 
 //به طور دیفالت سه محصول با قیمت های مختلف در سبد خرید کاربر موجود باشد 
+
+
+var store_repository=[
+  {
+    id:1,
+    name:"sabon",
+    pric:100
+  },
+  {
+    id:2,
+    name:"shampo",
+    pric:150
+  },
+  {
+    id:3,
+    name:"lif",
+    pric:200
+  },
+  {
+    id:4,
+    name:"kos",
+    pric:1000
+  }
+];
+
+
+var cart=[
+  {
+    id:1,
+    name:"sabon",
+    pric:100
+  },
+  {
+    id:2,
+    name:"shampo",
+    pric:150
+  },
+  {
+    id:3,
+    name:"kise",
+    pric:200
+  }
+]
+
+var kala_user=prompt("چه محصولی میخواهی به سبد خرید اضافه کنی ?");
+var requestkala;
+
+
+var isexiste=store_repository.some(function(kala){
+  if(store_repository.name===kala_user)
+    {
+      requestkala=kala;
+      return true;
+
+    }
+})
+if( isexiste)
+  {
+    var newkala={
+      id:3,
+      name:requestkala.name,
+      price:requestkala.pric      
+    }
+    cart.push(newkala);
+    console.log(cart);
+  }
+  else{
+    console.log("متاسفانه این کالا موجود نیست")
+  }
+
+
