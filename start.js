@@ -864,58 +864,82 @@ function onSubmit(e) {
 // console.log(object['family'])
 // console.log(object.age)
 
-var object =[
-  {
-  id:1,
-  name:"sam",
-  lastname:"reazazade",
-  age:21,
-  email:"@ali2frt.ir@gmail.com"
-  },
-  {
-    id:2,
-    name:"ilia",
-    lastname:"rezazad",
-    age:16,
-    email:"ilia@gmail.com"
-  },
-  {
-    id:3,
-  name:"sara",
-  lastname:"javado",
-  age:22,
-  email:"sara@gmail.com"
-  }
-];
+// var object =[
+//   {
+//   id:1,
+//   name:"sam",
+//   lastname:"reazazade",
+//   age:21,
+//   email:"@ali2frt.ir@gmail.com"
+//   },
+//   {
+//     id:2,
+//     name:"ilia",
+//     lastname:"rezazad",
+//     age:16,
+//     email:"ilia@gmail.com"
+//   },
+//   {
+//     id:3,
+//   name:"sara",
+//   lastname:"javado",
+//   age:22,
+//   email:"sara@gmail.com"
+//   }
+// ];
 
 
 
-var user_name=prompt("enter User_name:");
-var Age=(prompt("enter AGE"));
-var Last_name=prompt("enter last_name:");
-var Email=prompt("enter your email adress:");
+// var user_name=prompt("enter User_name:");
+// var Age=(prompt("enter AGE"));
+// var Last_name=prompt("enter last_name:");
+// var Email=prompt("enter your email adress:");
 
-if (user_name.length<3  || user_name.length>10)
-  {
-    alert("نام حداقل سه حرف و حداکثر 10 حرف می باشد.");
-  }else if(Last_name.length<3||Last_name.length>15){
-    alert("نام خانوادگی حداقل دارای  3 حرف و حداکثر دارای 15 حرف باشد.");
-  }else if(Age.length>4||isNaN(Age))
-  {
-    alert("سن حد اکثر سه رقم است");
-  }
-
-
+// if (user_name.length<3  || user_name.length>10)
+//   {
+//     alert("نام حداقل سه حرف و حداکثر 10 حرف می باشد.");
+//   }else if(Last_name.length<3||Last_name.length>15){
+//     alert("نام خانوادگی حداقل دارای  3 حرف و حداکثر دارای 15 حرف باشد.");
+//   }else if(Age.length>4||isNaN(Age))
+//   {
+//     alert("سن حد اکثر سه رقم است");
+//   }
 
 
-var user_register=[
-  {
-    name:user_name,
-    lastname:Last_name,
-    age:Age,
-    email:Email
 
-  }
-];
-object.push(user_register);
-console.log(object)
+// else{
+// var user_register=[
+//   {
+//     name:user_name,
+//     lastname:Last_name,
+//     age:Age,
+//     email:Email
+
+//   }
+// ];
+// object.push(user_register);
+// console.log(object)
+// }
+
+// var user=[
+//   'sam',
+//   'sara',
+//   'leyla',
+//   'sahar',
+//   'sanaz',
+//   'mahnaz',
+//   'ali',
+// ];
+
+// user.forEach(function(x){
+//   console.log(x+"sa");
+// })
+
+
+// var numbers=[
+//   18,19,20,12,15
+// ];
+// numbers.forEach(function(number){
+//   console.log(number+12);
+// })
+
