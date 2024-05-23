@@ -992,28 +992,40 @@ function onSubmit(e) {
 
 
 
-var Array =
-[
-  {id:1,
-   name:'sam',
-    family:"rezai"
-  },
-  {
-    id:2,
-    name:'sara',
-    family:"afsary"
-  },
-  {
-    id:3,
-    name:"sahar",
-    family:"rahi"
-  }
+// var Array =
+// [
+//   {id:1,
+//    name:'sam',
+//     family:"rezai"
+//   },
+//   {
+//     id:2,
+//     name:'sara',
+//     family:"afsary"
+//   },
+//   {
+//     id:3,
+//     name:"sahar",
+//     family:"rahi"
+//   }
 
-];
+// ];
 
-var isuser=Array.some(function(array){
-  console.log(array ) ; 
-  return array.name==='sara';
-});
+// var isuser=Array.some(function(array){
+//   console.log(array ) ; 
+//   return array.name==='sara';
+// });
 
-console.log(isuser);
+// console.log(isuser);
+
+
+
+
+//یک فروشگاه آنلاین پیاده سازی کنید 
+//به این شکل که فروشگاه خود را در دیتا بیسی ذخیره کرده (آرایه ) و آرایه ای برای سبد خرید کاربر داشته باشد 
+//و از کاربر اسم محصولی که میخواهد به سبد خرید اضافه کند دریافت کند
+// اگر محصول درخواستی کار بر در انبار شما موجود بود آن را به سبد خرید کاربر اضافه کند 
+//وسپس مبلغ کل سبد خرید را محاسبه کرده و نمایش دهید 
+//و در غیر این صورت به کاربر پیغام اتمام موجودی را نمایش دهید نکات قابل توجه :
+//بعد از اضافه کردن محصول به سبد خرید کاربر سبد را در کنسول نمایش دهید 
+//به طور دیفالت سه محصول با قیمت های مختلف در سبد خرید کاربر موجود باشد 
