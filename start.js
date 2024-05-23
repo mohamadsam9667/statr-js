@@ -943,3 +943,35 @@ function onSubmit(e) {
 //   console.log(number+12);
 // })
 
+//دیتابیسی برای  ذخیره اطلاغات کاربران داشته باشید (آرایه ای از آبجکت ها )
+//و سپس به کمک متد فور ایچ اطلاعات هر یوزر را به صورت جداگانه  در کنسول نمایش داد
+// var Data_user=[
+//   {
+//   id:1,
+//   name:"sam",  
+//   family:"rezaazadeh"
+//   },
+//   {
+//   id:2,
+//   name:"ilia",
+//   family:"rrezai"
+//   },
+//   {
+//   id:3,
+//   name:"abolfazle",
+//   family:"khani"
+//   }
+// ];
+
+// Data_user.forEach(function(Data_user){
+//   console.log("name:",Data_user.name  + "family:",Data_user.family)
+// })
+
+ var Array =[
+  "sam",
+  "sina",
+  "amir ","aria","hasan","mani","abolfazle"
+ ];
+
+
+ console.log(Array.includes("mani"));
