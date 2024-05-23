@@ -965,13 +965,55 @@ function onSubmit(e) {
 
 // Data_user.forEach(function(Data_user){
 //   console.log("name:",Data_user.name  + "family:",Data_user.family)
-// })
-
- var Array =[
-  "sam",
-  "sina",
-  "amir ","aria","hasan","mani","abolfazle"
- ];
+// // })
+// var username=prompt("enter you name:");
 
 
- console.log(Array.includes("mani"));
+//  var Array =[
+//   "sam",
+//   "sina",
+//   "amir ","aria","hasan","mani","abolfazle"
+//  ];
+
+//  if (Array.includes(username)===true)
+//   {
+//     console.log("true")
+//     console.log(Array[])
+//     console.log(username);
+    
+//   }
+//   else {
+//     console.log("nist")
+//   }
+
+
+//  console.log(Array.includes("mani"));
+
+
+
+
+var Array =
+[
+  {id:1,
+   name:'sam',
+    family:"rezai"
+  },
+  {
+    id:2,
+    name:'sara',
+    family:"afsary"
+  },
+  {
+    id:3,
+    name:"sahar",
+    family:"rahi"
+  }
+
+];
+
+var isuser=Array.some(function(array){
+  console.log(array ) ; 
+  return array.name==='sara';
+});
+
+console.log(isuser);
