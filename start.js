@@ -1085,26 +1085,31 @@ function onSubmit(e) {
 // console.log(Isall);
 
 
-var group=[
-  {age:19,name:'hasan'},
-  {age:19,name:'abolfazle'},
-  {age:19,name:'sam'},
-  {age:19,name:'aria'}
-]
-var ISage =group.every(function(ages){
-   return ages.age>18;
-})
 
-if (ISage==true)
-  {
-    console.log("shoma mogaz hasti");
+// var group=[
+//   {age:19,name:'hasan'},
+//   {age:19,name:'abolfazle'},
+//   {age:19,name:'sam'},
+//   {age:19,name:'aria'}
+// ]
 
-  }
 
-  else[
-    console.log("sik out")
-  ]
+// var ISage =group.every(function(ages){
+//   return ages.age>18;
+// })
 
+
+// if (ISage==true)
+//   {
+//     console.log("shoma mogaz hasti");
+    
+//   }
+  
+//   else{
+//     console.log("sik out")
+//   }
+    
+  
 
 
 
