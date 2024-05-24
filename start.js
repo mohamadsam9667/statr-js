@@ -1032,71 +1032,45 @@ function onSubmit(e) {
 
 
 var store_repository=[
-  {
-    id:1,
-    name:"sabon",
-    pric:100
-  },
-  {
-    id:2,
-    name:"shampo",
-    pric:150
-  },
-  {
-    id:3,
-    name:"lif",
-    pric:200
-  },
-  {
-    id:4,
-    name:"kos",
-    pric:1000
-  }
-];
-
-
-var cart=[
-  {
-    id:1,
-    name:"sabon",
-    pric:100
-  },
-  {
-    id:2,
-    name:"shampo",
-    pric:150
-  },
-  {
-    id:3,
-    name:"kise",
-    pric:200
-  }
+  {id:1,name:"sabon",pric:100},
+  {id:2,name:"shampo",pric:150},
+  {id:3,name:"lif",pric:200},
+  {id:3,name:"kise",pric:200}
 ]
 
-var kala_user=prompt("چه محصولی میخواهی به سبد خرید اضافه کنی ?");
-var requestkala;
+var cart=[
+  {id:1, name:"sabon",pric:100},
+  {id:2,name:"shampo",pric:150},
+  {id:3,name:"kise",pric:200}
+]
 
+var name_kala=prompt("ener name your product:");
+var request=null;
 
-var isexiste=store_repository.some(function(kala){
-  if(store_repository.name===kala_user)
+var isExsiste=store_repository.some(function(kala){
+  if (kala.name===name_kala)
     {
-      requestkala=kala;
+      request=kala;
       return true;
-
     }
 })
-if( isexiste)
+
+
+if(isExsiste==true)
   {
-    var newkala={
-      id:3,
-      name:requestkala.name,
-      price:requestkala.pric      
-    }
-    cart.push(newkala);
+   
+    cart.push({
+      id:4,
+      name:request.name,
+      pric:request.pric
+    })
     console.log(cart);
-  }
-  else{
-    console.log("متاسفانه این کالا موجود نیست")
-  }
+    var sum=0;
+    cart.forEach(function(price){
+      sum+=price.pric;
+    });
+    console.log(sum)
 
-
+  }else{
+    console.log("موجود نیست")
+  }
