@@ -1031,46 +1031,63 @@ function onSubmit(e) {
 //به طور دیفالت سه محصول با قیمت های مختلف در سبد خرید کاربر موجود باشد 
 
 
-var store_repository=[
-  {id:1,name:"sabon",pric:100},
-  {id:2,name:"shampo",pric:150},
-  {id:3,name:"lif",pric:200},
-  {id:3,name:"kise",pric:200}
-]
+// var store_repository=[
+//   {id:1,name:"sabon",pric:100},
+//   {id:2,name:"shampo",pric:150},
+//   {id:3,name:"lif",pric:200},
+//   {id:3,name:"kise",pric:200}
+// ]
 
-var cart=[
-  {id:1, name:"sabon",pric:100},
-  {id:2,name:"shampo",pric:150},
-  {id:3,name:"kise",pric:200}
-]
+// var cart=[
+//   {id:1, name:"sabon",pric:100},
+//   {id:2,name:"shampo",pric:150},
+//   {id:3,name:"kise",pric:200}
+// ]
 
-var name_kala=prompt("ener name your product:");
-var request=null;
+// var name_kala=prompt("ener name your product:");
+// var request=null;
 
-var isExsiste=store_repository.some(function(kala){
-  if (kala.name===name_kala)
-    {
-      request=kala;
-      return true;
-    }
-})
+// var isExsiste=store_repository.some(function(kala){
+//   if (kala.name===name_kala)
+//     {
+//       request=kala;
+//       return true;
+//     }
+// })
 
 
-if(isExsiste==true)
-  {
+// if(isExsiste==true)
+//   {
    
-    cart.push({
-      id:4,
-      name:request.name,
-      pric:request.pric
-    })
-    console.log(cart);
-    var sum=0;
-    cart.forEach(function(price){
-      sum+=price.pric;
-    });
-    console.log(sum)
+//     cart.push({
+//       id:4,
+//       name:request.name,
+//       pric:request.pric
+//     })
+//     console.log(cart);
+//     var sum=0;
+//     cart.forEach(function(price){
+//       sum+=price.pric;
+//     });
+//     console.log(sum)
 
-  }else{
-    console.log("موجود نیست")
-  }
+//   }else{
+//     console.log("موجود نیست")
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
