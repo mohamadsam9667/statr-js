@@ -1077,14 +1077,33 @@ function onSubmit(e) {
 
 
 
-var ages=[21,19,20,23,10,21];
-var Isall=ages.every(function(age){
+// var ages=[21,19,20,23,10,21];
+// var Isall=ages.every(function(age){
   
-  return age>18;
+//   return age>18;
+// })
+// console.log(Isall);
+
+
+var group=[
+  {age:19,name:'hasan'},
+  {age:19,name:'abolfazle'},
+  {age:19,name:'sam'},
+  {age:10,name:'aria'}
+]
+var ISage =group.every(function(ages){
+   ages.age>18;
 })
-console.log(Isall);
 
+if (ISage==true)
+  {
+    console.log("shoma mogaz hasti");
 
+  }
+
+  else[
+    console.log("sik out")
+  ]
 
 
 
