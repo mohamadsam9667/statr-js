@@ -1089,10 +1089,10 @@ var group=[
   {age:19,name:'hasan'},
   {age:19,name:'abolfazle'},
   {age:19,name:'sam'},
-  {age:10,name:'aria'}
+  {age:19,name:'aria'}
 ]
 var ISage =group.every(function(ages){
-   ages.age>18;
+   return ages.age>18;
 })
 
 if (ISage==true)
