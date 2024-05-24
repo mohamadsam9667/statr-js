@@ -1079,6 +1079,7 @@ function onSubmit(e) {
 
 var ages=[21,19,20,23,10,21];
 var Isall=ages.every(function(age){
+  
   return age>18;
 })
 console.log(Isall);
