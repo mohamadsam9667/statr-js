@@ -1120,5 +1120,21 @@ function onSubmit(e) {
 
 
 
+var user =['sam ','ali','yazdan','ahmad'];
+
+var userIndex=user.findIndex(function(us){
+  return us=='yazdan';
+} )
+console.log(userIndex)
+
+
+
+
+
+
+
+
+
+
 
 
