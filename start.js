@@ -1189,8 +1189,8 @@ var repository_store=[
 
 var cart=[
   {id:1 ,name:"simin" , price:200},
-  {id:1 ,name:"mohsen" , price:200},
-  {id:1 ,name:"alireza" , price:50}
+  {id:2 ,name:"mohsen" , price:200},
+   {id:3 ,name:"alireza" , price:50}
 ]
 
 var request_user =prompt("( (اضافه) ?حذف(حذف)   ,  اضافه کردن با )چی کار می خوای کنی اضافه کنی به سبد خرید یا حذف کنی؟");
@@ -1221,11 +1221,71 @@ if(request_user==='اضافه')
     console.log("اضافه شد")
     
   }
-  else{
-    
-    console.log("حذف شد")
+  else if(request_user=="حذف"){
+  var  name_kala=prompt("نام کالا شما چیست؟");      
+  var counter=cart.findIndex(function(Kala){
+    return Kala.name===name_kala;});
+  
+        console.log(counter)
+  cart.splice(counter, 1);
+  console.log("Updated cart:", cart);
+  console.log("کالا از سبد خرید حذف شد");
+// "Product removed from the cart" in Persian
+          // cart.splice(counter, 1);
+          // console.log(cart);
+  } 
+      else{
+        console.log(cart);
 
+          console.log("کلا از نیست کلا");
+        }
+      
+
+
+
+/*
+
+
+
+else if (request_user === 'حذف') {
+  var name_kala = prompt("نام کالا شما چیست؟");      
+  var counter = cart.findIndex(function(Kala){
+    return Kala.name === name_kala;
+  });
+
+  if (counter !== -1) {
+    cart.splice(counter, 1);
+    console.log("Updated cart:", cart);
+    console.log("کالا از سبد خرید حذف شد"); // "Product removed from the cart" in Persian
+  } else {
+    console.log("کالا در سبد خرید یافت نشد"); // "Product not found in the cart" in Persian
+  }
+} else {
+  console.log("درخواست نامعتبر است");
 }
+
+if (counter !== -1) {
+   cart.splice(counter, 1);
+    console.log("Updated cart:", cart);
+     console.log("کالا از سبد خرید حذف شد");
+ // "Product removed from the cart" in Persian
+ }
+
+
+
+
+
+
+
+var kala_name = prompt("نام کالا شما چیست؟");
+ var index = cart.findIndex(function(kala) 
+ { return kala.name === kala_name; });
+  if (index !== -1)
+     { cart.splice(index, 1);
+       //  حذف کالا از آرایه 
+       cart console.log(cart); 
+  console.log("حذف شد"); }
+   else { console.log("کالا در سبد خرید یافت نشد"); } }*/ 
 
 
 
