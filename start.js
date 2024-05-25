@@ -1112,10 +1112,11 @@ function onSubmit(e) {
   
 
 
+var numbers=[10,12,3,4,55,6,56,70,90  ];
+ var resault= numbers.splice(2,5)
 
 
-
-
+console.log(resault)
 
 
 
