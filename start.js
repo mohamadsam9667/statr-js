@@ -1162,38 +1162,77 @@ function onSubmit(e) {
 
 
 /*
-
-
-
 exercise.txt
 exercise.txt
 يروزه فروشكاه را در نظر بكيريد
-
 محصولات فروشكاه را داخل آرايه اى نخيره كرده و آرايه اى يراي سبد خريد در نظر بكيريد
 و داخل سبد خريد 3 محصول بطور ديفالت قرار دهيد
-
 منوبى را به كاربر نمايش دهيد كه شامل 2- كزينه است
 كزينه اى - يراى" حذف" محصول انسبد خريد
-و كزينه اى يراي إضافه كرين محصول به سبد خريد
-
+و كزينه اى يراي إضافه كرين محصول به سبد خري
 عمليات لازم يراي هر كرينه را بياده ساري كنيد
-
 script.js
-
 xercise >
-1
-2
-3
-4
-5
-
-6
-
-7
-8
-
-9
-10
 */
+var repository_store=[
+  {id:1 ,name:"mamad" , price:200},
+  {id:1 ,name:"sara" , price:300},
+  {id:1 ,name:"sahar" , price:500},
+  {id:1 ,name:"neda" , price:100},
+  {id:1 ,name:"nasrin" , price:700},
+  {id:1 ,name:"fariba" , price:1000},
+  {id:1 ,name:"sorya" , price:20},
+  {id:1 ,name:"simin" , price:200},
+  {id:1 ,name:"mohsen" , price:200},
+  {id:1 ,name:"alireza" , price:50}
+]
+
+var cart=[
+  {id:1 ,name:"simin" , price:200},
+  {id:1 ,name:"mohsen" , price:200},
+  {id:1 ,name:"alireza" , price:50}
+]
+
+var request_user =prompt("( (اضافه) ?حذف(حذف)   ,  اضافه کردن با )چی کار می خوای کنی اضافه کنی به سبد خرید یا حذف کنی؟");
+
+
+
+if(request_user==='اضافه')
+  {
+    var name_kala=prompt ("نام کالا:");
+      var kala_new;
+ var iscomplate=repository_store.some(function(store){
+   if(name_kala==store.name)
+    {
+      kala_new=store;
+      return true;
+    }
+   })
+   if(iscomplate)
+    {
+      var kala_add={
+        id:4,
+        name:kala_new.name,
+        price:kala_new.price
+      }
+      cart.push(kala_add);
+      console.log(cart)
+    }
+    console.log("اضافه شد")
+    
+  }
+  else{
+    
+    console.log("حذف شد")
+
+}
+
+
+
+
+
+
+
+
 
 
