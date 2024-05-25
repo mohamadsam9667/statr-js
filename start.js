@@ -1120,21 +1120,80 @@ function onSubmit(e) {
 
 
 
-var user =['sam ','ali','yazdan','ahmad'];
+// var user =['sam ','ali','yazdan','ahmad'];
 
-var userIndex=user.findIndex(function(us){
-  return us=='yazdan';
-} )
-console.log(userIndex)
-
-
+// var userIndex=user.findIndex(function(us){
+//   return us=='yazdan';
+// } )
+// console.log(userIndex)
 
 
 
 
+// var user =[
+//   {id:1,name:'amir',age :23},
+//   {id:2,name:'saman',age :21},
+//   {id:3,name:'saman',age :17}
+// ];
+
+
+// var UseIndex=user.findIndex(function(User){
+//   return User.name=='saman';
+// })
+
+
+// console.log(UseIndex)
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+exercise.txt
+exercise.txt
+يروزه فروشكاه را در نظر بكيريد
+
+محصولات فروشكاه را داخل آرايه اى نخيره كرده و آرايه اى يراي سبد خريد در نظر بكيريد
+و داخل سبد خريد 3 محصول بطور ديفالت قرار دهيد
+
+منوبى را به كاربر نمايش دهيد كه شامل 2- كزينه است
+كزينه اى - يراى" حذف" محصول انسبد خريد
+و كزينه اى يراي إضافه كرين محصول به سبد خريد
+
+عمليات لازم يراي هر كرينه را بياده ساري كنيد
+
+script.js
+
+xercise >
+1
+2
+3
+4
+5
+
+6
+
+7
+8
+
+9
+10
+*/
 
 
