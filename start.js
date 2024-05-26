@@ -1355,8 +1355,8 @@ var scores=[12,4,52,27,83,93,214,86,43,32];
 var number=19;
 // console.log(scores.indexOf(83));
 // console.log(scores.slice(2,5));
-console.log(scores.join('  / '))
-
+// console.log(scores.join('  / '))
+console.log(scores.reverse())
 
 
 
