@@ -1290,12 +1290,12 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-var score=[10,12,44,56,63,19];
-score.map(function(number)
-      {
-        console.log(number+2)
-      }
-    )   
+// var score=[10,12,44,56,63,19];
+// score.map(function(number)
+//       {
+//         console.log(number+2)
+//       }
+//     )   
     // console.log(score)
 
 
