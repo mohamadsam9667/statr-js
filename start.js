@@ -1174,71 +1174,72 @@ exercise.txt
 script.js
 xercise >
 */
-var repository_store=[
-  {id:1 ,name:"mamad" , price:200},
-  {id:1 ,name:"sara" , price:300},
-  {id:1 ,name:"sahar" , price:500},
-  {id:1 ,name:"neda" , price:100},
-  {id:1 ,name:"nasrin" , price:700},
-  {id:1 ,name:"fariba" , price:1000},
-  {id:1 ,name:"sorya" , price:20},
-  {id:1 ,name:"simin" , price:200},
-  {id:1 ,name:"mohsen" , price:200},
-  {id:1 ,name:"alireza" , price:50}
-]
 
-var cart=[
-  {id:1 ,name:"simin" , price:200},
-  {id:2 ,name:"mohsen" , price:200},
-   {id:3 ,name:"alireza" , price:50}
-]
+// var repository_store=[
+//   {id:1 ,name:"mamad" , price:200},
+//   {id:1 ,name:"sara" , price:300},
+//   {id:1 ,name:"sahar" , price:500},
+//   {id:1 ,name:"neda" , price:100},
+//   {id:1 ,name:"nasrin" , price:700},
+//   {id:1 ,name:"fariba" , price:1000},
+//   {id:1 ,name:"sorya" , price:20},
+//   {id:1 ,name:"simin" , price:200},
+//   {id:1 ,name:"mohsen" , price:200},
+//   {id:1 ,name:"alireza" , price:50}
+// ]
 
-var request_user =prompt("( (اضافه) ?حذف(حذف)   ,  اضافه کردن با )چی کار می خوای کنی اضافه کنی به سبد خرید یا حذف کنی؟");
+// var cart=[
+//   {id:1 ,name:"simin" , price:200},
+//   {id:2 ,name:"mohsen" , price:200},
+//    {id:3 ,name:"alireza" , price:50}
+// ]
+
+// var request_user =prompt("( (اضافه) ?حذف(حذف)   ,  اضافه کردن با )چی کار می خوای کنی اضافه کنی به سبد خرید یا حذف کنی؟");
 
 
 
-if(request_user==='اضافه')
-  {
-    var name_kala=prompt ("نام کالا:");
-      var kala_new;
- var iscomplate=repository_store.some(function(store){
-   if(name_kala==store.name)
-    {
-      kala_new=store;
-      return true;
-    }
-   })
-   if(iscomplate)
-    {
-      var kala_add={
-        id:4,
-        name:kala_new.name,
-        price:kala_new.price
-      }
-      cart.push(kala_add);
-      console.log(cart)
-    }
-    console.log("اضافه شد")
+// if(request_user==='اضافه')
+//   {
+//     var name_kala=prompt ("نام کالا:");
+//       var kala_new;
+//  var iscomplate=repository_store.some(function(store){
+//    if(name_kala==store.name)
+//     {
+//       kala_new=store;
+//       return true;
+//     }
+//    })
+//    if(iscomplate)
+//     {
+//       var kala_add={
+//         id:4,
+//         name:kala_new.name,
+//         price:kala_new.price
+//       }
+//       cart.push(kala_add);
+//       console.log(cart)
+//     }
+//     console.log("اضافه شد")
     
-  }
-  else if(request_user=="حذف"){
-  var  name_kala=prompt("نام کالا شما چیست؟");      
-  var counter=cart.findIndex(function(Kala){
-    return Kala.name===name_kala;});
+//   }
+//   else if(request_user=="حذف"){
+//   var  name_kala=prompt("نام کالا شما چیست؟");      
+//   var counter=cart.findIndex(function(Kala){
+//     return Kala.name===name_kala;});
   
-        console.log(counter)
-  cart.splice(counter, 1);
-  console.log("Updated cart:", cart);
-  console.log("کالا از سبد خرید حذف شد");
-// "Product removed from the cart" in Persian
-          // cart.splice(counter, 1);
-          // console.log(cart);
-  } 
-      else{
-        console.log(cart);
+//         console.log(counter)
+//   cart.splice(counter, 1);
+//   console.log("Updated cart:", cart);
+//   console.log("کالا از سبد خرید حذف شد");
+// // "Product removed from the cart" in Persian
+//           // cart.splice(counter, 1);
+//           // console.log(cart);
+//   } 
+//       else{
+//         console.log(cart);
 
-          console.log("کلا از نیست کلا");
-        }
+//           console.log("کلا از نیست کلا");
+//         }
       
 
 
@@ -1286,6 +1287,50 @@ var kala_name = prompt("نام کالا شما چیست؟");
        cart console.log(cart); 
   console.log("حذف شد"); }
    else { console.log("کالا در سبد خرید یافت نشد"); } }*/ 
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
