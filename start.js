@@ -1412,49 +1412,49 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // در بايان هر كدام از عملياتهاء ليست تودوها را در كنسول نمايش دهيد
 
 
-var todo =[
-  {id:1,name:'sam',condition:'انجام شده'},
-  {id:2,name:'aria',condition:'در حال ارسال'},
-  {id:3,name:'hasan',condition:'ارسال نشده'},
-  {id:4,name:'sara',condition:'حذف کالا'}
-];
+// var todo =[
+//   {id:1,name:'sam',condition:'انجام شده'},
+//   {id:2,name:'aria',condition:'در حال ارسال'},
+//   {id:3,name:'hasan',condition:'ارسال نشده'},
+//   {id:4,name:'sara',condition:'حذف کالا'}
+// ];
 
-var choice_user=prompt("نام کاربری خود را وارد کنید: 1)اضافه کردن تو 2)حذف تودو 3) انجام تودو (تغییر وضعیت)");
-if (choice_user==='1')
-  {
-   var name_user=prompt("نام خود را وارد کنید:");
-   var new_todo={
-    id:5,
-    name:name_user,
-    condition:'اضافه شده جدید'
+// var choice_user=prompt("نام کاربری خود را وارد کنید: 1)اضافه کردن تو 2)حذف تودو 3) انجام تودو (تغییر وضعیت)");
+// if (choice_user==='1')
+//   {
+//    var name_user=prompt("نام خود را وارد کنید:");
+//    var new_todo={
+//     id:5,
+//     name:name_user,
+//     condition:'اضافه شده جدید'
 
-   } ;
-   todo.push (new_todo);
-   console.log(todo);
-  }
-  else if(choice_user==='2')
-    {
-      var user_name=prompt("نام کالا خود را وارد کنید");
-      var counter=todo.findIndex(function(index){
-        return index.name===user_name})
+//    } ;
+//    todo.push (new_todo);
+//    console.log(todo);
+//   }
+//   else if(choice_user==='2')
+//     {
+//       var user_name=prompt("نام کالا خود را وارد کنید");
+//       var counter=todo.findIndex(function(index){
+//         return index.name===user_name})
       
-        todo.splice(counter,1);
-      console.log(todo)
+//         todo.splice(counter,1);
+//       console.log(todo)
       
-    }
-    else if(choice_user==='3')
-      { 
+//     }
+//     else if(choice_user==='3')
+//       { 
 
-        var name_todo=prompt("نام تو دو  را وارد نمایید");
-        todo.map(function(chang){
-          if(chang.name===name_todo)
-            {return chang.condition='انجام شده '}
-        });
-        console.log(todo)
+//         var name_todo=prompt("نام تو دو  را وارد نمایید");
+//         todo.map(function(chang){
+//           if(chang.name===name_todo)
+//             {return chang.condition='انجام شده '}
+//         });
+//         console.log(todo)
       
-      }else{
-        console.log("به آب شور ارومیه");
-      }
+//       }else{
+//         console.log("به آب شور ارومیه");
+//       }
 
 
 
