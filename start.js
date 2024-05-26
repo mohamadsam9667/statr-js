@@ -1298,15 +1298,55 @@ var kala_name = prompt("نام کالا شما چیست؟");
 //     )   
     // console.log(score)
 
+    // يک يروره فروشكاه آنلاين بياده سازي كنيد
+
+    // به اين صورت كه يک آرايه به عنوان سبد خريد كاربير در نظر بکيريد که 6 محصول به طور ديفالت دارد
+    
+    // سياست كارى فروشكاه به اين شكل است كه يراى محصولاتي كه بالاى 100 هزار تومان باشند، از مشترى هزينه يست دريافت نمى شود
+    
+    // و دائته باشند، يراى هر كدام 1000 تومان هزينه ارسال (هزينه يست) دريافت ميته
+    // اما محصولاتي كه زير 100 هزار تومان قيمت داشقه باسيد،
+    
+    // لطفا قيمت كل سبد خريد را همراه با هزينه يست محاسبه كرده وبه كاربر نمايش دهين
+    // I
+
+var store_repository=[
+{id:1,name:'عقیق' ,price:200},
+{id:2,name:' الماس',price:300},
+{id:3,name:'فیروزه',price:400},
+{id:4,name:'سیترین',price:100},
+{id:5,name:'یشم',price:1000},
+{id:6,name:'کوارتز',price:2000},
+{id:7,name:'یاقوت',price:120}
+];
 
 
-
-
-
-
-
-
-
+var cart=[
+  {id:1,name:'عقیق' ,price:200},
+{id:2,name:' الماس',price:300},
+{id:3,name:'فیروزه',price:400},
+{id:4,name:'سیترین',price:100},
+{id:5,name:'یشم',price:1000},
+{id:6,name:'کوارتز',price:2000}
+]
+var sum=0;
+var Sum=0;
+var jam2=cart.map(function(cost){
+  if(cost.price>320)
+  {
+          return sum+=cost.price;      
+        }
+      })
+      // console.log("هزینه ارسال نداره:",sum); 
+      var jam1= cart.map(function(const_send){
+        if(const_send.price<320)
+        {
+          Sum=Sum+10
+          return Sum=Sum+const_send.price;
+        }
+    })
+var total=Sum+sum;
+    console.log("هزینه  شما با ارسال:",total);
 
 
 
