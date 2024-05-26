@@ -1310,48 +1310,50 @@ var kala_name = prompt("نام کالا شما چیست؟");
     // لطفا قيمت كل سبد خريد را همراه با هزينه يست محاسبه كرده وبه كاربر نمايش دهين
     // I
 
-var store_repository=[
-{id:1,name:'عقیق' ,price:200},
-{id:2,name:' الماس',price:300},
-{id:3,name:'فیروزه',price:400},
-{id:4,name:'سیترین',price:100},
-{id:5,name:'یشم',price:1000},
-{id:6,name:'کوارتز',price:2000},
-{id:7,name:'یاقوت',price:120}
-];
+// var store_repository=[
+// {id:1,name:'عقیق' ,price:200},
+// {id:2,name:' الماس',price:300},
+// {id:3,name:'فیروزه',price:400},
+// {id:4,name:'سیترین',price:100},
+// {id:5,name:'یشم',price:1000},
+// {id:6,name:'کوارتز',price:2000},
+// {id:7,name:'یاقوت',price:120}
+// ];
 
 
-var cart=[
-  {id:1,name:'عقیق' ,price:200},
-{id:2,name:' الماس',price:300},
-{id:3,name:'فیروزه',price:400},
-{id:4,name:'سیترین',price:100},
-{id:5,name:'یشم',price:1000},
-{id:6,name:'کوارتز',price:2000}
-]
-var sum=0;
-var Sum=0;
-var jam2=cart.map(function(cost){
-  if(cost.price>320)
-  {
-          return sum+=cost.price;      
-        }
-      })
-      // console.log("هزینه ارسال نداره:",sum); 
-      var jam1= cart.map(function(const_send){
-        if(const_send.price<320)
-        {
-          Sum=Sum+10
-          return Sum=Sum+const_send.price;
-        }
-    })
-var total=Sum+sum;
-    console.log("هزینه  شما با ارسال:",total);
+// var cart=[
+//   {id:1,name:'عقیق' ,price:200},
+// {id:2,name:' الماس',price:300},
+// {id:3,name:'فیروزه',price:400},
+// {id:4,name:'سیترین',price:100},
+// {id:5,name:'یشم',price:1000},
+// {id:6,name:'کوارتز',price:2000}
+// ]
+// var sum=0;
+// var Sum=0;
+// var jam2=cart.map(function(cost){
+//   if(cost.price>320)
+//   {
+//           return sum+=cost.price;      
+//         }
+//       })
+//       // console.log("هزینه ارسال نداره:",sum); 
+//       var jam1= cart.map(function(const_send){
+//         if(const_send.price<320)
+//         {
+//           Sum=Sum+10
+//           return Sum=Sum+const_send.price;
+//         }
+//     })
+// var total=Sum+sum;
+//     console.log("هزینه  شما با ارسال:",total);
 
 
 
 
-
+var scores=[12,4,52,27,83,93,214,86,43,32];
+var number=19;
+console.log(scores.indexOf(83));
 
 
 
