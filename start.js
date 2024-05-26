@@ -1351,15 +1351,27 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-var scores=[12,4,52,27,83,93,214,86,43,32];
-var number='amir/sam/mohamad';
+// var scores=[12,4,52,27,83,93,214,86,43,32];
+// var number='amir/sam/mohamad';
 // console.log(scores.indexOf(83));
 // console.log(scores.slice(2,5));
 // console.log(scores.join('  / '))
 // console.log(scores.reverse())
-console.log(number.split('/'))
+// console.log(number.split('/'))
 
 
+
+
+
+// e > E exercise.txt
+// كلمه اى از كاربر دريافت كرده وچك كنيد كه كلمه وارد شده از هر دو سمت چب وراست به يك صورت خوانده
+// مى شود يا خير
+
+// به عنوان مثل كلمه
+// gig
+// از هر دو طرف به يك صورت خوانده مى شود
+
+// T
 
 
 
