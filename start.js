@@ -1531,22 +1531,64 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // console.log(Prouducte);
 // console.log(new_producte)
 
-var user_city=prompt("نام استان شما چیست ");
+// var user_city=prompt("نام استان شما چیست ");
+
+// var city=[
+//   {name:"tehran" ,  state:'fershte / jordan / sada abad / chitgar / istgahyakhchal/shahr gods/nezam abad'},
+//   {name:"qazvin", state:'norozian / janbazan / sabze meydon/meydon adle/alamot /ponk/khayam /ferdosi'},
+//   {name:"gilan", state:"foman/ramsar /rodbar /javaherde / chaharfasle /lahijan/masale"}
+// ];
 
 
-var city=[
-  {name:"tehran" ,  state:'fershte / jordan / sada abad / chitgar / istgahyakhchal/shahr gods/nezam abad'},
-  {name:"qazvin", state:'norozian / janbazan / sabze meydon/meydon adle/alamot /ponk/khayam /ferdosi'},
-  {name:"gilan", state:"foman/ramsar /rodbar /javaherde / chaharfasle /lahijan/masale"}
+// var states=city.filter(function(name_city){
+//   if(user_city===name_city.name)
+//     {
+//       // console.log(name_city.state);
+//       return name_city.state;
+//     }
+// })
+
+// console.log(states);
+
+
+
+
+
+var all_questtion=[
+  {id:1,title: '2+1' ,answer: '3' },
+  {id:2,title: '2+2' ,answer: '4' },
+  {id:3,title: '1+4' ,answer: '5' },
+  {id:4,title: '2+4' ,answer: '6' },
+  {id:5,title: '2+5' ,answer: '7' },
+  {id:6,title: '2+6' ,answer: '8' },
 ];
+ 
+var score=0;
+var resault='';
+
+all_questtion.forEach(function(ques){
+  
+       resault=prompt(ques.title+"?");
+      if( resault===ques.answer)
+        {
+           score++;
+        }
+      
+    })
+  console.log("scores:",score);
 
 
-var states=city.filter(function(name_city){
-  if(user_city===name_city)
-    {
-      return name_city.state;
-    }
-})
 
-console.log(states);
+
+
+
+
+
+
+
+
+
+
+
+
 
