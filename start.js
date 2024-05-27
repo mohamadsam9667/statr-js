@@ -1488,22 +1488,33 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-var user_STR=prompt("وارد کنید متن مورد نظر خود را ");
+// var user_STR=prompt("وارد کنید متن مورد نظر خود را ");
 
 
-var kareakter=user_STR[0];
-var counter=0;
-for(var i=1;i<=user_STR.length;i++)
-  {
+// var kareakter=user_STR[0];
+// var counter=0;
+// for(var i=1;i<=user_STR.length;i++)
+//   {
 
-    if(user_STR[i]===kareakter)
-      {
-        counter++;
-      }
-  }
+//     if(user_STR[i]===kareakter)
+//       {
+//         counter++;
+//       }
+//   }
 
 
-console.log(counter);
+// console.log(counter);
+
+
+var user1=['sam','mohamad','asal','negar','alireza','atena','reyhane','hanane'];
+
+
+var user2=user1;
+
+user1.push('sara');
+
+console.log("user1:",user1);
+console.log("user2:",user2);
 
 
 
