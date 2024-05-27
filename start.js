@@ -1506,16 +1506,30 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // console.log(counter);
 
 
-var user1=['sam','mohamad','asal','negar','alireza','atena','reyhane','hanane'];
+// var user1=['sam','mohamad','asal','negar','alireza','atena','reyhane','hanane'];
 
 
-var user2=user1;
+// var user2=user1;
 
-user1.push('sara');
+// user1.push('sara');
 
-console.log("user1:",user1);
-console.log("user2:",user2);
+// console.log("user1:",user1);
+// console.log("user2:",user2);
 
+
+var Prouducte={
+  id:1,
+  name:'laptop',
+  price:1000
+
+};
+
+
+var new_producte=Prouducte;
+
+new_producte.count='100322';
+console.log(Prouducte);
+console.log(new_producte)
 
 
 
