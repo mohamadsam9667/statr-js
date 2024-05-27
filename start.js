@@ -1466,27 +1466,44 @@ var kala_name = prompt("نام کالا شما چیست؟");
 //و سپس تسک مورد نظر مدیر را به کارمند مورد نظرش اضافه کرده و لیست را در کنسول نمایش دهید
 
 
-var employee={
-  ali:['wordpress','html','css'],
-  sam:['js','react','tailwind','nodeJS'],
-  alireza:['pyton','php','laravel','jango'],
-  morteza:['pyton','backend','css']
-};
+// var employee={
+//   ali:['wordpress','html','css'],
+//   sam:['js','react','tailwind','nodeJS'],
+//   alireza:['pyton','php','laravel','jango'],
+//   morteza:['pyton','backend','css']
+// };
 
 
 
-var task=prompt("تسک مورد نظر درباره چیه؟");
-var user_task=prompt("فرد مورد نظر خود را برای انجام تسک وارد کنید");
+// var task=prompt("تسک مورد نظر درباره چیه؟");
+// var user_task=prompt("فرد مورد نظر خود را برای انجام تسک وارد کنید");
 
 
 
-var worke_employee=employee[user_task];
+// var worke_employee=employee[user_task];
 
-worke_employee.push(task);
-console.log(employee);
+// worke_employee.push(task);
+// console.log(employee);
 
 
 
+
+var user_STR=prompt("وارد کنید متن مورد نظر خود را ");
+
+
+var kareakter=user_STR[0];
+var counter=0;
+for(var i=1;i<=user_STR.length;i++)
+  {
+
+    if(user_STR[i]===kareakter)
+      {
+        counter++;
+      }
+  }
+
+
+console.log(counter);
 
 
 
