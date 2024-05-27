@@ -1517,24 +1517,36 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // console.log("user2:",user2);
 
 
-var Prouducte={
-  id:1,
-  name:'laptop',
-  price:1000
+// var Prouducte={
+//   id:1,
+//   name:'laptop',
+//   price:1000
 
-};
-
-
-var new_producte=Prouducte;
-
-new_producte.count='100322';
-console.log(Prouducte);
-console.log(new_producte)
+// };
 
 
+// var new_producte=Prouducte;
+
+// new_producte.count='100322';
+// console.log(Prouducte);
+// console.log(new_producte)
+
+var user_city=prompt("نام استان شما چیست ");
 
 
+var city=[
+  {name:"tehran" ,  state:'fershte / jordan / sada abad / chitgar / istgahyakhchal/shahr gods/nezam abad'},
+  {name:"qazvin", state:'norozian / janbazan / sabze meydon/meydon adle/alamot /ponk/khayam /ferdosi'},
+  {name:"gilan", state:"foman/ramsar /rodbar /javaherde / chaharfasle /lahijan/masale"}
+];
 
 
+var states=city.filter(function(name_city){
+  if(user_city===name_city)
+    {
+      return name_city.state;
+    }
+})
 
+console.log(states);
 
