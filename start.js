@@ -1554,31 +1554,64 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-var all_questtion=[
-  {id:1,title: '2+1' ,answer: '3' },
-  {id:2,title: '2+2' ,answer: '4' },
-  {id:3,title: '1+4' ,answer: '5' },
-  {id:4,title: '2+4' ,answer: '6' },
-  {id:5,title: '2+5' ,answer: '7' },
-  {id:6,title: '2+6' ,answer: '8' },
-];
+// var all_questtion=[
+//   {id:1,title: '2+1' ,answer: '3' },
+//   {id:2,title: '2+2' ,answer: '4' },
+//   {id:3,title: '1+4' ,answer: '5' },
+//   {id:4,title: '2+4' ,answer: '6' },
+//   {id:5,title: '2+5' ,answer: '7' },
+//   {id:6,title: '2+6' ,answer: '8' },
+// ];
  
-var score=0;
-var resault='';
+// var score=0;
+// var resault='';
 
-all_questtion.forEach(function(ques){
+// all_questtion.forEach(function(ques){
   
-       resault=prompt(ques.title+"?");
-      if( resault===ques.answer)
-        {
-           score++;
-        }
+//        resault=prompt(ques.title+"?");
+//       if( resault===ques.answer)
+//         {
+//            score++;
+//         }
       
-    })
-  console.log("scores:",score);
+//     })
+//   console.log("scores:",score);
 
 
 
+
+
+//یک پروژه ماشین حساب پیاده سازی کنید
+//به این صورت دو عدد را همراه با عملیات لازم ضرب و تقسیم و و.. از کاربر دریافت کرده  وعملات دلخواه روی اعداد وارد کنید 
+
+
+
+// var number1=Number(prompt("عدد اول مد نظر خودرا وارد کرده"));
+// var number2=Number(prompt("عدد دوم مد نظر خود را وارد کنید"));
+
+// var symble=prompt(" + || - || * || / ?");
+// var resault=0;
+// switch(symble)
+// {
+//   case '+':
+//     {
+//       resault =number1+number2;breake;
+//     } 
+//   case '-':
+//     {
+//      resault=number1-number2
+//     }
+//   case '/':
+//     {
+//       resault=number1/number2;
+//     }
+//     case '*':
+//       {
+//         resault=number1*number2;
+//       }
+//   }
+
+// console.log(resault);
 
 
 
