@@ -1613,10 +1613,30 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 // console.log(resault);
 
+//console.log("asm")
+
+//فرض کنید در سامنه ای کار کردید که کاربر پسوردش را فاموش کره
+//شما یوزر نیم میگیرید و پسوردشو بهش میدید
+// اگر اسم طرف نبود و دیتا بیس بگو نیست
 
 
+var Data_base={
+  sam:['12hgasmd'],
+  mohamadali:['jhracv1k8'],
+  abase:['lasamiuw090']
+};
 
+var User_name=prompt("نام خود را وارد کنید؟");
 
+var main=Data_base[User_name];
+if(main)
+  {
+
+    console.log(main)
+  }
+else{
+  console.log("not existe")
+}
 
 
 
