@@ -1651,3 +1651,10 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // }
 
 // console.log(sumNumber(1,));
+
+
+// var i=10;
+// setInterval(functio(){  
+//   console.log(`sam(${i++}) `);
+// },1000)
+
