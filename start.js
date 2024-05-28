@@ -1702,11 +1702,24 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // },1000)
 
 
+// var username=prompt("یوزر نیم خود را وارد نمایید");
 
 
+// if(!username){
+//   alert("لطفا یوزر نام خود را وارد کنید!")
+// }
+// else{
+  
+// }
 
 
+// var usernumber=+prompt("عدد موردد نظر خود را وارد کنید")
 
+// if(!usernumber){
+//     console.log("چرت و پرت")
+//   }else{
+//     console.log(usernumber)
+//   }
 
 
 
