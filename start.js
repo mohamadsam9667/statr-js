@@ -1639,9 +1639,15 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // }
 
 
+//ایول از ما یه کد محاسباتی میگیره اجامش میده و نتیجه رو به ما نشون میده البنه باید از console .log استفاده کرد
+// console.log(eval("2*8 "));
 
-console.log(eval("2*8"))
+// eval("var x=10")
+// alert(x*3);
 
 
+function sumNumber(num1,num2=19){
+  return num1+num2;
+}
 
-
+console.log(sumNumber(1,));
