@@ -1736,27 +1736,27 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-var username=prompt("یوزر نیم خود را وارد کنید؟");
+// var username=prompt("یوزر نیم خود را وارد کنید؟");
 
 
-var user=['ali','sam','mamad','ahmad','abase'];
+// var user=['ali','sam','mamad','ahmad','abase'];
  
-var loginflag = false;
+// var loginflag = false;
 
-for (var i=0;i<user.length;i++)
-  {
-    if(username===user[i])
-      {
-        loginflag=true;
-      }
-  }
-if(loginflag)
-  {
-    console.log(".یافت شد");
-  }
-  else{
-    console.log(".یافت نشد");
-  }
+// for (var i=0;i<user.length;i++)
+//   {
+//     if(username===user[i])
+//       {
+//         loginflag=true;
+//       }
+//   }
+// if(loginflag)
+//   {
+//     console.log(".یافت شد");
+//   }
+//   else{
+//     console.log(".یافت نشد");
+//   }
 
 
 
