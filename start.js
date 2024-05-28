@@ -1725,14 +1725,38 @@ var kala_name = prompt("نام کالا شما چیست؟");
 //   console.log (num1+num2)
 // },3000)
 
-var isimag=true;
+// var isimag=true;
 
 
-setTimeout(function(){
+// setTimeout(function(){
 
-},5000 )
+// },5000 )
 
 
+
+
+
+var username=prompt("یوزر نیم خود را وارد کنید؟");
+
+
+var user=['ali','sam','mamad','ahmad','abase'];
+ 
+var loginflag = false;
+
+for (var i=0;i<user.length;i++)
+  {
+    if(username===user[i])
+      {
+        loginflag=true;
+      }
+  }
+if(loginflag)
+  {
+    console.log(".یافت شد");
+  }
+  else{
+    console.log(".یافت نشد");
+  }
 
 
 
