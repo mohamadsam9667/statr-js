@@ -1620,23 +1620,23 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // اگر اسم طرف نبود و دیتا بیس بگو نیست
 
 
-var Data_base={
-  sam:['12hgasmd'],
-  mohamadali:['jhracv1k8'],
-  abase:['lasamiuw090']
-};
+// var Data_base={
+//   sam:['12hgasmd'],
+//   mohamadali:['jhracv1k8'],
+//   abase:['lasamiuw090']
+// };
 
-var User_name=prompt("نام خود را وارد کنید؟");
+// var User_name=prompt("نام خود را وارد کنید؟");
 
-var main=Data_base[User_name];
-if(main)
-  {
+// var main=Data_base[User_name];
+// if(main)
+//   {
 
-    console.log(main)
-  }
-else{
-  console.log("not existe")
-}
+//     console.log(main)
+//   }
+// else{
+//   console.log("not existe")
+// }
 
 
 
