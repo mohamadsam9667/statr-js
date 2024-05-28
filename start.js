@@ -1675,6 +1675,58 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
+//تایمری بسازید 
+// به طوری که از کاربر میزان دقیقه و ثانیه  را دریافت کرده و تایمری را با اطلاعات وارد شده استارت بزنید
+// وزمانی که تایمر داده شد پیغام مناسبی نمایش داده شود
+
+
+// var min=prompt("چنددقیقه؟");
+
+// var second=prompt("چند ثانیه؟");
+
+
+// var timer=setInterval(function(){
+//   console.log(min +" : "+second)
+//   if(second===0)
+//     {
+//       min--;
+//       second=60;
+//     }
+//   second--;
+
+//   if(second<=0 && min<=0)
+//     {
+//       console.log("time finish")
+//       clearInterval(timer);
+//     }
+// },1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
