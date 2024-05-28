@@ -1777,30 +1777,41 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-num2=12;
+// num2=12;
 
-console.log(num1);
+// console.log(num1);
 
-var num1=10;
-var num2;
-
-
+// var num1=10;
+// var num2;
 
 
 
 
 
 
+//توابعی که در یک وری ایبل ذخیره میشوند هوست نمی شوند 
+
+// showValue()
+
+// function showValue(){
+//   console.log("sam");
+// }
+
+// هاست کردن در عبارت بالا معنی دارد ولی در عبارت پایین بی معنا می باشد
+
+
+// showValue()
 
 
 
+// var showValue=function(){
+//   console.log(12+12);
+// }
+
+// در این عبارت ارور دریافت میکنیم در بالا نوشتیمش
 
 
-
-
-
-
-
+//let const var   
 
 
 
