@@ -1725,7 +1725,12 @@ var kala_name = prompt("نام کالا شما چیست؟");
 //   console.log (num1+num2)
 // },3000)
 
+var isimag=true;
 
+
+setTimeout(function(){
+
+},5000 )
 
 
 
