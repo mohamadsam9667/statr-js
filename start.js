@@ -1721,7 +1721,9 @@ var kala_name = prompt("نام کالا شما چیست؟");
 //     console.log(usernumber)
 //   }
 
-setTimeout(function(num1,num2){console.log (num1+num2)},3000,12,8)
+setTimeout(function(num1=12,num2=8){
+  console.log (num1+num2)
+},3000)
 
 
 
