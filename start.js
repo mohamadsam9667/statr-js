@@ -1640,7 +1640,7 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-
+console.log(eval("2*8"))
 
 
 
