@@ -1646,8 +1646,8 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // alert(x*3);
 
 
-function sumNumber(num1,num2=19){
-  return num1+num2;
-}
+// function sumNumber(num1,num2=19){
+//   return num1+num2;
+// }
 
-console.log(sumNumber(1,));
+// console.log(sumNumber(1,));
