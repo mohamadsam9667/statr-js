@@ -1661,16 +1661,20 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-var i=10;
-var timer=setInterval(function(){
-  if(i===0){
-    alert("Game Over")
-    clearInterval(timer);
-  }
-  console.log(i)
+// var i=10;
+// var timer=setInterval(function(){
+//   if(i===0){
+//     alert("Game Over")
+//     clearInterval(timer);
+//   }
+//   console.log(i)
    
-  i--;
-},1000)
+//   i--;
+// },1000)
+
+
+
+
 
 
 
