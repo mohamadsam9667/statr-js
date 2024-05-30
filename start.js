@@ -1897,10 +1897,10 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // ulList.appendChild(Newli2)
 // console.log(ulList)
 
-let h1tag=document.getElementById('title');
-function function1(){
-  h1tag.style.color="red";
-}
+// let h1tag=document.getElementById('title  ');
+// function function1(){
+//   h1tag.style.color="red";
+// }
 
 
 
