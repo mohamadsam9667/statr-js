@@ -1866,12 +1866,14 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // h1tag.style.fontSize='2em'
 
 
-let charakter=document.getElementById('title');
-charakter.innerText='sam sigma'
-let text=document.getElementsByClassName("list-item");
-text[0].innerHTML="sam";
+// let charakter=document.getElementById('title');
+// charakter.innerText='sam sigma'
+// let text=document.getElementsByClassName("list-item");
+// text[0].innerHTML="sam";
 
+let Input=document.getElementById('input')
 
+console.log(Input.value)
 
 
 
