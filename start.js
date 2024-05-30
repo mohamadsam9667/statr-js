@@ -1837,6 +1837,17 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // console.log(H1Element)
 
 
+let List=document.getElementsByClassName('list-item');
+
+List[0].setAttribute('class','samjnk')
+
+console.log(List  );
+
+
+// let liElement=document.getElementsByClassName('list-item')
+
+
+// console.log(liElement);
 
 
 
