@@ -1858,8 +1858,10 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
+let h1tag=document.getElementById('tehran');
 
-
+h1tag.style.color='red';
+h1tag.style.background="blue"
 
 
 
