@@ -1885,6 +1885,17 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // console.log(newdiv)
 // newdiv.style.fontFamily='34px';
 
+let ulList=document.querySelector('.list');
+          
+let Newli=document.createElement('li');
+Newli.setAttribute('id','newli');
+Newli.innerHTML='sam is sigma'
+let Newli2=document.createElement('li');
+// Newli2.setAttribute('id ','newli2');
+Newli2.innerText="alah"
+ulList.append(Newli)
+ulList.appendChild(Newli2)
+console.log(ulList)
 
 
 
