@@ -1871,12 +1871,19 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // let text=document.getElementsByClassName("list-item");
 // text[0].innerHTML="sam";
 
-let Input=document.getElementById('input')
+// let Input=document.getElementById('input')
 
-console.log(Input.value)
+// console.log(Input.value);
 
 
-
+// // let text=prompt("enter your text");
+// let newdiv=document.createElement('div');
+// // console.log(newdiv)
+// // newdiv.innerHTML=text;
+// // console.log(newdiv)
+// newdiv.setAttribute('id','newattribute');
+// console.log(newdiv)
+// newdiv.style.fontFamily='34px';
 
 
 
