@@ -1819,14 +1819,22 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
+// let h1element=document.getElementsByClassName("list-item")
+// let h1Element=document.getElementById("title");
+// let All_word=document.querySelectorAll(".list-item")
+// // console.log(h1element)
+// // console.log(h1Element)
+// var i=0;
+// All_word.forEach(function(item){
+//   i--
+//   item.innerText=item.innerText+`sam+${i}`;
+// })
+// console.log("sam",All_word)
 
-
-
-
-
-
-
-
+// let H1Element=document.getElementById('title')
+// console.log(H1Element.getAttribute('id'))
+// H1Element.setAttribute('class','sam-ab')
+// console.log(H1Element)
 
 
 
