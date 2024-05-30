@@ -1850,9 +1850,16 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // console.log(liElement);
 
 
-let array=document.getElementsByClassName('list-item')
+// let array=document.getElementsByClassName('list-item')
 
-array[0].setAttribute('id','alah')
+// array[0].setAttribute('id','alah')
+
+
+
+
+
+
+
 
 
 
