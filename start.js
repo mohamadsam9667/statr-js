@@ -1858,10 +1858,17 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-let h1tag=document.getElementById('tehran');
+// let h1tag=document.getElementById('tehran');
 
-h1tag.style.color='red';
-h1tag.style.background="blue"
+// h1tag.style.color='red';
+// // h1tag.style.background="blue"
+// h1tag.style.fontWeigth='bold'
+// h1tag.style.fontSize='2em'
+
+
+
+let text=document.getElementsByClassName("list-item");
+text[0].innerHTML="sam";
 
 
 
