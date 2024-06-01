@@ -1,176 +1,31 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>SarvinStyle Codding</title>
-  
 
-    <!--
-      
-    <style>
-        * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  ul li {
-    padding: 5px;
-    background: #f4f4f4;
-    margin: 5px 0;
-  }
-  
-  header {
-    background: #f4f4f4;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .container {
-    margin: auto;
-    width: 400px;
-    overflow: auto;
-    padding: 3rem 2rem;
-  }
-  
-  #my-form {
-    padding: 2rem;
-    background: #f4f4f4;
-  }
-  
-  #my-form label {
-    display: block;
-  }
-  
-  #my-form input[type='text'] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-  }
-  
-  .btn {
-    display: block;
-    width: 100%;
-    padding: 10px 15px;
-    border: 0;
-    background: #333;
-    color: #fff;
-    border-radius: 5px;
-    margin: 5px 0;
-  }
-  
-  .btn:hover {
-    background: #444;
-  }
-  
-  .bg-dark {
-    background: #333;
-    color: #fff;
-  }
-  
-  .error {
-    background: orangered;
-    color: #fff;
-    padding: 5px;
-    margin: 5px;
-  }
-    </style>
-    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SabzLearn | Js | 111</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
 
-  </head>
-  <body>
-<!--
-  
-    <header>
-      <h2>SarvinStyle Codding</h2>
-    </header>
+<body>
 
-    <section class="container">
-      <form id="my-form">
-        <h2>Add User</h2>
-        <div class="msg"></div>
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name">
+    <div class="login-page">
+        <div class="form">
+                <!-- <input type="text" placeholder="username" class="username" onkeypress="keyLog()" /> -->
+                <!-- <input type="text" placeholder="username" class="username" onkeydown="keyLog()" /> -->
+                <input type="text" placeholder="username" class="username" onkeyup="keyLog()" />
+                <input type="password" placeholder="password" class="password" />
+                <button>login</button>
+                <p class="message">Not registered? <a>Create an account</a></p>
         </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email">
-        </div>
-        <input class="btn" type="submit" value="Submit">
-      </form>
+    </div>
 
-      <ul id="users"></ul>
+    <script src="./start.js"></script>
 
-      <ul class="items">
-        <li class="item">Item 1</li>
-        <li class="item">Item 2</li>
-        <li class="item">Item 3</li>
-      </ul>
-    </section>
--->
-  <!-- <h1 align="center" id="title">
-    mohamadsam9667.ir
-  </h1>
-    
-  
-  <ul class="list">
-      <li class="list-item" id="tehran">1</li>
-      <li class="list-item" id="tehran">2</li>
-      <li class="list-item" id="tehran">3</li>
-    </ul>
+</body>
 
-    <hr><hr>
-
-    <input type="text" name="" id="input" value='sam' />
-
-    <hr>
-    <hr>
-    <hr>
-
-    <button onClick="function1()">
-        Click Me
-    </button>
-
- -->
- <!--پروژه لامپ 
-دو تا عکس لامپ و یه کلیک خاموش و روشن داشته باشید با کلید لامپ خاموش و روشن بشه-->
-
-
-
-
-<!-- <img style="display:none ;width:300px; " src="./image/53962242623952001131352518123718268105134.jpg" alt="" id="turnOn"> -->
-<!-- <div style="display: flex;align-items: center; justify-content: center; flex-direction: column; ">
-
-  <img style=" width: 800px; margin-top: 30px; " src="./image/light.jpg" alt="" id="turnOff">
-  <button style="width: 800px ;height: 200px; font-size: 44px;" onclick="functionsam()">click for show</button>
-</div> -->
-
-<!--
-  یک فرم لاگین پیاده سازی کنید
-  از دو اینپوت و یک دکمه تشکیل شده باشند
-  به محض کلید روی دکمه فرم ولیو اینپون برسی شود واگر با محدودیت های لازم مطابقت نداشتند  به کاربر پیغام خطا 
-  ودر غیر این صورت پیغامی مناسب نمایش دهد 
-
-  اینپوت نویسه حداقل برابر 12 کاراکتر و اینپوت پسورد دارای 8 نویسه باشد
-
--->
-<input type="text" id="username" value="samqaklaopfss">
-<input type="password" id="password" value="12wid08uw">
-<button onclick="confirm()"> click me</button>
-
-    <script src ="./start.js">
-  </script>
-    </body>
-    </html> 
-
+</html>
