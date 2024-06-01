@@ -1903,20 +1903,23 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // }
 
 // let trunon=document.getElementById('turnOn');
-let turnoff=document.getElementById('turnOff');
+// let turnoff=document.getElementById('turnOff');
 
-let=bulbFlag=false;
+// let=bulbFlag=false;
 
-function functionsam(){
-    if(bulbFlag){
-      turnoff.setAttribute('src','./image/53962242623952001131352518123718268105134.jpg');
-      bulbFlag=false;
-    }else{
-      turnoff.setAttribute('src','./image/light.jpg') ;
-      bulbFlag=true
-    }
+// function functionsam(){
+//     if(bulbFlag){
+//       turnoff.setAttribute('src','./image/53962242623952001131352518123718268105134.jpg');
+//       bulbFlag=false;
+//     }else{
+//       turnoff.setAttribute('src','./image/light.jpg') ;
+//       bulbFlag=true
+//     }
   
-}
+// }
+
+
+
 
 
 
