@@ -1935,28 +1935,40 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 // }
 
-let username=document.querySelector(".username");
-let password=document.querySelector(".password");
-let model=document.querySelector(".modal");
+// let username=document.querySelector(".username");
+// let password=document.querySelector(".password");
+// let model=document.querySelector(".modal");
 
-function keyLog(){
-  let userName=username.value;
-  let passWord=password.value;
+// function keyLog(){
+//   let userName=username.value;
+//   let passWord=password.value;
 
-  if (userName.length<=12 ||passWord.length<=8){
-    model.style.display='inline'
-  setTimeout(function(){
-    model.style.display='none';
-  },3000)
+//   if (userName.length<=12 ||passWord.length<=8){
+//     model.style.display='inline'
+//   setTimeout(function(){
+//     model.style.display='none';
+//   },3000)
   
-}
-  else {
-    // model.style.display='none';
-    alert("sucsses full")
-  }
+// }
+//   else {
+//     // model.style.display='none';
+//     alert("sucsses full")
+//   } 
 
 
 
+// }
+
+
+
+
+
+
+//keyPress  ----- keyDown ----- keyUp
+
+function keyLog()
+{
+  console.log("sam")
 }
 
 
