@@ -1919,21 +1919,46 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // }
  
 
-let username=document.querySelector('#username');
-let pass=document.querySelector('#password');
+// let username=document.querySelector('#username');
+// let pass=document.querySelector('#password');
 
-function confirm(){
+// function confirm(){
 
-  let userName=username.value
-let passWord=pass.value
-if(userName.length<=12){
-  console.log("یوزر کمتر  از 12 نویسه ");
+//   let userName=username.value
+// let passWord=pass.value
+// if(userName.length<=12){
+//   console.log("یوزر کمتر  از 12 نویسه ");
+// }
+// if(passWord.length<=8){
+//   console.log("پسور کمتر از 8 نویسه است ");
+// }
+
+// }
+
+let username=document.querySelector(".username");
+let password=document.querySelector(".password");
+let model=document.querySelector(".modal");
+
+function keyLog(){
+  let userName=username.value;
+  let passWord=password.value;
+
+  if (userName.length<=12 ||passWord.length<=8){
+    model.style.display='inline'
+  setTimeout(function(){
+    model.style.display='none';
+  },3000)
+  
 }
-if(passWord.length<=8){
-  console.log("پسور کمتر از 8 نویسه است ");
-}
+  else {
+    // model.style.display='none';
+    alert("sucsses full")
+  }
+
+
 
 }
+
 
 
 
