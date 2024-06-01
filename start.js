@@ -1917,6 +1917,23 @@ var kala_name = prompt("نام کالا شما چیست؟");
 //     }
   
 // }
+ 
+
+let username=document.querySelector('#username');
+let pass=document.querySelector('#password');
+
+function confirm(){
+
+  let userName=username.value
+let passWord=pass.value
+if(userName.length<=12){
+  console.log("یوزر کمتر  از 12 نویسه ");
+}
+if(passWord.length<=8){
+  console.log("پسور کمتر از 8 نویسه است ");
+}
+}
+
 
 
 
