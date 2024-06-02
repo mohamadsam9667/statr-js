@@ -1966,10 +1966,44 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 //keyPress  ----- keyDown ----- keyUp
 
-function keyLog()
-{
-  console.log("sam")
+// function keyLog()
+// {
+//   console.log("sam")
+// }
+var i=0;
+let username=document.querySelector(".username");
+let password=document.querySelector(".password");
+
+let validation=document.querySelector(".user-validation");
+let validation_pass=document.querySelector(".password-validation");
+// console.log(username,password,validation,validation_pass);   for test
+
+function keypres(){
+  // validation.style.display.none;
+ let lengthUser=username.value;
+
+  if(lengthUser.length<12){
+  // console.log("sam");
+  validation.innerHTML="must 12  character(Min)";
+validation.style.color = 'red';
+validation.style.display='block';
+    setTimeout(function(){
+  validation.style.display='none';
+
+    },10000)
+
+  }  
+  else{
+    console.log("more 12")
+  validation.style.display='none';
+  }
 }
+
+
+
+
+
+
 
 
 
