@@ -2077,9 +2077,17 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // let elementH1=document.querySelector("#clickH1");
 
 // elementH1.addEventListener('click',function(){
-//   console.log("sam sigma");
-// })
+  //   console.log("sam sigma");
+  // })
 
+
+  let elementH1=document.querySelector("#clickH1");
+
+  elementH1.addEventListener("click",printer);
+  
+  function printer(){
+    console.log("sam sigma");
+  }
 
 
 
