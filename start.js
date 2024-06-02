@@ -1998,7 +1998,22 @@ validation.style.display='block';
   validation.style.display='none';
   }
 }
+function keyup(){
+  
+  if(password.value.length<8)
+    {
+      validation_pass.style.display='block';
+      validation_pass.style.color='red';
+      validation_pass.innerHTML='Must contain 8 character (Min)';
+    }
+    else{
+      validation_pass.style.display='none';
+      
+    }
 
+
+
+}
 
 
 
