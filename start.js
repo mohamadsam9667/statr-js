@@ -1970,69 +1970,68 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // {
 //   console.log("sam")
 // }
-var i=0;
-let username=document.querySelector(".username");
-let password=document.querySelector(".password");
+// var i=0;
+// let username=document.querySelector(".username");
+// let password=document.querySelector(".password");
 
-let validation=document.querySelector(".user-validation");
-let validation_pass=document.querySelector(".password-validation");
+// let validation=document.querySelector(".user-validation");
+// let validation_pass=document.querySelector(".password-validation");
 // console.log(username,password,validation,validation_pass);   for test
 
-function keypres(){
-  // validation.style.display.none;
- let lengthUser=username.value;
+// function keypres(){
+//   // validation.style.display.none;
+//  let lengthUser=username.value;
 
-  if(lengthUser.length<12){
-  // console.log("sam");
-  validation.innerHTML="must 12  character(Min)";
-validation.style.color = 'red';
-validation.style.display='block';
-    setTimeout(function(){
-  validation.style.display='none';
+//   if(lengthUser.length<12){
+//   // console.log("sam");
+//   validation.innerHTML="must 12  character(Min)";
+// validation.style.color = 'red';
+// validation.style.display='block';
+//     setTimeout(function(){
+//   validation.style.display='none';
 
-    },10000)
+//     },10000)
 
-  }  
-  else{
-  validation.style.display='block';
-    validation.style.color='green';
-    validation.innerHTML='corect text'
-}
-}
-function keyup(){
-  var isrigth=true;
-  if(password.value.length<8)
-    {
-      validation_pass.style.display='block';
-      validation_pass.style.color='red';
-      validation_pass.innerHTML='Must contain 8 character (Min)';
-      isrigth=false;
-    }
-    else{
+//   }  
+//   else{
+//   validation.style.display='block';
+//     validation.style.color='green';
+//     validation.innerHTML='corect text'
+// }
+// }
+// function keyup(){
+//   var isrigth=true;
+//   if(password.value.length<8)
+//     {
+//       validation_pass.style.display='block';
+//       validation_pass.style.color='red';
+//       validation_pass.innerHTML='Must contain 8 character (Min)';
+//       isrigth=false;
+//     }
+//     else{
       
-  validation_pass.style.display='block';
-  validation_pass.style.color='green';
-  validation_pass.innerHTML="thats true";
-    }
+//   validation_pass.style.display='block';
+//   validation_pass.style.color='green';
+//   validation_pass.innerHTML="thats true";
+//     }
 
 
 
-}
-let print=document.querySelector(".type");
-function submit(){
-  keyup();
-   if(isrigth){
-    console.log("hazat sam");
+// }
+// let print=document.querySelector(".type");
+let username=document.querySelector(".username");
+let validationUser=document.querySelector(".user-validation");
+let validationPassword=document.querySelector(".password-validation")
+console.log(validationUser,validationPassword,username);
+// function exitUser(){
 
-  }
-  else{
-    console.log("kos")
-  }
-}
+//   if(validationUser.value)
+// }
 
-
+// function exitPass(){
 
 
+// }
 
 
 
