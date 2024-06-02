@@ -123,7 +123,12 @@
     direction: ltr;
     display: none;
   }
-
+.model{
+ color: #ed3131;
+  }
+.all{
+  background-color: #fff;
+}
 
 body {
   background: #76b852; /* fallback for old browsers */

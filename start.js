@@ -2086,7 +2086,9 @@ var kala_name = prompt("نام کالا شما چیست؟");
   elementH1.addEventListener("click",printer);
   
   function printer(){
-    console.log("sam sigma");
+        // elementH1.classList.add('model');
+        // elementH1.classList.remove('all');
+      elementH1.classList.toggle('all')
   }
 
 
