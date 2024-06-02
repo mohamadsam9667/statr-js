@@ -1994,25 +1994,40 @@ validation.style.display='block';
 
   }  
   else{
-    console.log("more 12")
-  validation.style.display='none';
-  }
+  validation.style.display='block';
+    validation.style.color='green';
+    validation.innerHTML='corect text'
+}
 }
 function keyup(){
-  
+  var isrigth=true;
   if(password.value.length<8)
     {
       validation_pass.style.display='block';
       validation_pass.style.color='red';
       validation_pass.innerHTML='Must contain 8 character (Min)';
+      isrigth=false;
     }
     else{
-      validation_pass.style.display='none';
       
+  validation_pass.style.display='block';
+  validation_pass.style.color='green';
+  validation_pass.innerHTML="thats true";
     }
 
 
 
+}
+let print=document.querySelector(".type");
+function submit(){
+  keyup();
+   if(isrigth){
+    console.log("hazat sam");
+
+  }
+  else{
+    console.log("kos")
+  }
 }
 
 
