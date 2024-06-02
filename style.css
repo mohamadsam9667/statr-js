@@ -10,7 +10,7 @@
   z-index: 1;
   background: #FFFFFF;
   max-width: 360px;
-  margin: 0 auto 100px;
+  margin :20px auto 100px;
   padding: 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -106,9 +106,21 @@
     transition: all 1s linear;
   }
 
-
+  .password-validation,
   .user-validation{
     /* color: #0  00000; */
+    display: none;
+  }
+  .type{
+    position: relative;
+    width: 200px;
+    height: 100px;
+    background-color: #ed3131;
+    color:white;
+    margin: 30px auto;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    direction: ltr;
     display: none;
   }
 
