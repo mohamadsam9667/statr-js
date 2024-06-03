@@ -2117,11 +2117,25 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // },2000)
 
 
+// onChange (input) و هر موقع یه نوشته یا یه تغییری به اینپوت اضافه بشه این کار ها فراخون میشه
 
 
 
+// function change(){
+//   console.log("sam")
+// }
 
 
+
+//معمولا از ان چنج برای اینپوت ها استفاده نمیشه برای سلکت استفاده میشه 
+let selecte=document.getElementById('boxSelect');
+// console.log(select)
+
+function schange(){
+
+    console.log(selecte.value);
+
+}
 
 
 
