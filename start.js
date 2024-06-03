@@ -2091,8 +2091,16 @@ var kala_name = prompt("نام کالا شما چیست؟");
   //     elementH1.classList.toggle('all')
   // }
 
+// console.log(document.body);
 
+let ArayColor=['red','blue','green',"yellow",'black'];
+setInterval(function(){
 
+  let coolor=Math.floor(Math.random()*ArayColor.length);
+  
+  console.log(coolor);
+  document.body.style.backgroundColor=ArayColor[coolor];
+},5000)
 
 
 
