@@ -2104,17 +2104,28 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-setInterval(function(){
+// setInterval(function(){
 
 
-  let ColorRed=Math.floor(Math.random()*255);
-  let ColorGreen=Math.floor(Math.random()*255);
-  let ColorBlue=Math.floor(Math.random()*255);
-  console.log(ColorRed);
-  let Color='rgb('+ColorRed+','+ColorGreen+','+ColorBlue+')';
-  document.body.style.background=Color;
+//   let ColorRed=Math.floor(Math.random()*255);
+//   let ColorGreen=Math.floor(Math.random()*255);
+//   let ColorBlue=Math.floor(Math.random()*255);
+//   console.log(ColorRed);
+//   let Color='rgb('+ColorRed+','+ColorGreen+','+ColorBlue+')';
+//   document.body.style.background=Color;
 
-},2000)
+// },2000)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
