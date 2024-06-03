@@ -2081,15 +2081,15 @@ var kala_name = prompt("نام کالا شما چیست؟");
   // })
 
 
-  let elementH1=document.querySelector("#clickH1");
+  // let elementH1=document.querySelector("#clickH1");
 
-  elementH1.addEventListener("click",printer);
+  // elementH1.addEventListener("click",printer);
   
-  function printer(){
-        // elementH1.classList.add('model');
-        // elementH1.classList.remove('all');
-      elementH1.classList.toggle('all')
-  }
+  // function printer(){
+  //       // elementH1.classList.add('model');
+  //       // elementH1.classList.remove('all');
+  //     elementH1.classList.toggle('all')
+  // }
 
 
 
