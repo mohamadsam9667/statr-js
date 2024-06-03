@@ -1,23 +1,52 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <!-- <h1 style="margin:200px auto; display: inline;">sam is sigma and yazdan is poor</h1> -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-    <!-- <input type="text" onchange="change()"  name="" id=""> -->
-    
-    
-    <select name="" id="boxSelect" onchange="schange()">
-        <option value="Iran">Iran</option>
-        <option value="USA">USA</option>
-        <option value="Canada">Canada</option>
-        <option value="Turkey">Turkey</option>
-    </select>
-    
-    <script src="./start.js"></script>
-</body>
+    <title>SabzLearn | Js | 120</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-md-6 box">
+        <input class="fnameInput" placeholder="First Name" />
+      </div>
+
+      <div class="col-md-6 box">
+        <input class="lnameInput" placeholder="Last Name" />
+      </div>
+      <div class="col-md-6 box">
+        <input class="phoneInput" placeholder="Phone Number" />
+      </div>
+      <div class="col-md-6 box">
+        <input class="emailInput" placeholder="Email" />
+      </div>
+      <div class="col-md-6 box">
+        <select class="countrySelect" onchange="countrySelectFunction()">
+          <option value="Please Select">Please Select ...</option>
+          <option class="option" value="Iran">Iran</option>
+          <option class="option" value="Canada">Canada</option>
+          <option class="option" value="US">United State</option>
+        </select>
+      </div>
+      <div class="col-md-6 box">
+        <select class="citySelect">
+            <option value="-1">Select City ...</option>
+        </select>
+      </div>
+      <div class="col-md-12 box">
+        <button class="btn">Book a ticket</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
 </html>

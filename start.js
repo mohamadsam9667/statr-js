@@ -2128,14 +2128,16 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 //معمولا از ان چنج برای اینپوت ها استفاده نمیشه برای سلکت استفاده میشه 
-let selecte=document.getElementById('boxSelect');
+// let selecte=document.getElementById('boxSelect');
 // console.log(select)
 
-function schange(){
+// function schange(){
 
-    console.log(selecte.value);
+//     console.log(selecte.value);
 
-}
+// }
+
+
 
 
 
