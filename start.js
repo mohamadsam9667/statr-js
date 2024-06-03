@@ -2093,18 +2093,28 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 // console.log(document.body);
 
-let ArayColor=['red','blue','green',"yellow",'black'];
+// let ArayColor=['red','blue','green',"yellow",'black'];
+// setInterval(function(){
+
+//   let coolor=Math.floor(Math.random()*ArayColor.length);
+  
+//   console.log(coolor);
+//   document.body.style.backgroundColor=ArayColor[coolor];
+// },5000)
+
+
+
 setInterval(function(){
 
-  let coolor=Math.floor(Math.random()*ArayColor.length);
-  
-  console.log(coolor);
-  document.body.style.backgroundColor=ArayColor[coolor];
-},5000)
 
+  let ColorRed=Math.floor(Math.random()*255);
+  let ColorGreen=Math.floor(Math.random()*255);
+  let ColorBlue=Math.floor(Math.random()*255);
+  console.log(ColorRed);
+  let Color='rgb('+ColorRed+','+ColorGreen+','+ColorBlue+')';
+  document.body.style.background=Color;
 
-
-
+},2000)
 
 
 
