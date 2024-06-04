@@ -2141,26 +2141,33 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 let countrySelect1=document.querySelector(".countrySelect")
 console.log(countrySelect1);
-
+let citySelect=document.querySelector(".citySelect");
+console.log(citySelect);
 
 let Object={
   Iran:['teharn','karaj','qazvin','gilan','mazandaran'],
   Canada:['torento','vancover','vesvancor'],
-  United_State:['felorida','losanjelese','halyWODE']
+  UnitedState:['felorida','losanjelese','halyWODE']
 };
 
-let namecity= countrySelect1.value;
-let city=Object[namecity];
-console.log(city)
+
+
+
+// let city=Object[namecity];
+// console.log(city)
 
 function countrySelectFunction(){
-  if(namecity===city)
-    {
-      console.log(city)
-    }
-    else{
-      console.log("اشتباه")
-    }
+let citySelect=document.querySelector(".citySelect");
+  
+  let namecity= countrySelect1.value;
+  let optioin=document.createElement('option');
+  console.log(Object[namecity]);
+  Object[namecity].forEach(function(){
+    optioin.value = namecity;
+    
+    console.log(namecity);
+  });  
+
   }
 
 
