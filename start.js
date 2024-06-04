@@ -2147,7 +2147,7 @@ console.log(citySelect);
 let Object={
   Iran:['teharn','karaj','qazvin','gilan','mazandaran'],
   Canada:['torento','vancover','vesvancor'],
-  UnitedState:['felorida','losanjelese','halyWODE']
+  US:['felorida','losanjelese','halyWODE']
 };
 
 
@@ -2160,14 +2160,19 @@ function countrySelectFunction(){
 let citySelect=document.querySelector(".citySelect");
   
   let namecity= countrySelect1.value;
-  let optioin=document.createElement('option');
-  console.log(Object[namecity]);
-  Object[namecity].forEach(function(){
-    optioin.value = namecity;
-    
-    console.log(namecity);
-  });  
+  
+  if(namecity==='Please Select'){
+    alert(" koft")
+    citySelect.innerHTML="<option>"+"Select City"+"</option>";
+  }
+  else{
+    citySelect.innerHTML="";
 
+  Object[namecity].forEach(function(citys){
+      citySelect.innerHTML+="<option>"+citys+"</option>";  
+  
+  });  
+  }
   }
 
 
