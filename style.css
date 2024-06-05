@@ -4,10 +4,12 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  flex-direction: column-reverse;
   font-family: 'Open Sans', sans-serif;
   background: #222;
   background-image: url('https://source.unsplash.com/1600x900/?landscape');
   font-size: 120%;
+  background-repeat: no-repeat;
 }
 
 .card {
@@ -84,3 +86,15 @@ h1.temp {
   top: 0;
   left: 20px;
 }
+
+
+.errore{
+  background-color: rgb(230, 22, 22);
+  display: none;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 10px;
+
+}
+
+

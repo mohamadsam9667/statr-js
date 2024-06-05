@@ -2178,7 +2178,9 @@ var kala_name = prompt("نام کالا شما چیست؟");
 let searchButton=document.getElementById('search');
 let inpute=document.querySelector('.search-bar');
 let City=document.querySelector(".city");
-// let shoWeather=document.querySelector("weatherloading")
+// let shoWeather=document.querySelector("weatherloading")\
+let showErrore=document.querySelector(".errore");
+// console.log(showErrore);
 
 let citiesData={
   tehran:{city:"Tehran",temp:12,weather:"rainy",humidity:23,windSpeed:32},
@@ -2195,13 +2197,19 @@ searchButton.addEventListener('click',function(){
 
     document.querySelector(".weather").classList.remove('loading');
     City.innerHTML=markaz.city;
-    document.querySelector(".temp").innerHTML=markaz.temp;
-    
-
+    document.querySelector(".temp").innerHTML=markaz.temp+"°C";
+    document.querySelector(".humidity").innerHTML="Humidity: "+markaz.humidity;
+    document.querySelector(".wind").innerHTML="Wind speed:"+markaz.windSpeed+"km/h";
 
   }
   else{
-console.log(" oskol")
+
+    setTimeout(function(){
+      showErrore.style.display='flex';
+      console.log("alah")
+    },3000)
+
+
   }
   
 
