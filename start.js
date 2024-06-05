@@ -2177,9 +2177,8 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 let searchButton=document.getElementById('search');
 let inpute=document.querySelector('.search-bar');
-let City=document .getElementsByClassName("city");
-let shoWeather=document.querySelector("weatherloading")
-console.log(shoWeather)
+let City=document.querySelector(".city");
+// let shoWeather=document.querySelector("weatherloading")
 
 let citiesData={
   tehran:{city:"Tehran",temp:12,weather:"rainy",humidity:23,windSpeed:32},
@@ -2194,7 +2193,11 @@ searchButton.addEventListener('click',function(){
   // console.log(  citiesData[inpute.value]);
   if(markaz){
 
-    City.innerHTML="<h2>"+markaz.city+"</h2>";
+    document.querySelector(".weather").classList.remove('loading');
+    City.innerHTML=markaz.city;
+    document.querySelector(".temp").innerHTML=markaz.temp;
+    
+
 
   }
   else{
