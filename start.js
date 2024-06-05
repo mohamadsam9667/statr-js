@@ -2203,9 +2203,10 @@ searchButton.addEventListener('click',function(){
 
   }
   else{
-
+  
+    showErrore.style.display='flex';
     setTimeout(function(){
-      showErrore.style.display='flex';
+    showErrore.style.display='none';
       console.log("alah")
     },3000)
 
