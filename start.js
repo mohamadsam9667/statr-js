@@ -2139,16 +2139,16 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-let countrySelect1=document.querySelector(".countrySelect")
-console.log(countrySelect1);
-let citySelect=document.querySelector(".citySelect");
-console.log(citySelect);
+// let countrySelect1=document.querySelector(".countrySelect")
+// console.log(countrySelect1);
+// let citySelect=document.querySelector(".citySelect");
+// console.log(citySelect);
 
-let Object={
-  Iran:['teharn','karaj','qazvin','gilan','mazandaran'],
-  Canada:['torento','vancover','vesvancor'],
-  US:['felorida','losanjelese','halyWODE']
-};
+// let Object={
+//   Iran:['teharn','karaj','qazvin','gilan','mazandaran'],
+//   Canada:['torento','vancover','vesvancor'],
+//   US:['felorida','losanjelese','halyWODE']
+// };
 
 
 
@@ -2156,24 +2156,72 @@ let Object={
 // let city=Object[namecity];
 // console.log(city)
 
-function countrySelectFunction(){
-let citySelect=document.querySelector(".citySelect");
+// function countrySelectFunction(){
+// let citySelect=document.querySelector(".citySelect");
   
-  let namecity= countrySelect1.value;
+//   let namecity= countrySelect1.value;
   
-  if(namecity==='Please Select'){
-    alert(" koft")
-    citySelect.innerHTML="<option>"+"Select City"+"</option>";
+//   if(namecity==='Please Select'){
+//     alert(" koft")
+//     citySelect.innerHTML="<option>"+"Select City"+"</option>";
+//   }
+//   else{
+//     citySelect.innerHTML="";
+
+//   Object[namecity].forEach(function(citys){
+//       citySelect.innerHTML+="<option>"+citys+"</option>";  
+  
+//   });  
+//   }
+//   }
+
+let searchButton=document.getElementById('search');
+let inpute=document.querySelector('.search-bar');
+let City=document .getElementsByClassName("city");
+let shoWeather=document.querySelector("weatherloading")
+console.log(shoWeather)
+
+let citiesData={
+  tehran:{city:"Tehran",temp:12,weather:"rainy",humidity:23,windSpeed:32},
+  shiraz:{city:"Shiraz",temp:9,weather:"fine",humidity:12,windSpeed:14},
+  tabriz:{city:"Tabriz",temp:1,weather:"snow",humidity:43,windSpeed:12},
+  mashhad:{city:"Mashhad",temp:16,weather:"Sunny",humidity:7,windSpeed:24},
+  esfahan:{city:"Esfahan",temp:20,weather:"rainy",humidity:15,windSpeed:18},
+};
+ 
+searchButton.addEventListener('click',function(){
+  let markaz=citiesData[inpute.value];
+  // console.log(  citiesData[inpute.value]);
+  if(markaz){
+
+    City.innerHTML="<h2>"+markaz.city+"</h2>";
+
   }
   else{
-    citySelect.innerHTML="";
-
-  Object[namecity].forEach(function(citys){
-      citySelect.innerHTML+="<option>"+citys+"</option>";  
+console.log(" oskol")
+  }
   
-  });  
-  }
-  }
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
