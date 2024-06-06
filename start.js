@@ -2269,13 +2269,13 @@ var kala_name = prompt("نام کالا شما چیست؟");
   
 
 
-let ulList=document.querySelector("ul");
-function addnewList(){
-  let Li=document.createElement('li');
-  Li.innerHTML="yazdan farar az morad";
+// let ulList=document.querySelector("ul");
+// function addnewList(){
+//   let Li=document.createElement('li');
+//   Li.innerHTML="yazdan farar az morad";
   
-  let Li2=document.createElement("li");
-  Li2.innerHTML="mamad khaye male";
+//   let Li2=document.createElement("li");
+//   Li2.innerHTML="mamad khaye male";
 
   // ulList.append(Li,Li2); 
   // ulList.appendChild(Li,Li2);
@@ -2283,14 +2283,20 @@ function addnewList(){
 
   // let resault1=ulList.append(Li);
   // let resault2=ulList.appendChild(Li);
-  console.log(resault1)
+  // console.log(resault1)
 
 
 
-}
-
-
-
+// }
+// function keyDownhandeler(){
+// console.log('key down')
+// }
+// function keyPresshandeler(){
+// console.log('key press')
+// }
+// function keyUphandeler(){
+// console.log('key up')
+// }
 
 
 
