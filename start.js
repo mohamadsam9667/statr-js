@@ -2303,45 +2303,68 @@ let inputText=document.getElementById('converter');
 let Celsios=document.querySelector('.C')
 let Farenhight=document.querySelector('.F');
 let Converter=document.getElementById('converter');
-// let placeholderInpute=Converter.placeholder;
-// console.log(placeholderInpute)
+let resault =document.querySelector('.result')
 
+
+//  F = (1.8 × C) + 32
 function convert(){
-  console.log('convert');
+  let TempC=Number(inputText.value);
+  let TempF=Number(inputText.value);
+ 
+ 
+  if(Celsios.innerHTML=='°C'){
+     TempC=Number(inputText.value);
+     TempF=(1.8*TempC)+32;
+   resault.innerHTML=TempF;
   }
+
+  else{
+    TempC=(TempF-32)/1.8;
+    resault.innerHTML=TempC;
+  }
+
+
+}
   
    function reset(){
-    console.log("reset") ; 
+    inputText.value=" "
+    resault.innerHTML="";
+ 
+ 
   }
     
     function change(){
-     if(Celsios.innerHTML=='°C')
+     
+     
+      if(Celsios.innerHTML=='°C')
       {
         Celsios.innerHTML='°F';
         Farenhight.innerHTML="°C";
       }
+
       else{
         Celsios.innerHTML="°C";
         Farenhight.innerHTML="°F";
       }
 
       if(document.title==='SalzLearn| Js | °C to °F'){
-        console.log("sam")
         document.title="SalzLearn| Js | °F to °C ";
       }
+
       else{
          document.title="SalzLearn| Js | °C to °F";
       }
-      
+
+
       if(Converter.placeholder==="°C"){
         Converter.placeholder='°F';
       }
+
       else{
         Converter.placeholder='°C';
       }
-      
-      
-    };
+  
+  };
   
 
 
