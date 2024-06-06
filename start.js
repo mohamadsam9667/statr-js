@@ -2299,6 +2299,70 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // }
 
 
+let inputText=document.getElementById('converter');
+let Celsios=document.querySelector('.C')
+let Farenhight=document.querySelector('.F');
+let Converter=document.getElementById('converter');
+// let placeholderInpute=Converter.placeholder;
+// console.log(placeholderInpute)
+
+function convert(){
+  console.log('convert');
+  }
+  
+   function reset(){
+    console.log("reset") ; 
+  }
+    
+    function change(){
+     if(Celsios.innerHTML=='°C')
+      {
+        Celsios.innerHTML='°F';
+        Farenhight.innerHTML="°C";
+      }
+      else{
+        Celsios.innerHTML="°C";
+        Farenhight.innerHTML="°F";
+      }
+
+      if(document.title==='SalzLearn| Js | °C to °F'){
+        console.log("sam")
+        document.title="SalzLearn| Js | °F to °C ";
+      }
+      else{
+         document.title="SalzLearn| Js | °C to °F";
+      }
+      
+      if(Converter.placeholder==="°C"){
+        Converter.placeholder='°F';
+      }
+      else{
+        Converter.placeholder='°C';
+      }
+      
+      
+    };
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
