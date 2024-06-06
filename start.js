@@ -2218,34 +2218,34 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-let searchButton=document.getElementById('search');
-let inpute=document.querySelector('.search-bar');
-let City=document.querySelector(".city");
+// let searchButton=document.getElementById('search');
+// let inpute=document.querySelector('.search-bar');
+// let City=document.querySelector(".city");
 // let shoWeather=document.querySelector("weatherloading")\
-let showErrore=document.querySelector(".errore");
+// let showErrore=document.querySelector(".errore");
 // console.log(showErrore);
 
-let citiesData=[
-  {city:"Tehran",temp:12,weather:"rainy",humidity:23,windSpeed:32},
-  {city:"Shiraz",temp:9,weather:"fine",humidity:12,windSpeed:14},
-  {city:"Tabriz",temp:1,weather:"snow",humidity:43,windSpeed:12},
-  {city:"Mashhad",temp:16,weather:"Sunny",humidity:7,windSpeed:24},
-  {city:"Esfahan",temp:20,weather:"rainy",humidity:15,windSpeed:18},
-];
-    addEventListener('click',function(){
-      citiesData.find(function(item){
-        if( item.city===inpute.value)
-          {
-            document.querySelector(".weather").classList.remove('loading');
-            City.innerHTML=item.city;
-            document.querySelector(".temp").innerHTML=item.temp+"°C";
-            document.querySelector(".humidity").innerHTML="Humidity: "+item.humidity;
-            document.querySelector(".wind").innerHTML="Wind speed:"+item.windSpeed+"km/h";
+// let citiesData=[
+//   {city:"Tehran",temp:12,weather:"rainy",humidity:23,windSpeed:32},
+//   {city:"Shiraz",temp:9,weather:"fine",humidity:12,windSpeed:14},
+//   {city:"Tabriz",temp:1,weather:"snow",humidity:43,windSpeed:12},
+//   {city:"Mashhad",temp:16,weather:"Sunny",humidity:7,windSpeed:24},
+//   {city:"Esfahan",temp:20,weather:"rainy",humidity:15,windSpeed:18},
+// ];
+    // addEventListener('click',function(){
+    //   citiesData.find(function(item){
+    //     if( item.city===inpute.value)
+    //       {
+    //         document.querySelector(".weather").classList.remove('loading');
+    //         City.innerHTML=item.city;
+    //         document.querySelector(".temp").innerHTML=item.temp+"°C";
+    //         document.querySelector(".humidity").innerHTML="Humidity: "+item.humidity;
+    //         document.querySelector(".wind").innerHTML="Wind speed:"+item.windSpeed+"km/h";
         
-          }
-      })
+    //       }
+    //   })
   
-    })
+    // })
 
 // if(markaz){
 
@@ -2267,6 +2267,32 @@ let citiesData=[
 
 //   }
   
+
+
+let ulList=document.querySelector("ul");
+function addnewList(){
+  let Li=document.createElement('li');
+  Li.innerHTML="yazdan farar az morad";
+  
+  let Li2=document.createElement("li");
+  Li2.innerHTML="mamad khaye male";
+
+  // ulList.append(Li,Li2); 
+  // ulList.appendChild(Li,Li2);
+
+
+  // let resault1=ulList.append(Li);
+  // let resault2=ulList.appendChild(Li);
+  console.log(resault1)
+
+
+
+}
+
+
+
+
+
 
 
 
