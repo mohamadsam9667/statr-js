@@ -2408,20 +2408,26 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-let elementH1=document.querySelector(".btn");
+// let elementH1=document.querySelector(".btn");
 // console.log(elementH1);      for test
 
 
 
 
-elementH1.onclick= function (){
-  console.log("sam")
-}
+// elementH1.onclick= function (){
+//   console.log("sam")
+// }
 // elementH1.addEventListener('click',shomlog)
 // elementH1.addEventListener('click',shomlog);
 
 
 
+let submit=document.getElementById('logon-form');
+// console.log(submit); for test 
+
+submit.addEventListener('submit',function(){
+  console.log("choise");
+})
 
 
 
