@@ -2408,6 +2408,17 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
+let elementH1=document.querySelector(".btn");
+// console.log(elementH1);      for test
+
+
+function shomlog(){
+  console.log("sam")
+}
+
+// elementH1.addEventListener('click',shomlog)
+elementH1.addEventListener('click',shomlog);
+
 
 
 
