@@ -2416,8 +2416,9 @@ function shomlog(){
   console.log("sam")
 }
 
+elementH1.onclick=shomlog;
 // elementH1.addEventListener('click',shomlog)
-elementH1.addEventListener('click',shomlog);
+// elementH1.addEventListener('click',shomlog);
 
 
 
