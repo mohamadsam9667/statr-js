@@ -2412,11 +2412,11 @@ let elementH1=document.querySelector(".btn");
 // console.log(elementH1);      for test
 
 
-function shomlog(){
+
+
+elementH1.onclick= function (){
   console.log("sam")
 }
-
-elementH1.onclick=shomlog;
 // elementH1.addEventListener('click',shomlog)
 // elementH1.addEventListener('click',shomlog);
 
