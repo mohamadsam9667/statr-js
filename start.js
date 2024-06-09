@@ -2422,12 +2422,38 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-let submit=document.getElementById('logon-form');
+// let submit=document.getElementById('logon-form');
 // console.log(submit); for test 
 
-submit.addEventListener('submit',function(){
-  console.log("choise");
+// submit.addEventListener('submit',function(){
+//   console.log("choise");
+// })
+
+
+let button=document.getElementById('logon-form');
+
+// button.onclick=function(){
+//   console.log("Sam")
+// }
+button.addEventListener('click',function(event){
+  console.log(event.target );
 })
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
