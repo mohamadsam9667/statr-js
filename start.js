@@ -2380,13 +2380,11 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-let inputType=document.getElementById('converter')
+// let inputType=document.getElementById('converter')
 
-inputType.username="dam";
-console.log(inputType.username)
-console.log(inputType.getAttribute("username"))
-
-
+// inputType.username="dam";
+// console.log(inputType.username)
+// console.log(inputType.getAttribute("username"))
 
 
 
@@ -2398,6 +2396,15 @@ console.log(inputType.getAttribute("username"))
 
 
 
+// let inputElem=document.querySelector('#choise');
+// // console.log(inputElem);
+
+// // let saveInput=inputElem.hasAttribute('href');
+// let saveInput=inputElem.hasAttribute('placeholder');
+
+// console.log(saveInput)
+//   inputElem.removeAttribute('placeholder');
+//   console.log(inputElem);
 
 
 
