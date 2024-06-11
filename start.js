@@ -2435,8 +2435,13 @@ let button=document.getElementById('logon-form');
 // button.onclick=function(){
 //   console.log("Sam")
 // }
-button.addEventListener('click',function(event){
-  console.log(event.target );
+button.addEventListener('keydown',function(event){
+  if (event.key==='k'){
+    console.log("sam")
+  }
+  else{
+    console.log("1 ")
+  }
 })
  
 
