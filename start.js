@@ -2430,20 +2430,72 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // })
 
 
-let button=document.getElementById('logon-form');
+// let button=document.getElementById('logon-form');
 
 // button.onclick=function(){
 //   console.log("Sam")
 // }
-button.addEventListener('keydown',function(event){
-  if (event.key==='k'){
-    console.log("sam")
-  }
-  else{
-    console.log("1 ")
-  }
-})
+// button.addEventListener('keydown',function(event){
+//   if (event.key==='k'){
+//     console.log("sam")
+//   }
+//   else{
+//     console.log("1 ")
+//   }
+// })
  
+
+
+
+let $=document;
+ 
+let locationKey=$.querySelector('#location')
+let title=$.querySelector('title');
+let KeyCode=$.getElementById('keyCode');
+let key=$.querySelector('#key');
+let Code=$.querySelector('#code');
+let whichElem=$.querySelector('#which');
+
+// console.log(locationKey,title,Keycode,key,whichElem,Code);  for test select item
+
+
+$.body.addEventListener('keydown',function(event){
+  
+  event.preventDefault();
+  
+// preventDefault با عث میشه ایوت حرکت دیفالتشو مثل رفرش در هرد فعه فراموش کنه  
+ 
+
+starter.style.display='none';
+heading.style.display='flex';
+ascii.style.display='flex';
+infos.style.display='flex';
+
+let eventKeyCode=event.keyCode;
+let eventLocation=event.location;
+let eventKey=event.key;
+let eventWhich=event.which;
+let eventCode=event.code;
+
+locationKey.innerHTML=eventLocation;
+KeyCode.innerHTML=eventKeyCode;
+key.innerHTML=eventKey;
+Code.innerHTML=eventCode;
+whichElem.innerHTML=eventWhich;
+
+
+
+
+  // console.log(event);
+
+})
+
+
+
+
+
+
+
 
 
 
