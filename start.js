@@ -2490,20 +2490,19 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 // })
 
-let h1Elem=document.getElementById("title")
+// let h1Elem=document.getElementById("title")
 // console.log(h1Elem); for test 
-console.log(h1Elem.nodeName)
+// console.log(h1Elem.nodeName)
 
-
-
-
-
-
-
-
-
-
-
+let h1=document.querySelector(".head1")
+let h2=document.querySelector(".head2")
+let h3=document.querySelector(".head3")
+let h4=document.querySelector(".head4")
+let h5=document.querySelector(".head5")
+let h6=document.querySelector(".head6")
+// let h1=document.querySelector("head1")
+h2.innerHTML="sam is sigma"
+console.log(h2.parentElement)
 
 
 
