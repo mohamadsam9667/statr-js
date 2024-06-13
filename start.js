@@ -2447,48 +2447,48 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-let $=document;
+// let $=document;
  
-let locationKey=$.querySelector('#location')
-let title=$.querySelector('title');
-let KeyCode=$.getElementById('keyCode');
-let key=$.querySelector('#key');
-let Code=$.querySelector('#code');
-let whichElem=$.querySelector('#which');
+// let locationKey=$.querySelector('#location')
+// let title=$.querySelector('title');
+// let KeyCode=$.getElementById('keyCode');
+// let key=$.querySelector('#key');
+// let Code=$.querySelector('#code');
+// let whichElem=$.querySelector('#which');
 
 // console.log(locationKey,title,Keycode,key,whichElem,Code);  for test select item
 
 
-$.body.addEventListener('keydown',function(event){
+// $.body.addEventListener('keydown',function(event){
   
-  event.preventDefault();
+//   event.preventDefault();
   
 // preventDefault با عث میشه ایوت حرکت دیفالتشو مثل رفرش در هرد فعه فراموش کنه  
  
 
-starter.style.display='none';
-heading.style.display='flex';
-ascii.style.display='flex';
-infos.style.display='flex';
+// starter.style.display='none';
+// heading.style.display='flex';
+// ascii.style.display='flex';
+// infos.style.display='flex';
 
-let eventKeyCode=event.keyCode;
-let eventLocation=event.location;
-let eventKey=event.key;
-let eventWhich=event.which;
-let eventCode=event.code;
+// let eventKeyCode=event.keyCode;
+// let eventLocation=event.location;
+// let eventKey=event.key;
+// let eventWhich=event.which;
+// let eventCode=event.code;
 
-locationKey.innerHTML=eventLocation;
-KeyCode.innerHTML=eventKeyCode;
-key.innerHTML=eventKey;
-Code.innerHTML=eventCode;
-whichElem.innerHTML=eventWhich;
+// locationKey.innerHTML=eventLocation;
+// KeyCode.innerHTML=eventKeyCode;
+// key.innerHTML=eventKey;
+// Code.innerHTML=eventCode;
+// whichElem.innerHTML=eventWhich;
 
 
 
 
   // console.log(event);
 
-})
+// })
 
 
 
