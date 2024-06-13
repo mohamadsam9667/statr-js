@@ -2490,9 +2490,9 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 // })
 
-
-
-
+let h1Elem=document.getElementById("title")
+// console.log(h1Elem); for test 
+console.log(h1Elem.nodeName)
 
 
 
