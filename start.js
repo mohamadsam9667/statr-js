@@ -2512,15 +2512,57 @@ let had6=document.querySelector(".head6")
 
 
 
-let listItem=document.getElementsByClassName('list-item');
-console.log(listItem[2].nextSibling);
+// let listItem=document.getElementsByClassName('list-item');
+// let list=document.getElementById('list')
+// console.log(listItem[2].nextSibling);
+// console.log(listItem[2].previousSibling.previousSibling.previousSibling.previousSibling)
+
+// console.log(list) for test select ul
 
 
+// console.log(list.childElementCount);
+// console.log(list.children[1]);
+// console.log(list.childNodes)
+// console.log(list.hasChildNodes())  میگه این دیو المنتی در خودش داره یا نداره
 
+// console.log(list.lastChild)
+// console.log(list.lastElementChild);
 
+// list.lastElementChild.style.color='red';  رنگ آخرین المنت تغییر کرد
+// list.lastElementChild.firstElementChild.style.color='red'; خود المنت  قرمز شد انگار ما تگ  ای رو انتخاب کردیم
 
+ // Functions for select elems with id & class
+ var $ = document;
+ function _id(id_name) {
+   return $.getElementById(id_name);
+ }
 
+ function _class(class_name) {
+   return $.getElementsByClassName(class_name);
+ }
 
+ // Select Elems
+ var togglePassword = $.querySelector(".toggle-password");
+ var passwordField = $.getElementById("password-field");
+
+ // Fire click event on eye icon
+ togglePassword.addEventListener("click", function () {
+   if (passwordField.type =="text") {
+     passwordField.type= "password";
+    //  togglePassword.classList.remove("fa fa-eye")
+
+    } else {
+      passwordField.type = "text";
+      //  togglePassword.classList.remove("fa fa-eye");
+      
+      // togglePassword.classList.add("fa fa-eye-slash");
+    }
+  })
+  
+  console.log();
+//  let eye=$.querySelector('.fa.fa-eye');
+
+//  console.log(eye)
 
 
 
