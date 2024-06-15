@@ -2532,44 +2532,67 @@ let had6=document.querySelector(".head6")
 // list.lastElementChild.firstElementChild.style.color='red'; خود المنت  قرمز شد انگار ما تگ  ای رو انتخاب کردیم
 
  // Functions for select elems with id & class
- var $ = document;
- function _id(id_name) {
-   return $.getElementById(id_name);
- }
+//  var $ = document;
+//  function _id(id_name) {
+//    return $.getElementById(id_name);
+//  }
 
- function _class(class_name) {
-   return $.getElementsByClassName(class_name);
- }
+//  function _class(class_name) {
+//    return $.getElementsByClassName(class_name);
+//  }
 
  // Select Elems
- var togglePassword = $.querySelector(".toggle-password");
- var passwordField = $.getElementById("password-field");
+//  var togglePassword = $.querySelector(".toggle-password");
+//  var passwordField = $.getElementById("password-field");
 
  // Fire click event on eye icon
- togglePassword.addEventListener("click", function () {
-   if (passwordField.type =="text") {
-     passwordField.type= "password";
-     togglePassword.classList.remove("active")
+//  togglePassword.addEventListener("click", function () {
+//    if (passwordField.type =="text") {
+//      passwordField.type= "password";
+//      togglePassword.classList.remove("active")
 
-    } else {
-      passwordField.type = "text";
-      //  togglePassword.classList.remove("fa fa-eye");
+//     } else {
+//       passwordField.type = "text";
+//       //  togglePassword.classList.remove("fa fa-eye");
       
-      togglePassword.classList.add("active");
-    }
-  })
+//       togglePassword.classList.add("active");
+//     }
+//   })
   
-  console.log();
+//   console.log();
 //  let eye=$.querySelector('.fa.fa-eye');
 
 //  console.log(eye)
 
 
+// let h1Elem=document.querySelector('.title');
+
+// let button1=document.querySelector(".remover");
+
+// button1.addEventListener('click',function(){
+//   console.log("test");
+//   h1Elem.innerHTML='';
+// })
 
 
+// let list=document.querySelector('.list');
+// console.log(list); for test
+
+// let listItem=document.querySelectorAll('.list-item');
+
+// console.log(listItem); for test
 
 
+// listItem.forEach(function(li){
+  
+//   li.addEventListener('click',function(event){
+  
+//     console.log(event.target.parentElement);
+  
+//   });
+// })
 
+//click and find parent element TAG (a);
 
 
 
