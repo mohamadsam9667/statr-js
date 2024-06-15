@@ -2549,13 +2549,13 @@ let had6=document.querySelector(".head6")
  togglePassword.addEventListener("click", function () {
    if (passwordField.type =="text") {
      passwordField.type= "password";
-    //  togglePassword.classList.remove("fa fa-eye")
+     togglePassword.classList.remove("active")
 
     } else {
       passwordField.type = "text";
       //  togglePassword.classList.remove("fa fa-eye");
       
-      // togglePassword.classList.add("fa fa-eye-slash");
+      togglePassword.classList.add("active");
     }
   })
   
