@@ -2602,7 +2602,35 @@ var kala_name = prompt("نام کالا شما چیست؟");
 //   })
 // });
 
+let trash =document.querySelector('.fa fa-trash-o delete');
+let ulElem=document.querySelector('ul');
+let liElem=document.querySelectorAll('li');
+let Lable=document.querySelector('label');
+let text=document.querySelector('span');
+let inpute=document.querySelector('input')
+console.log(ulElem,liElem,Lable,text,inpute);
 
+Lable.addEventListener('click',function(){
+
+  // li.appendChild("inpute.value")
+  // console.log(inpute.value);
+  var li = document.createElement("li");
+
+  li.style.listStyle=' none';
+
+  li.appendChild(document.createTextNode(inpute.value));
+  li.setAttribute("id", "element4");
+  // added line
+  ulElem.appendChild(li);
+  inpute.value='';
+
+})
+
+
+trash.addEventListener('click',function(){
+  // liElem.remove();
+  console.log("samsmis");
+})
 
 
 
