@@ -2388,14 +2388,6 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-
-
-
-
-
-
-
-
 // let inputElem=document.querySelector('#choise');
 // // console.log(inputElem);
 
@@ -2494,12 +2486,12 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // console.log(h1Elem); for test 
 // console.log(h1Elem.nodeName)
 
-let had1=document.querySelector(".head1")
-let had2=document.querySelector(".head2")
-let had3=document.querySelector(".head3")
-let had4=document.querySelector(".head4")
-let had5=document.querySelector(".head5")
-let had6=document.querySelector(".head6")
+// let had1=document.querySelector(".head1")
+// let had2=document.querySelector(".head2")
+// let had3=document.querySelector(".head3")
+// let had4=document.querySelector(".head4")
+// let had5=document.querySelector(".head5")
+// let had6=document.querySelector(".head6")
 
 
 // let h1=document.querySelector("head1")
@@ -2593,6 +2585,23 @@ let had6=document.querySelector(".head6")
 // })
 
 //click and find parent element TAG (a);
+
+// let h1Elem=document.querySelector('.title');
+// let buton=document.querySelector('.click');
+// console.log(buton); for test 
+// console.log(h1Elem) for test 
+// buton.addEventListener('click',function(){
+//    h1Elem.remove()
+// })
+
+// let List=document.querySelectorAll('.list-item');
+
+// List.forEach(function(li){
+//   li.addEventListener('click',function(event){
+//     event.target.remove()
+//   })
+// });
+
 
 
 
