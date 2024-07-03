@@ -2629,9 +2629,9 @@ Lable.addEventListener('click',function(){
 
 trash.addEventListener('click',function(){
   // liElem.remove();
-  console.log("samsmis");ط
-})
+  console.log("samsmis");
 
+}
 
 
 
