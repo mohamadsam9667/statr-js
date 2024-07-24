@@ -2602,17 +2602,32 @@ var kala_name = prompt("نام کالا شما چیست؟");
 //   })
 // });
 
-let trash =document.querySelector('.fa fa-trash-o delete');
-let ulElem=document.querySelector('ul');
-let liElem=document.querySelectorAll('li');
-let Lable=document.querySelector('label');
-let text=document.querySelector('span');
-let inpute=document.querySelector('input')
-console.log(ulElem,liElem,Lable,text,inpute);
+// let trash =document.querySelector('.fa fa-trash-o delete');
+// let ulElem=document.querySelector('ul');
+// let liElem=document.querySelectorAll('li');
+// let Lable=document.querySelector('label');
+// let text=document.querySelector('span');
+// let inpute=document.querySelector('input')
+// console.log(ulElem,liElem,Lable,text,inpute,trash);
 
 
+// inpute.addEventListener('click',function(){
+//   console.log("sam sigma")
+// })
 
+// let sam=document.querySelector(".sam");
 
+// console.log(sam)
+let user=[
+  {name:"sam" , password:"12frztx"},
+  {name:"alireza",password:"tyew"}
+];
+let inpute=document.querySelector("#input");
+inpute.onclick=function(){
+  console.log("sasjqeiq")
+}
+// user.name=
+console.log("sas")
 
 
 
