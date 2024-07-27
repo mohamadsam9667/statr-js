@@ -2618,18 +2618,6 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // let sam=document.querySelector(".sam");
 
 // console.log(sam)
-let user=[
-  {name:"sam" , password:"12frztx"},
-  {name:"alireza",password:"tyew"}
-];
-let inpute=document.querySelector("#input");
-inpute.onclick=function(){
-  console.log("sasjqeiq")
-}
-// user.name=
-console.log("sas")
-
-
 
 
 
