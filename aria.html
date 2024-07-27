@@ -1,0 +1,35 @@
+;]0ol6+0o
+==UTF- nu nhh8
++
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<label for="username">نام کاربری 
+</label>
+<input type="text" id="username">
+<p id="message"></p>
+<button onclick="checkUsername()">کلیک کن</button>
+    <script>
+        function checkUsername(){
+            var username=document.getElementById("username").value;
+            var message=document.getElementById("message");
+            if(username==='sam'){
+                message.innerHTML="رمز عبور : 12234";
+                console.log("رمز عبور ");
+            }else{
+
+                message.textContent="خطا";
+                console.log("خطا");
+
+
+            }
+        }
+    </script>
+</body>
+</html>
