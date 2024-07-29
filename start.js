@@ -2628,17 +2628,63 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // اعداد را به تعداد  دلخواه از کار بر گرفته و در آرایه ای ذخیره کنید
 // و سپس میانگین آن ها را محاسبه کرده و نمایش دهید
 
-var bound=parseFloat(prompt("تعداد اعداد مورد نظر شما چند عدد است؟"));
-var a=[];
-var sum=0;
-for (var i=0;i<bound ;i++){
-  number=parseFloat(prompt(`عدد مورد${i} نظر خود را وارد کنید:`))
-  // a.push(number);
-  sum=sum+number;
+// var bound=parseFloat(prompt("تعداد اعداد مورد نظر شما چند عدد است؟"));
+// var a=[];
+// var sum=0;
+// for (var i=0;i<bound ;i++){
+//   number=parseFloat(prompt(`عدد مورد${i} نظر خود را وارد کنید:`))
+//   // a.push(number);
+//   sum=sum+number;
+// }
+// console.log(sum/bound);
+
+
+
+// يك سامانه تبت نام پياده سازى كنيد
+
+// ن شكل كه يك آرايه براى ذخيره اطلاعات كاربران داشته باشيد (3 كاربر را بطور ديفالت در آرايه داشته باشيد)
+// و از كاربرى كه قصد ثبت نام دارد تام، تام خانوادكى، سن وايميل را دريافت كرده
+// وداخل آبجكتى مجزا در آرايه كاربران ذخيره كنيد
+// يس از انجام عمل ثبت نام، اطلالاعات تك تك كاربران را لاى بكيريد
+
+// نكات قابل توجه :
+// نام حداقل بايد 3 كاراكتر وحداكثر 10 كاراكتر داشته باشد
+// نام خانوادكى حداقل بايد 3 كاراكتر وحداكثر بايد 15 كاراكتر داشته باشد
+// سن حتما بايد عدد بوده وحداكثر 3 رقم باشد
+var users=[
+  {Firstname:"sam",Lastname:"rezazadeh",age:21,email:"ali2frt.ir@gmail.com"},
+  {Firstname:"hasan",Lastname:"khani",age:23,email:"jagi.com@gmail.com"},
+  {Firstname:"amir",Lastname:"shahi",age:20,email:"jag rahmati elayhe"}
+
+];
+var Fname=prompt("نام خود را وارد کنید:");
+var Lname=prompt("نام خانوادگی خود را وارد کنید");
+var Age=parseFloat(prompt("سنت چقدره", 2));
+var Email=prompt("ایمیل خود را وارد کنید");
+
+if (Fname.length<3 || Fname.length>10){
+  alert("نام باید بیش از سه کاراکتر کمتر از 10 حرف باشه")
+}else if(Lname.length<3 || Lname.length>15){
+  alert("بیش از 3 کاراکتر کمتر از  15 کاراکتر باشه")
+}else if (Age===Number){
+  alert("error")
 }
-console.log(sum/bound);
 
 
+
+
+
+
+var newuser=[
+  {Firstname:Fname,
+    Lastname:Lname,
+    age:Age,
+    email:Email
+  }
+];
+
+users.push(newuser)
+console.log(users);
 
 
 
