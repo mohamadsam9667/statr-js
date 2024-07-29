@@ -2621,12 +2621,22 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
+// var tag_p=document.querySelector(".sam");
+// console.log(tag_p);
+// tag_p.textContent="  ";
 
+// اعداد را به تعداد  دلخواه از کار بر گرفته و در آرایه ای ذخیره کنید
+// و سپس میانگین آن ها را محاسبه کرده و نمایش دهید
 
-
-
-
-
+var bound=parseFloat(prompt("تعداد اعداد مورد نظر شما چند عدد است؟"));
+var a=[];
+var sum=0;
+for (var i=0;i<bound ;i++){
+  number=parseFloat(prompt(`عدد مورد${i} نظر خود را وارد کنید:`))
+  // a.push(number);
+  sum=sum+number;
+}
+console.log(sum/bound);
 
 
 
