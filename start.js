@@ -2757,18 +2757,102 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // کلمه ای از کابر بگیرید وبرسی کنید از دو طرف چپ و راست به یک شکل خوانده میشود یا نه 
 
 
-var vocabe=prompt("کلمه مورد نظر خود را وارد کنید :");
-arrayKalame=vocabe.split('');
-wordReverce=arrayKalame.reverse();
-wordreverceMain=wordReverce.join('');
+// var vocabe=prompt("کلمه مورد نظر خود را وارد کنید :");
+// arrayKalame=vocabe.split('');
+// wordReverce=arrayKalame.reverse();
+// wordreverceMain=wordReverce.join('');
 
-// console.log(arrayKalame,"  ",wordReverce,"  ",wordreverceMain);
+// // console.log(arrayKalame,"  ",wordReverce,"  ",wordreverceMain);
 
 
 
-if(wordreverceMain===vocabe){
-    console.log("پیدا شد")
-  }
-  else{
-    console.log("پیدا نشد");
-  }
+// if(wordreverceMain===vocabe){
+//     console.log("پیدا شد")
+//   }
+//   else{
+//     console.log("پیدا نشد");
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// يك بروزه تودوليست بياده سازى كنيد
+
+// به اين صورت كه يك آرايه اى براى ذخيره تودوها داشته باشيد وبه طور ديفالت 3 تودو داخل آن ذخيره كنيد
+// هرتودو مشخصاتى مثل آيدى، اسم تودو ووضعيت را دارد
+
+// منويى به 3 كزيته به صورت زير به كاربر تمايش دهيد :
+// اضافه كردن تودو .1
+// حذف تودو .2
+// انجام تودو (تغيير وضعيت) .3
+
+// در قسمت اول اسم تودويى را از كاربر دريافت كرده وبه ليست تودوها اضافه كنيد
+// در قسمت دوم اسم تودويى را از كاربر دريافت كرده و آن را از ليست تودوها حذف كنيد
+// در قسمت سوم اسم تودو را دريافت كرده وهمان تودو را در وضعيت انجام شده قرار دهيد
+
+// ليست تودوها را در كنسول نمايش دهيد
+
+// در بايان هركدام از عمليات
+
+
+
+var todo_list=[
+
+  {id:1,name:"sam",disply:"active"},,
+  {id:2,name:"hasan",disply:"noactive"},
+  {id:3,name:"ilia",disply:"active"}
+
+];
+
+var input=prompt(" 1. اضافه کردن به تودو \n 2.حذف تودو  \n 3.تغیر وضعیت")
+
+if (input==='1'){
+  
+ var  Id=4;
+ var  Name=prompt ("نام مد نظر خود را وارد کنید:");
+ var  Disply=prompt("وضعیت فعال با شه یا غیر فعال:");
+ new_todo={
+  id:Id,
+  name:Name,
+  disply:Disply
+ };
+
+ todo_list.push(new_todo);
+ console.log(todo_list);
+
+}
+
+else if(input==='2'){
+  todo_list.splice(todo_list.length-1,1);
+  console.log(todo_list);
+}
+
+else if(input==='3'){
+      var choise=Number(prompt("کدوم خونه انتخابته"));
+    var disply=prompt("وضعیت چی بشه ");
+      todo_list.forEach(function(index){
+        if(index.id===choise){
+          index.disply=disply;
+          console.log(todo_list)
+        }
+      })
+
+}
+
+
+else{
+  console.log("khar")
+}
+
+
+
+
