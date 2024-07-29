@@ -2640,6 +2640,35 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // يك سامانه تبت نام پياده سازى كنيد
 
 // ن شكل كه يك آرايه براى ذخيره اطلاعات كاربران داشته باشيد (3 كاربر را بطور ديفالت در آرايه داشته باشيد)
@@ -2651,42 +2680,64 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // نام حداقل بايد 3 كاراكتر وحداكثر 10 كاراكتر داشته باشد
 // نام خانوادكى حداقل بايد 3 كاراكتر وحداكثر بايد 15 كاراكتر داشته باشد
 // سن حتما بايد عدد بوده وحداكثر 3 رقم باشد
-var users=[
-  {Firstname:"sam",Lastname:"rezazadeh",age:21,email:"ali2frt.ir@gmail.com"},
-  {Firstname:"hasan",Lastname:"khani",age:23,email:"jagi.com@gmail.com"},
-  {Firstname:"amir",Lastname:"shahi",age:20,email:"jag rahmati elayhe"}
 
+
+
+
+
+
+
+// var users=[
+//   {Firstname:"sam",Lastname:"rezazadeh",age:21,email:"ali2frt.ir@gmail.com"},
+//   {Firstname:"hasan",Lastname:"khani",age:23,email:"jagi.com@gmail.com"},
+//   {Firstname:"amir",Lastname:"shahi",age:20,email:"jag rahmati elayhe"}
+
+// ];
+// var Fname=prompt("نام خود را وارد کنید:");
+// var Lname=prompt("نام خانوادگی خود را وارد کنید");
+// var Age=parseFloat(prompt("سنت چقدره", 2));
+// var Email=prompt("ایمیل خود را وارد کنید");
+
+// if (Fname.length<3 || Fname.length>10){
+//   alert("نام باید بیش از سه کاراکتر کمتر از 10 حرف باشه")
+// }else if(Lname.length<3 || Lname.length>15){
+//   alert("بیش از 3 کاراکتر کمتر از  15 کاراکتر باشه")
+// }else if (Age===Number){
+//   alert("error")
+// }
+
+
+
+
+
+
+// var newuser=[
+//   {Firstname:Fname,
+//     Lastname:Lname,
+//     age:Age,
+//     email:Email
+//   }
+// ];
+
+// users.push(newuser)
+// console.log(users);
+
+
+
+
+
+
+
+
+
+
+//دیتا بیسی برای ذخیره اطلاعات کاربران داشته باشید 
+// وسپس به کمک متد فور ایچ  اطلاعات هر یوزر را  به  صورت جداگانه در کنسول نمایش دهید
+var data_users=[
+  {name:"sam",age:20,email:"ali@gmail.com"},
+  {name:"ali",age: 30,email:"jali@gmail.com"}
 ];
-var Fname=prompt("نام خود را وارد کنید:");
-var Lname=prompt("نام خانوادگی خود را وارد کنید");
-var Age=parseFloat(prompt("سنت چقدره", 2));
-var Email=prompt("ایمیل خود را وارد کنید");
 
-if (Fname.length<3 || Fname.length>10){
-  alert("نام باید بیش از سه کاراکتر کمتر از 10 حرف باشه")
-}else if(Lname.length<3 || Lname.length>15){
-  alert("بیش از 3 کاراکتر کمتر از  15 کاراکتر باشه")
-}else if (Age===Number){
-  alert("error")
-}
-
-
-
-
-
-
-var newuser=[
-  {Firstname:Fname,
-    Lastname:Lname,
-    age:Age,
-    email:Email
-  }
-];
-
-users.push(newuser)
-console.log(users);
-
-
-
-
-
+data_users.forEach(function(user){
+  console.log("name:",user.name,"  Age:",user.age,"  email:",user.email)
+})
