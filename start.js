@@ -2733,11 +2733,42 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 //دیتا بیسی برای ذخیره اطلاعات کاربران داشته باشید 
 // وسپس به کمک متد فور ایچ  اطلاعات هر یوزر را  به  صورت جداگانه در کنسول نمایش دهید
-var data_users=[
-  {name:"sam",age:20,email:"ali@gmail.com"},
-  {name:"ali",age: 30,email:"jali@gmail.com"}
-];
+// var data_users=[
+//   {name:"sam",age:20,email:"ali@gmail.com"},
+//   {name:"ali",age: 30,email:"jali@gmail.com"}
+// ];
 
-data_users.forEach(function(user){
-  console.log("name:",user.name,"  Age:",user.age,"  email:",user.email)
-})
+// data_users.forEach(function(user){
+//   console.log("name:",user.name,"  Age:",user.age,"  email:",user.email)
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+// کلمه ای از کابر بگیرید وبرسی کنید از دو طرف چپ و راست به یک شکل خوانده میشود یا نه 
+
+
+var vocabe=prompt("کلمه مورد نظر خود را وارد کنید :");
+arrayKalame=vocabe.split('');
+wordReverce=arrayKalame.reverse();
+wordreverceMain=wordReverce.join('');
+
+// console.log(arrayKalame,"  ",wordReverce,"  ",wordreverceMain);
+
+
+
+if(wordreverceMain===vocabe){
+    console.log("پیدا شد")
+  }
+  else{
+    console.log("پیدا نشد");
+  }
