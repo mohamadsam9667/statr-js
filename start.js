@@ -2805,53 +2805,123 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-var todo_list=[
+// var todo_list=[
 
-  {id:1,name:"sam",disply:"active"},,
-  {id:2,name:"hasan",disply:"noactive"},
-  {id:3,name:"ilia",disply:"active"}
+//   {id:1,name:"sam",disply:"active"},,
+//   {id:2,name:"hasan",disply:"noactive"},
+//   {id:3,name:"ilia",disply:"active"}
 
-];
+// ];
 
-var input=prompt(" 1. اضافه کردن به تودو \n 2.حذف تودو  \n 3.تغیر وضعیت")
+// var input=prompt(" 1. اضافه کردن به تودو \n 2.حذف تودو  \n 3.تغیر وضعیت")
 
-if (input==='1'){
+// if (input==='1'){
   
- var  Id=4;
- var  Name=prompt ("نام مد نظر خود را وارد کنید:");
- var  Disply=prompt("وضعیت فعال با شه یا غیر فعال:");
- new_todo={
-  id:Id,
-  name:Name,
-  disply:Disply
- };
+//  var  Id=4;
+//  var  Name=prompt ("نام مد نظر خود را وارد کنید:");
+//  var  Disply=prompt("وضعیت فعال با شه یا غیر فعال:");
+//  new_todo={
+//   id:Id,
+//   name:Name,
+//   disply:Disply
+//  };
 
- todo_list.push(new_todo);
- console.log(todo_list);
+//  todo_list.push(new_todo);
+//  console.log(todo_list);
 
-}
+// }
 
-else if(input==='2'){
-  todo_list.splice(todo_list.length-1,1);
-  console.log(todo_list);
-}
+// else if(input==='2'){
+//   todo_list.splice(todo_list.length-1,1);
+//   console.log(todo_list);
+// }
 
-else if(input==='3'){
-      var choise=Number(prompt("کدوم خونه انتخابته"));
-    var disply=prompt("وضعیت چی بشه ");
-      todo_list.forEach(function(index){
-        if(index.id===choise){
-          index.disply=disply;
-          console.log(todo_list)
-        }
-      })
+// else if(input==='3'){
+//       var choise=Number(prompt("کدوم خونه انتخابته"));
+//     var disply=prompt("وضعیت چی بشه ");
+//       todo_list.forEach(function(index){
+//         if(index.id===choise){
+//           index.disply=disply;
+//           console.log(todo_list)
+//         }
+//       })
 
-}
+// }
 
 
-else{
-  console.log("khar")
-}
+// else{
+//   console.log("khar")
+// }
+
+
+
+
+
+
+
+
+// var employee=[
+//   {name:"sam",work:"js"},
+//   {name:"ali",work:"css"},
+//   {name:"sara",work:"pyton"},
+//   {name:"sahar",work:"php"}
+// ];
+
+
+// var name_employee=prompt("نام کارمند مد نظر برای افزودن تسک:");
+// var work_employee=prompt(" نام خود تسکی که به کارمند می خواهید بسپارید");
+
+
+// employee.forEach(function(index){
+//   if(name_employee===index.name){
+//     index.work=work_employee;
+//     console.log(employee)
+//   }
+  
+// })
+ // همون  برنامه بالا رو در باید با ابجکتی از آرایه ها میساختیم
+
+
+ var employee={
+  sam:["test","js code"],
+  mamd:["wordpress ","java code"],
+  sara:["css ","tailwind"],
+  alireza:["pyton","php","css","html"]
+ }
+
+ var work_employee=prompt("نام کار مد نظر را وارد کنید همان تسک :");
+var name_employee=prompt("نام کارمند مد نظر خود را وارد کنید:");
+var employee_task=employee[name_employee];
+console.log(employee_task)
+employee_task.push(work_employee);
+console.log(employee);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
