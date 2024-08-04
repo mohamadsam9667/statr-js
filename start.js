@@ -2882,19 +2882,82 @@ var kala_name = prompt("نام کالا شما چیست؟");
  // همون  برنامه بالا رو در باید با ابجکتی از آرایه ها میساختیم
 
 
- var employee={
-  sam:["test","js code"],
-  mamd:["wordpress ","java code"],
-  sara:["css ","tailwind"],
-  alireza:["pyton","php","css","html"]
- }
+//  var employee={
+//   sam:["test","js code"],
+//   mamd:["wordpress ","java code"],
+//   sara:["css ","tailwind"],
+//   alireza:["pyton","php","css","html"]
+//  }
 
- var work_employee=prompt("نام کار مد نظر را وارد کنید همان تسک :");
-var name_employee=prompt("نام کارمند مد نظر خود را وارد کنید:");
-var employee_task=employee[name_employee];
-console.log(employee_task)
-employee_task.push(work_employee);
-console.log(employee);
+//  var work_employee=prompt("نام کار مد نظر را وارد کنید همان تسک :");
+// var name_employee=prompt("نام کارمند مد نظر خود را وارد کنید:");
+// var employee_task=employee[name_employee];
+// console.log(employee_task)
+// employee_task.push(work_employee);
+// console.log(employee);
+
+
+
+
+document.addEventListener("DOMContentLoaded",function(){
+  var qualitySelect=document.getElementById('quality');
+  var image=document.getElementById('image');
+  
+  qualitySelect.addEventListener("change",function(){
+    var qualityValue=qualitySelect.value;
+    console.log(qualityValue);
+    var img=document.createElement('img');
+    image.innerHTML=" ";
+    
+    if (qualityValue==='144'){
+      img.src='../image/heart144.jpg';
+      img.alt="saminiran"
+   
+    }
+     else if(qualityValue==='240'){ 
+      // var img=document.createElement('img');
+      img.src='../image/heart240.jpg';
+      img.alt="240 quality";
+
+     }  else if (qualityValue==='360'){
+
+      img.src="../image/heart360.jpg";
+      img.alt="quality 360 ";
+     } else if (qualityValue==='480'){
+
+      img.src="../image/heart480.jpg";
+      img.alt="quality 480 ";
+     }else if(qualityValue==='720'){
+      img.src='../image/heart720.jpg';
+      img.alt='720 quality'
+     }
+
+
+     else   {
+      console.log("dsam")
+      return;
+     }
+    //  image.innerHTML="";
+      image.appendChild(img);
+      // console.log(image,img)
+    
+  })
+  
+  
+  
+ 
+  
+})
+
+
+
+
+
+
+
+
+
+
 
 
 

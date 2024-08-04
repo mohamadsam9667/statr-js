@@ -5,12 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./style.css">
+  <style>
+    body{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box; 
+    }
+    .all{
+      font-size: 20px;
+
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+    }
+    h1{
+      margin: 30px auto ;
+    }
+    #quality{
+      font-size: 20px;
+      margin: auto;
+    }
+    .optin1,.optin2,.optin3{
+      margin: auto;
+    
+    }
+#image{
+  display: flex;
+  margin: 30px auto;
+}
+
+  </style>
+
 </head>
 <body>
 
+<div class="all">
 
-
-  <h1>ای خدا</h1>
+  <h1>اگه میخوای بدونی عشق چیه </h1>
+  <h1>کلیک کن</h1>
+  <select id="quality">
+    <option class="optin1"  value="144">144p</option>
+    <option class="optin2"  value="240">240p</option>
+    <option class="optin3"  value="360">360p</option>
+    <option class="optin4"  value="480">480p</option>
+    <option class="optin5"  value="720">720p</option>
+  </select>
+  <div id="image"></div>
+</div>
    <script src="start.js"></script>
 </body>
 </html>
