@@ -3013,25 +3013,25 @@ var kala_name = prompt("نام کالا شما چیست؟");
 // به این شکل که سوالات را به کاربر نمایش داده
 //  و پاسخ آن را دریافت کرده و به ازای هر پاسخ صحیح یک امتیاز بدهید
 // در پایان آزمون امتیاز را نمایش دهید
-var quest=[
-  {id:1,title:"2+2",answer:'4'},
-  {id:2,title:"2*4",answer:'8'},
-  {id:3,title:'7**2',answer:'49'},
-  {id:4,title:'12/4',answer:'3'},
-  {id:5,title:'100/25',answer:'4'}
-];
+// var quest=[
+//   {id:1,title:"2+2",answer:'4'},
+//   {id:2,title:"2*4",answer:'8'},
+//   {id:3,title:'7**2',answer:'49'},
+//   {id:4,title:'12/4',answer:'3'},
+//   {id:5,title:'100/25',answer:'4'}
+// ];
 
-var score =0;
+// var score =0;
 
-quest.forEach(function(main){
-  var inpute=prompt(" :جواب وارد کن",main.title)
+// quest.forEach(function(main){
+//   var inpute=prompt(" :جواب وارد کن"+main.title)
 
-if(inpute===main.answer){{
-  score++;
-}
-}
-})
-alert(`تعداد جواب های درست ${score}`);
+// if(inpute===main.answer){{
+//   score++;
+// }
+// }
+// })
+// alert(`تعداد جواب های درست ${score}`);
 
 
 
