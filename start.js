@@ -2899,62 +2899,139 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
-document.addEventListener("DOMContentLoaded",function(){
-  var qualitySelect=document.getElementById('quality');
-  var image=document.getElementById('image');
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.addEventListener("DOMContentLoaded",function(){
+//   var qualitySelect=document.getElementById('quality');
+//   var image=document.getElementById('image');
   
-  qualitySelect.addEventListener("change",function(){
-    var qualityValue=qualitySelect.value;
-    console.log(qualityValue);
-    var img=document.createElement('img');
-    image.innerHTML=" ";
+//   qualitySelect.addEventListener("change",function(){
+//     var qualityValue=qualitySelect.value;
+//     console.log(qualityValue);
+//     var img=document.createElement('img');
+//     image.innerHTML=" ";
     
-    if (qualityValue==='144'){
-      img.src='../image/heart144.jpg';
-      img.alt="saminiran"
+//     if (qualityValue==='144'){
+//       img.src='../image/heart144.jpg';
+//       img.alt="saminiran"
    
-    }
-     else if(qualityValue==='240'){ 
-      // var img=document.createElement('img');
-      img.src='../image/heart240.jpg';
-      img.alt="240 quality";
+//     }
+//      else if(qualityValue==='360'){ 
+//       // var img=document.createElement('img');
+//       img.src='../image/heart240.jpg';
+//       img.alt="240 quality";
 
-     }  else if (qualityValue==='360'){
+//      }  else if (qualityValue==='240'){
 
-      img.src="../image/heart360.jpg";
-      img.alt="quality 360 ";
-     } else if (qualityValue==='480'){
+//       img.src="../image/heart360.jpg";
+//       img.alt="quality 360 ";
+//      } else if (qualityValue==='480'){
 
-      img.src="../image/heart480.jpg";
-      img.alt="quality 480 ";
-     }else if(qualityValue==='720'){
-      img.src='../image/heart720.jpg';
-      img.alt='720 quality'
-     }
+//       img.src="../image/heart480.jpg";
+//       img.alt="quality 480 ";
+//      }else if(qualityValue==='720'){
+//       img.src='../image/heart720.jpg';
+//       img.alt='720 quality'
+//      }
 
 
-     else   {
-      console.log("dsam")
-      return;
-     }
-    //  image.innerHTML="";
-      image.appendChild(img);
-      // console.log(image,img)
+//      else   {
+//       console.log("dsam")
+//       return;
+//      }
+//     //  image.innerHTML="";
+//       image.appendChild(img);
+//       // console.log(image,img)
     
-  })
+//   })
   
   
   
  
   
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// refrence and primitive
+
+// var username1=['sam','ali','sara','negar'];
+// var username2=username1;
+// username2[2]='ahmad';
+// console.log("username1:",username1,"\nusername2: \n ",username2);
+
+
+
+
+
+//یک سامانه فروش بلیط آنلاین پیاده سازی کنید
+//  به این صورت که مبدا سفر استان را از کاربر دریافت کرده و سپس شهر های استان وارد شده را در کنسول نمایش بدهید
+
+
+// var database={
+//   قزوین : ["الوند و زیباشهر وقزوین آوج الموت وباراجین"],
+//   تهران :[" مولوی شمرون الهیه سعادآباد فرشته ایستگاه یخچال شهریار شهر زیبا چیتگر "]
+// }
+// var nameCity=prompt("نام استان خود را وارد کنید:");
+ 
+// console.log(database[nameCity]);
+
+
+
+
+
+
+
+
+
+
+
+// یک آزمون آنلاین پیاده سازی کنید
+// به این شکل که سوالات را به کاربر نمایش داده
+//  و پاسخ آن را دریافت کرده و به ازای هر پاسخ صحیح یک امتیاز بدهید
+// در پایان آزمون امتیاز را نمایش دهید
+var quest=[
+  {id:1,title:"2+2",answer:'4'},
+  {id:2,title:"2*4",answer:'8'},
+  {id:3,title:'7**2',answer:'49'},
+  {id:4,title:'12/4',answer:'3'},
+  {id:5,title:'100/25',answer:'4'}
+];
+
+var score =0;
+
+quest.forEach(function(main){
+  var inpute=prompt(" :جواب وارد کن",main.title)
+
+if(inpute===main.answer){{
+  score++;
+}
+}
 })
-
-
-
-
-
-
-
+alert(`تعداد جواب های درست ${score}`);
 
 
 
