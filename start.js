@@ -3135,10 +3135,44 @@ Plain text
 */
 
 
-var input=prompt("عدد مورد نظرو بده");
-console.log(input)
-var index=input.split('')
-console.log(Number(index[0])+Number(index[2]));
+// var input=prompt("عدد مورد نظرو بده");
+// console.log(input)
+// var index=input.split('')
+// console.log(Number(index[0])+Number(index[2]));
+
+
+//اعدادی را به تعداد دلخواه از کاربر گرفته و داخل آرایه ای ذخیره کنید و سپس میانگین آن ها را محاسبه کرده و نمایش دهید 
+
+// var number=Number(prompt("تعداد اعدادی که میخواهید وارد کنید؟:"));
+// console.log(number);
+// var a=[]
+// for (var i=0;i<number;i++){
+//    a[i]=Number(prompt(`array[${i}]=`));
+//   //  console.log(a[i]);
+// }
+
+// var sum=0;
+// a.forEach(function(numbers){
+//   sum=sum+numbers;
+// })
+
+// console.log(sum/number);
+
+var users=[
+  {id:1,name:"sam",family:"ahmadi"},
+  {id:2,name:"sara",family:"ahmad"}
+];
+
+console.log(users[1]["name"]);
+console.log(users[1].name);
+
+
+
+
+
+
+
+
 
 
 
