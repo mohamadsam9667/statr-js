@@ -3158,13 +3158,91 @@ Plain text
 
 // console.log(sum/number);
 
-var users=[
-  {id:1,name:"sam",family:"ahmadi"},
-  {id:2,name:"sara",family:"ahmad"}
+// var users=[
+//   {id:1,name:"sam",family:"ahmadi"},
+//   {id:2,name:"sara",family:"ahmad"}
+// ];
+
+// console.log(users[1]["name"]);
+// console.log(users[1].name);
+
+//یک سامانه ثبت نام پیاده ساز کنید به این شکل که 
+//سه کار بر داری یه آرایه هم برای ذخیره اطلاعات کاربران داریم
+// اگر کسی خواست ثبت نامه کنه اسم و خانوادگی ایمیل میگیری ودر آرایه ذخیره کن
+//پس از انجام عمل ثبت نام عمل تکتک کاربران را لاگ بگیرید
+
+
+// var user=[
+//   {id:1,name:"ilia",family:"razazadeh",email:"sam@gmail.com"},
+//   {id:2,name:"hasan",family:"khani" ,email:"hasan@gmail.com"},
+//   {id:3,name:"sam",family:"rezaz " ,email:"ilia@gmail.com"}
+// ];
+
+// var nameUser=prompt("نام خود را وارد کنید:");
+// var familyUser=prompt("نام خانوادگی خودرا وارد کنید:");
+// var emailUser=prompt("ایمیل خود را وارد کنید:");
+
+// var newUser={
+//   id:4,
+//   name:nameUser,
+//   family:familyUser,
+//   email:emailUser
+// };
+
+// user.unshift(newUser);
+// console.log(user);
+
+
+
+
+
+
+//دیتا بیسی برای ذخیره اطلاعات کاربران داشته باشید (آرایه ای از آبجکت ها )
+//و سپس به کمک متد فورایچ اطلاعات کاربر را به صورت جداگانه نمایش دهید
+
+
+// let users=[
+//   {id:1,name:"sam",family:"ahmadi"},
+//   {id:1,name:"khadije",family:"ahmad"},
+//   {id:1,name:"sara",family:"rahmaty"}
+// ];
+
+
+// users.forEach(function(item){
+//   console.log(item);
+
+// })
+
+
+var store=["sabon","shampo","roghan","makarani","branj","sabzi","goje","khiyar","shokolate"];
+
+var shopCart=[
+  {id:1,proc:"sabon"},
+  {id:2,proc:"branj"},
+  {id:3,proc:"goje"}
 ];
 
-console.log(users[1]["name"]);
-console.log(users[1].name);
+var nameProc=prompt("نام محصول به فینگکلیش که میخوای اضافه کنی");
+
+var isfound=store.some(function(item){
+  console.log(item)
+ 
+      return nameProc===item ;
+    
+})
+if (isfound===true){
+  var newProc={
+    id:4,
+    proc:nameProc
+  };
+  shopCart.push(newProc);
+  console.log(shopCart)
+}else{
+  console.log("موجود نیست !");
+}
+
+
+
 
 
 
