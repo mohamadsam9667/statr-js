@@ -3041,6 +3041,36 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
+//پروژه ساخت ماشین حساب 
+
+// var num1=+prompt("عدد اول مورد نظر خود را وارد کنید:");
+// var num2=+prompt("عدد دوم مد نظر خود را وارد کنید:");
+
+// var UserOperator=prompt("عملگر مورد نظر بگو :");
+
+// switch(UserOperator){
+
+//   case '+':{console.log(num1+num2)};break;
+//   case '-':{console.log(num1-num2)};break;
+//   case '/':{console.log(num1/num2)};break;
+//   case '%':{console.log(num1%num2)};break;
+//   case "*":{console.log(num1*num2);break;
+  
+
+
+//   }
+
+
+
+
+// }
+
+
+
+
+
+
+// quera questions
 
 
 
@@ -3049,19 +3079,66 @@ var kala_name = prompt("نام کالا شما چیست؟");
 
 
 
+/*در این سوال به شما دو عدد صحیح مثل 
+a
+a و 
+b
+b داده می‌شود. از شما می‌خواهیم برنامه‌ای بنویسید که مقدار 
+a
+a و 
+b
+b را دریافت کند و 
+a
++
+b
+a+b را چاپ کند.
+
+ورودی
+در تنها سطر ورودی، دو عدد صحیح 
+a
+a و 
+b
+b که با یک فاصله از هم جدا شده‌اند، داده می‌شود.
+
+1
+≤
+a
+,
+b
+≤
+1
+0
+0
+1≤a,b≤100
+
+خروجی
+در تنها سطر خروجی، مقدار 
+a
++
+b
+a+b را چاپ کنید.
+
+مثال‌ها
+ورودی نمونه ۱
+3 5
+خروجی نمونه ۱
+8
+Plain text
+ورودی نمونه ۲
+1 1
+Plain text
+خروجی نمونه ۲
+2
+Plain text
+راه‌حل JavaScript
+
+*/
 
 
-
-
-
-
-
-
-
-
-
-
-
+var input=prompt("عدد مورد نظرو بده");
+console.log(input)
+var index=input.split('')
+console.log(Number(index[0])+Number(index[2]));
 
 
 
