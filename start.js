@@ -3214,32 +3214,82 @@ Plain text
 // })
 
 
-var store=["sabon","shampo","roghan","makarani","branj","sabzi","goje","khiyar","shokolate"];
 
-var shopCart=[
-  {id:1,proc:"sabon"},
-  {id:2,proc:"branj"},
-  {id:3,proc:"goje"}
-];
 
-var nameProc=prompt("نام محصول به فینگکلیش که میخوای اضافه کنی");
 
-var isfound=store.some(function(item){
-  console.log(item)
+
+
+
+
+
+
+
+
+
+// var store=["sabon","shampo","roghan","makarani","branj","sabzi","goje","khiyar","shokolate"];
+
+// var shopCart=[
+//   {id:1,proc:"sabon"},
+//   {id:2,proc:"branj"},
+//   {id:3,proc:"goje"}
+// ];
+
+// var nameProc=prompt("نام محصول به فینگکلیش که میخوای اضافه کنی");
+
+// var isfound=store.some(function(item){
+//   console.log(item)
  
-      return nameProc===item ;
+//       return nameProc===item ;
     
-})
-if (isfound===true){
-  var newProc={
-    id:4,
-    proc:nameProc
-  };
-  shopCart.push(newProc);
-  console.log(shopCart)
-}else{
-  console.log("موجود نیست !");
+// })
+// if (isfound===true){
+//   var newProc={
+//     id:4,
+//     proc:nameProc
+//   };
+//   shopCart.push(newProc);
+//   console.log(shopCart)
+// }else{
+//   console.log("موجود نیست !");
+// }
+
+
+
+
+
+
+
+// سم نوشتم
+
+
+
+
+
+// let s = readline();
+
+
+var s=prompt("عدد بده")
+var [a,b]=s.split(' ').map(Number)
+
+if (!isNaN(a)&& !isNaN(b)){
+  console.log(a+b)
+
 }
+
+
+//سم نوشتم
+
+
+
+
+// var s = prompt("Enter two numbers separated by a space:");
+// var [a, b] = s.split(' ').map(Number);
+
+// if (!isNaN(a) && !isNaN(b)) {
+//     console.log(a + b);
+// } else {
+//     console.log("Please enter valid numbers.");
+// }
 
 
 
