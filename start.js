@@ -3268,13 +3268,13 @@ Plain text
 // let s = readline();
 
 
-var s=prompt("عدد بده")
-var [a,b]=s.split(' ').map(Number)
+// var s=prompt("عدد بده")
+// var [a,b]=s.split(' ').map(Number)
 
-if (!isNaN(a)&& !isNaN(b)){
-  console.log(a+b)
+// if (!isNaN(a)&& !isNaN(b)){
+//   console.log(a+b)
 
-}
+// }
 
 
 //سم نوشتم
@@ -3295,13 +3295,27 @@ if (!isNaN(a)&& !isNaN(b)){
 
 
 
+//method every();
 
 
+// var ages=[11,12,19];
+// var i=ages.every(function(age){
+//   return age>10;
+// })
+// console.log(i)
 
 
+// var users=[18,19,32,42,23,26,27];
 
+// var isAllow=users.every(function(age){
+//   return age>=18;
+// })
 
+// if(isAllow==true){
+//   console.log("اجازه داری تماس بگیری");
 
-
+// }else{
+//   console.log("اجازه نداری تماس بگیری");
+// }
 
 
