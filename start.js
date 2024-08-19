@@ -3405,3 +3405,87 @@ Plain text
 //   alert("در لیست نیست از فروشگاه برو بیرون!");
 // }
 
+// var numbers=[19,18,32,9,76,56,10,21];
+
+// var change =numbers.filter(function(age){
+//   return age>18
+// })
+// console.log(change)
+
+
+
+var store =[
+
+{id:1,name:"banana",price:10},
+{id:2,name:"tomato",price:20},
+{id:3,name:"laptop",price:3000},
+{id:4,name:"mobile",price:1000},
+{id:5,name:"muse",price:300},
+{id:6,name:"water",price:10},
+{id:7,name:"book",price:1},
+{id:8,name:"pensel",price:4},
+{id:9,name:"iphone",price:300},
+{id:10,name:"bag",price:400},
+{id:11,name:"chair",price:1200}
+]
+
+var cartBasket=[
+
+  {id:1,name:"banana",price:100},
+  {id:2,name:"tomato",price:100},
+  {id:3,name:"laptop",price:3000},
+  {id:4,name:"mobile",price:1000},
+  {id:5,name:"muse",price:300},
+  {id:6,name:"water",price:10}
+
+]
+ 
+var nameProduct=prompt("کالای مد نظر خود را وارد کنید:");
+
+var kala;
+var isExiste=store.some(function(proc){
+ if(proc.name===nameProduct){
+   
+   kala=proc
+   return true ;
+ }
+})
+
+if (isExiste===true){
+  
+
+  var newprduct={
+    id:7,
+    name:kala.name,
+    price:kala.price
+  }
+   
+  var cost
+
+  cartBasket.push(newprduct);
+  var counter=  cartBasket.filter(function(item){
+    
+    return item.price<1000
+  
+  })
+
+cost=counter.length*10;
+  console.log(cost)
+
+var sum=0;
+cartBasket.forEach(function(proc){
+  sum+=proc.price
+})
+console.log(sum)
+
+  
+}else{
+  console.log("error")
+}
+
+
+
+
+
+
+
