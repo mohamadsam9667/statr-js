@@ -3319,3 +3319,88 @@ Plain text
 // }
 
 
+//پروژه فروشگاه را درنظر بگیر
+//محصولات فروشگاه را داخل آرایه ای ذخیره کرده و آرایه ای برای سبد خرید در نظر بگیرید 
+// سه محصول به طور دیفالت در سبد خرید هست 
+
+// منویی یه کاربر نمایش دهید که شامل دو گزینه هست منویی برای حذف محصول از سبد خرید 
+// منویی برای  اضافه کردن محصول به شبد خرید
+ 
+
+
+
+
+var store=[  
+    {id:1,name:"sabon",price:"$1"},
+    {id:2,name:"shampo",price:"$2"},
+    {id:3,name:"oil",price:"$10"}  ,
+    {id:4,name:"banana",price:"$1"},
+    {id:5,name:"tomato",price:"$2"},
+    {id:6,name:"iscream",price:"$10"}  
+  ];
+
+var cart=[  
+  {id:1,name:"sabon",price:"$1"},
+  {id:2,name:"shampo",price:"$2"},
+  {id:3,name:"oil",price:"$10"}  
+];
+
+var choise=prompt("لیست منو :\n 1.اضافه کردن محصول به سبد خرید:\n 2.حذف محصول از سبد خرید");
+
+
+
+if(choise=='1'){
+
+  console.log("میخواد بخره");
+
+  var nameProduct=prompt("نام محصول مورد نظر وارد کنید:");
+
+  var ispro=  store.some(function(proc){
+    return proc.name===nameProduct;
+  })
+  var index=  store.findIndex(function(pri){
+    return pri.name===nameProduct;
+  })
+    if(ispro===true){
+    
+   
+    var newProduct={
+     id:4,
+     name:nameProduct,
+     price:store[index].price
+   }
+   cart.push(newProduct);
+   console.log(cart)
+
+
+    }  else{
+
+  console.log("در فروشگاه نداریم.");
+ }
+  
+
+
+}else if (choise=='2'){
+    
+  var nameRemove=prompt("نام محصولی که میخواهی حذف کنی");
+  
+var isExiste=store.some(function(item){
+    return item.name=nameRemove;
+  })
+  var indexRemove=  store.findIndex(function(pri){
+    return pri.name===nameRemove;
+  })
+  if(isExiste===true){
+  var count=cart.splice(indexRemove,1);
+  console.log(cart);
+
+  }else{
+    console.log("موجود نیست")
+  }
+
+
+
+}else{
+  
+  alert("در لیست نیست از فروشگاه برو بیرون!");
+}
