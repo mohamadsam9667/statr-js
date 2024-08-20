@@ -3561,74 +3561,102 @@ Plain text
 
 
 
+//Task Maneger Exercise
 
-var todoList=[
+// var todoList=[
   
-{id:1,name:"sam",disply:"noActive"},
-{id:2,name:"hasan",disply:"active"},
-{id:3,name:"sara",disply:"noActive"},  
- {id:4,name:"sina",disply:"active"}, 
+// {id:1,name:"sam",disply:"noActive"},
+// {id:2,name:"hasan",disply:"active"},
+// {id:3,name:"sara",disply:"noActive"},  
+//  {id:4,name:"sina",disply:"active"}, 
 
-  ]
+//   ]
 
-var choiseUser=prompt("1.اضافه کردن به تودو \n2.حذف کردنتودو \n3.تغییر وضعیت");
+// var choiseUser=prompt("1.اضافه کردن به تودو \n2.حذف کردنتودو \n3.تغییر وضعیت");
 
-if(choiseUser==='1'){
+// if(choiseUser==='1'){
 
-  // part add
-  var nameUser=prompt('نام خودرو وارد کنید:')
-  var newTodo={
-    id:5,
-    name:nameUser,
-    disply:'active'
-  }
-  todoList.push(newTodo);
-console.log(todoList)
+//   // part add
+//   var nameUser=prompt('نام خودرو وارد کنید:')
+//   var newTodo={
+//     id:5,
+//     name:nameUser,
+//     disply:'active'
+//   }
+//   todoList.push(newTodo);
+// console.log(todoList)
 
-}else if(choiseUser==='2'){
+// }else if(choiseUser==='2'){
 
-  // part remove
+//   // part remove
 
-  var nameRemove=prompt("نام تو دویی که میخوای حذف کنی :");
+//   var nameRemove=prompt("نام تو دویی که میخوای حذف کنی :");
 
-  var isExiste=todoList.some(function(item){
-    return item.name===nameRemove;
-  })
+//   var isExiste=todoList.some(function(item){
+//     return item.name===nameRemove;
+//   })
 
-    if(isExiste){
+//     if(isExiste){
     
-    var index=todoList.findIndex(function(user){
-      return user.name===nameRemove
-     })
+//     var index=todoList.findIndex(function(user){
+//       return user.name===nameRemove
+//      })
 
-     console.log(index);
-    todoList.splice(index,1);
+//      console.log(index);
+//     todoList.splice(index,1);
 
-     console.log(todoList)
-    }else{
-    console.log("همچین فردی در لیست بااین نام یافت نشد")
-   }
+//      console.log(todoList)
+//     }else{
+//     console.log("همچین فردی در لیست بااین نام یافت نشد")
+//    }
   
-}else if(choiseUser==='3'){
-  // console.log("disply change")
- var nameUser=prompt("نام تو دویی که مخوای وضعیتش انجام شده بشه");
+// }else if(choiseUser==='3'){
+//   // console.log("disply change")
+//  var nameUser=prompt("نام تو دویی که مخوای وضعیتش انجام شده بشه");
 
- todoList.forEach(function(worker){
+//  todoList.forEach(function(worker){
   
-  if(nameUser===worker.name){
+//   if(nameUser===worker.name){
 
-    worker.disply='active!';
-  }
- })
- console.log(todoList)
+//     worker.disply='active!';
+//   }
+//  })
+//  console.log(todoList)
  
 
 
 
-}else{
-  console.log("exit")
+// }else{
+//   console.log("exit")
+// }
+// alert(" من خدام")
+
+
+var taskManager={
+ 
+  amir:['java script' , 'css'],
+  sam:["java script" ,' react ',' nodejs'],
+  sara:["designer" , 'css' , "html"],
+  fatemeh:['c++ ',' c# ',' java']
+
 }
-alert(" من خدام")
+
+var boos=prompt("مدیر سایت تسک جدید به چه کسی اضافه شود؟");
+var task=prompt("چیه تسک؟")
+console.log(taskManager[boos])
+var newq=taskManager[boos]
+taskManager[boos].push(task)
+// console.log(indexNew)
+console.log(taskManager)
+
+// taskManager[boos][indexNew]=task;
+// var indexNew=taskManager[boos].length;
+
+
+
+
+
+
 
 
 
