@@ -3414,74 +3414,226 @@ Plain text
 
 
 
-var store =[
 
-{id:1,name:"banana",price:10},
-{id:2,name:"tomato",price:20},
-{id:3,name:"laptop",price:3000},
-{id:4,name:"mobile",price:1000},
-{id:5,name:"muse",price:300},
-{id:6,name:"water",price:10},
-{id:7,name:"book",price:1},
-{id:8,name:"pensel",price:4},
-{id:9,name:"iphone",price:300},
-{id:10,name:"bag",price:400},
-{id:11,name:"chair",price:1200}
-]
 
-var cartBasket=[
 
-  {id:1,name:"banana",price:100},
-  {id:2,name:"tomato",price:100},
-  {id:3,name:"laptop",price:3000},
-  {id:4,name:"mobile",price:1000},
-  {id:5,name:"muse",price:300},
-  {id:6,name:"water",price:10}
 
-]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var store =[
+
+// {id:1,name:"banana",price:10},
+// {id:2,name:"tomato",price:20},
+// {id:3,name:"laptop",price:3000},
+// {id:4,name:"mobile",price:1000},
+// {id:5,name:"muse",price:300},
+// {id:6,name:"water",price:10},
+// {id:7,name:"book",price:1},
+// {id:8,name:"pensel",price:4},
+// {id:9,name:"iphone",price:300},
+// {id:10,name:"bag",price:400},
+// {id:11,name:"chair",price:1200}
+// ]
+
+// var cartBasket=[
+
+//   {id:1,name:"banana",price:100},
+//   {id:2,name:"tomato",price:100},
+//   {id:3,name:"laptop",price:3000},
+//   {id:4,name:"mobile",price:1000},
+//   {id:5,name:"muse",price:300},
+//   {id:6,name:"water",price:10}
+
+// ]
  
-var nameProduct=prompt("کالای مد نظر خود را وارد کنید:");
+// var nameProduct=prompt("کالای مد نظر خود را وارد کنید:");
 
-var kala;
-var isExiste=store.some(function(proc){
- if(proc.name===nameProduct){
+// var kala;
+// var isExiste=store.some(function(proc){
+//  if(proc.name===nameProduct){
    
-   kala=proc
-   return true ;
- }
-})
+//    kala=proc
+//    return true ;
+//  }
+// })
 
-if (isExiste===true){
+// if (isExiste===true){
   
 
-  var newprduct={
-    id:7,
-    name:kala.name,
-    price:kala.price
-  }
+//   var newprduct={
+//     id:7,
+//     name:kala.name,
+//     price:kala.price
+//   }
    
-  var cost
+//   var cost
 
-  cartBasket.push(newprduct);
-  var counter=  cartBasket.filter(function(item){
+//   cartBasket.push(newprduct);
+//   var counter=  cartBasket.filter(function(item){
     
-    return item.price<1000
+//     return item.price<1000
   
+//   })
+
+// cost=counter.length*10;
+//   console.log(cost)
+
+// var sum=0;
+// cartBasket.forEach(function(proc){
+//   sum+=proc.price
+// })
+// console.log(sum)
+
+  
+// }else{
+//   console.log("error")
+// }
+
+
+
+
+
+
+
+
+// Apllication of slice ()Methode
+// var number=[10,14,52,42,45,43];
+
+// console.log(number.slice(1,4))
+
+
+
+//Apllication  split()Method
+
+// var strings='amir/sam/hasan/abasbo/azar';
+// console.log(strings.split(''))
+
+
+
+
+//  کلمه ای از کاربر دریافت کنید و چک کنید که کلمه وارد شده از هر دو سمت (چپ وراست ) به یک صورت خوانده می شود یا خیر 
+// به عنوان مثال 
+//از هر دو طرف به یک صورت خوانده میشود
+
+
+
+
+// var userString=prompt("رشته مورد نظر خود را وارد کنید:");
+// var string=userString.split('');
+// var recursive=string.reverse();
+// var joiin=recursive.join('');
+// console.log(userString)
+// console.log(string)
+// console.log(joiin)
+
+
+
+//   if(joiin===userString){
+//     console.log("yeah");
+//   }else{console.log("no")}
+
+
+
+
+
+
+
+
+
+
+var todoList=[
+  
+{id:1,name:"sam",disply:"noActive"},
+{id:2,name:"hasan",disply:"active"},
+{id:3,name:"sara",disply:"noActive"},  
+ {id:4,name:"sina",disply:"active"}, 
+
+  ]
+
+var choiseUser=prompt("1.اضافه کردن به تودو \n2.حذف کردنتودو \n3.تغییر وضعیت");
+
+if(choiseUser==='1'){
+
+  // part add
+  var nameUser=prompt('نام خودرو وارد کنید:')
+  var newTodo={
+    id:5,
+    name:nameUser,
+    disply:'active'
+  }
+  todoList.push(newTodo);
+console.log(todoList)
+
+}else if(choiseUser==='2'){
+
+  // part remove
+
+  var nameRemove=prompt("نام تو دویی که میخوای حذف کنی :");
+
+  var isExiste=todoList.some(function(item){
+    return item.name===nameRemove;
   })
 
-cost=counter.length*10;
-  console.log(cost)
+    if(isExiste){
+    
+    var index=todoList.findIndex(function(user){
+      return user.name===nameRemove
+     })
 
-var sum=0;
-cartBasket.forEach(function(proc){
-  sum+=proc.price
-})
-console.log(sum)
+     console.log(index);
+    todoList.splice(index,1);
 
+     console.log(todoList)
+    }else{
+    console.log("همچین فردی در لیست بااین نام یافت نشد")
+   }
   
+}else if(choiseUser==='3'){
+  // console.log("disply change")
+ var nameUser=prompt("نام تو دویی که مخوای وضعیتش انجام شده بشه");
+
+ todoList.forEach(function(worker){
+  
+  if(nameUser===worker.name){
+
+    worker.disply='active!';
+  }
+ })
+ console.log(todoList)
+ 
+
+
+
 }else{
-  console.log("error")
+  console.log("exit")
 }
+alert(" من خدام")
+
+
+
+
+
 
 
 
