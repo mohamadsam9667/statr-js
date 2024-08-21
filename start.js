@@ -3775,6 +3775,45 @@ Plain text
 // console.log(main)
 
 
+// var minut=Number(prompt("دقیقه مد نظر خود را وارد کنید:"));
+// var secound=Number(prompt("ثانیه مد نظر خود را وارد کنید:"));
+
+// var convertMtoS=minut*60;
+ 
+// var sumMinute=convertMtoS+secound
+// var timer=setInterval(function(){
+
+//   if(sumMinute===0){
+//     clearInterval(timer);
+//   }
+
+//   console.log(sumMinute);
+//   sumMinute--;
+
+// },1000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setTimeout(function(num){
+  console.log(num)
+},2000,10)
+// 10 = num 
+
+
+
+
+
 
 
 
