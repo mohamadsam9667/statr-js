@@ -3631,29 +3631,46 @@ Plain text
 // }
 // alert(" من خدام")
 
-
-var taskManager={
+//methode  1
+// var taskManager={
  
-  amir:['java script' , 'css'],
-  sam:["java script" ,' react ',' nodejs'],
-  sara:["designer" , 'css' , "html"],
-  fatemeh:['c++ ',' c# ',' java']
+//   amir:['java script' , 'css'],
+//   sam:["java script" ,' react ',' nodejs'],
+//   sara:["designer" , 'css' , "html"],
+//   fatemeh:['c++ ',' c# ',' java']
 
-}
+// }
 
-var boos=prompt("مدیر سایت تسک جدید به چه کسی اضافه شود؟");
-var task=prompt("چیه تسک؟")
-console.log(taskManager[boos])
-var newq=taskManager[boos]
-taskManager[boos].push(task)
+// var boos=prompt("مدیر سایت تسک جدید به چه کسی اضافه شود؟");
+// var task=prompt("چیه تسک؟")
+// console.log(taskManager[boos])
+// var newq=taskManager[boos]
+// taskManager[boos].push(task)
+// console.log(taskManager)
+
+
+// methode 2
 // console.log(indexNew)
-console.log(taskManager)
-
 // taskManager[boos][indexNew]=task;
 // var indexNew=taskManager[boos].length;
 
 
 
+// var namecitys={
+   
+//   tabriz:['jolfa ','ahar','hashtrod'],
+//   qazvin:['alvand','qazvin','boinzahra','takestan','mohamadiye'],
+//   tehran:['tehran','sadat abad ','qeytariye','azadi'],
+//   gilan:['rasht ','rodrar','anzali','rodsar','seyah dol']
+
+
+// }
+
+// var userCity=prompt('نام استان مورد نظر:');
+
+// namecitys[userCity].forEach(function(name){
+//   console.log(name)
+// })
 
 
 
@@ -3662,6 +3679,100 @@ console.log(taskManager)
 
 
 
+
+
+
+// var allQuestions=[
+  
+//  {id:1,title:"2+4=",answer:"6",score:1},
+//  {id:2,title:"5-2=",answer:"3",score:1},
+//  {id:3,title:"sam + y",answer:"samy",score:1},
+//  {id:4,title:"10**2",answer:"100",score:1},
+//  {id:5,title:"9%3=",answer:"0",score:1},
+//  {id:6,title:"12/3=",answer:"4",score:1},
+//  {id:7,title:"پیتخت ایران",answer:"تهران ",score:1}
+
+// ]
+
+
+// var sum=0;
+// allQuestions.forEach(function(item){
+//   var answerUser=prompt(item.title);
+  
+// if(answerUser===item.answer){
+//   sum+=item.score
+
+// }
+
+// })
+// console.log(sum)
+
+
+
+
+
+
+
+
+
+
+// var number1=prompt("عدد اول مد نظرتو بگو:");
+// var operator=prompt("عملگر مد نظر خودررا وارد کنید:");
+// var number2=prompt("عدد دوم مد نظرتو بگو:");
+
+
+
+// switch(operator){
+
+//   case '+' : console.log(number1+number2);break;
+//   case '-':console.log(number1-number2);break;
+//   case '/':console.log(number1/number2);break;
+//   case '%':console.log(number1%number2);break;
+//   case '*':console.log(number1*number2);break;
+
+//   default : alert("try again later");break;
+
+// }
+
+
+
+
+// var allData=[
+  
+//   {id:2,name:"sara",username:"sarasaki",password:"eir94ff"},
+//   {id:3,name:"samane",username:"samane9",password:"12hfeir"},
+//   {id:1,name:"sam",username:"samy",password:"13hr"},
+//    {id:4,name:"samira",username:"samira12l",password:"12hwer2e2fgeir"}
+
+// ]
+
+// var usernameUser=prompt("نام کاربری خود را وارد کنید");
+
+// var passwordUser=allData.find(function(data){
+//   if (usernameUser===data.username){
+//     return data.password
+//   }
+// })
+
+// console.log(passwordUser.password);
+
+
+
+
+
+// var data=[
+  
+//     {id:1,name:"sam",age:20},
+//   {id:1,name:"sam",age:20},
+//   {id:1,name:"sam",age:20},
+//   {id:1,name:"sam",age:10}
+
+// ]
+
+// var main=data.filter(function(item){
+//   return item.age===10
+// })
+// console.log(main)
 
 
 
