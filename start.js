@@ -3893,15 +3893,24 @@ Plain text
 
 //یه تگ میسازیم بهش رنگ و کلاس و آیدی میدیم بعد اونو یکی از آیتم های تگ یو ال میکنیم
 
-  let valueUser=prompt("چی داخل تگ باشه ")
-  let newH1Element=document.createElement('h2');
-  let fatherTag=document.querySelector('ul')
-  newH1Element.innerHTML=valueUser
-  newH1Element.style.color='green';
-  console.log(newH1Element);
-  newH1Element.setAttribute('class','nameclass');
-  newH1Element.setAttribute('id','#idy')
-  fatherTag.append(newH1Element)
+  // let valueUser=prompt("چی داخل تگ باشه ")
+  // let newH1Element=document.createElement('h2');
+  // let fatherTag=document.querySelector('ul')
+  // newH1Element.innerHTML=valueUser
+  // newH1Element.style.color='green';
+  // console.log(newH1Element);
+  // newH1Element.setAttribute('class','nameclass');
+  // newH1Element.setAttribute('id','#idy')
+  // fatherTag.append(newH1Element)
 
 
 
+
+let button=document.getElementById('btn')
+  function clickIn(){
+    button.style.color='red'
+  }
+
+
+
+ 
