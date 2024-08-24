@@ -3906,11 +3906,32 @@ Plain text
 
 
 
-let button=document.getElementById('btn')
-  function clickIn(){
-    button.style.color='red'
-  }
+// let button=document.getElementById('btn')
+//   function clickIn(){
+//     button.style.color='red'
+//   }
 
 
+
+ //یک عکس لامپ و یک عکس دکمه داشته باشید
+ //با کلیک روی دکمه لامپ روشن وخاموش میشه
+
+let img=document.getElementById('image');
+
+let IsFlag=true
+
+ function changeImg(){
+if(IsFlag===true)
+{
+  img.src='./image/53962242623952001131352518123718268105134.jpg'
+  IsFlag=false  
+}
+else{
+  img.src='./image/light.jpg'
+  IsFlag=true
+}
+
+
+ }
 
  
