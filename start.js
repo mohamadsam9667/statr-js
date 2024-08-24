@@ -3805,9 +3805,9 @@ Plain text
 
 
 
-setTimeout(function(num){
-  console.log(num)
-},2000,10)
+// setTimeout(function(num){
+//   console.log(num)
+// },2000,10)
 // 10 = num 
 
 
@@ -3815,7 +3815,93 @@ setTimeout(function(num){
 
 
 
+// var input=false
 
+// setTimeout(function(){
+  
+//   if(!input){
+//     console.log("عکس پروفایل بده");
+
+//   }
+  
+
+// },5000)
+
+
+
+
+
+
+
+
+
+
+
+// var user=prompt("یه اسمی نامی چیزی بده :");
+
+// var users=['sam','ali','ahmad','sara','samaneh','taraneh','sanaz','sam haval'];
+
+
+// isFlag=false;
+
+// for(var i=0;i<users.length;i++){
+  
+//   if(users[i]===user){
+//     isFlag=true
+//   }
+
+// }
+
+
+// if(isFlag===true){
+//   console.log("find it")
+// }else{
+//   console.log("پیدا نمی شود ")
+// }
+
+
+
+
+
+// var sam=document.querySelector('.breadcrumb__link');
+// sam.innerHTML="من خدام"
+
+
+// let h1Elem=document.getElementById("title")
+// console.log(h1Elem)
+
+// let allElements=document.getElementsByClassName("list_item")
+
+// console.log(allElements)
+
+
+// let h1Elem=document.querySelectorAll('.list_item');
+// console.log(h1Elem[2].innerHTML)
+
+
+
+
+
+// let input=document.getElement ById('input');
+// console.log(input.value)
+
+
+
+
+
+
+
+//یه تگ میسازیم بهش رنگ و کلاس و آیدی میدیم بعد اونو یکی از آیتم های تگ یو ال میکنیم
+
+  let valueUser=prompt("چی داخل تگ باشه ")
+  let newH1Element=document.createElement('h2');
+  let fatherTag=document.querySelector('ul')
+  newH1Element.innerHTML=valueUser
+  newH1Element.style.color='green';
+  console.log(newH1Element);
+  newH1Element.setAttribute('class','nameclass');
+  newH1Element.setAttribute('id','#idy')
+  fatherTag.append(newH1Element)
 
 
 
