@@ -4054,13 +4054,17 @@ let all=document.body
 console.log(all)
 
 allColor=['yellow','green','red','pink','orange']
+
 setInterval(function(){
   
-  randomShet=Math.floor(Math.random()*5)
-  console.log(randomShet)
-  all.style.backgroundColor=allColor[randomShet]
+let  randomShet1=Math.floor(Math.random()*255)
+let  randomShet2=Math.floor(Math.random()*255)
+let  randomShet3=Math.floor(Math.random()*255)
 
-},3000)
+
+  all.style.backgroundColor='rgb('+randomShet1+','+randomShet2+","+randomShet3+')'
+
+},1000)
 
 
 
