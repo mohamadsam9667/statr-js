@@ -4050,8 +4050,17 @@ Plain text
 
 
 
+let all=document.body
+console.log(all)
 
+allColor=['yellow','green','red','pink','orange']
+setInterval(function(){
+  
+  randomShet=Math.floor(Math.random()*5)
+  console.log(randomShet)
+  all.style.backgroundColor=allColor[randomShet]
 
+},3000)
 
 
 
