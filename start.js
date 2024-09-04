@@ -3916,22 +3916,147 @@ Plain text
  //یک عکس لامپ و یک عکس دکمه داشته باشید
  //با کلیک روی دکمه لامپ روشن وخاموش میشه
 
-let img=document.getElementById('image');
+// let img=document.getElementById('image');
 
-let IsFlag=true
+// let IsFlag=true
 
- function changeImg(){
-if(IsFlag===true)
-{
-  img.src='./image/53962242623952001131352518123718268105134.jpg'
-  IsFlag=false  
-}
-else{
-  img.src='./image/light.jpg'
-  IsFlag=true
-}
+//  function changeImg(){
+// if(IsFlag===true)
+// {
+//   img.src='./image/53962242623952001131352518123718268105134.jpg'
+//   IsFlag=false  
+// }
+// else{
+//   img.src='./image/light.jpg'
+//   IsFlag=true
+// }
 
 
- }
+//  }
 
- 
+
+
+
+
+
+// let userName=document.getElementById('username');
+// let passWord=document.getElementById('password')
+
+
+
+// function checkLogIn(){
+
+//   if(userName.value.length<12 && passWord.value.length<8)
+// {
+//   console.log("خطا")
+// }else{
+//   console.log("ثبت نام شدی ")
+// }
+
+// }
+
+
+// let userName=document.querySelector('.username');
+// let passWord=document.querySelector('.password');
+// let massage=document.querySelector('.modal')
+
+
+// function dataValidation(){
+//   if(userName.value.length<12 && passWord.value.length<8){
+    
+//     massage.computedStyleMap.background='red';
+//     massage.style.display='flex'
+//     setTimeout(function(){
+//       massage.style.display='none'
+      
+//     },4000)
+    
+//   }else{
+    
+//     massage.innerText='ثبت نام با موفقیت انجام شد ';
+//     massage.style.background='green';
+//     massage.style.display='flex'
+
+//     setTimeout(function(){
+//       massage.style.display='none'
+//     },2000)
+
+
+
+//   }
+
+
+// }
+// let h1elem=document.querySelector('.title');
+// console.log(h1elem)
+// function changText(){
+// h1elem.innerHTML='sigma'
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+// let btn=document.querySelector('.btn');
+
+// btn.addEventListener('click',function(){
+//   console.log("sam errorrr")
+// })
+
+
+// function doJob() {
+  
+//   let btn = document.querySelector('.btn');
+//   btn.addEventListener('click', function() {
+//     console.log("sam errorrr");
+//   });
+// }
+
+// let btn=document.querySelector('.btn');
+
+
+// btn.addEventListener('click',print);
+
+// function print(e){
+//   console.log(e);
+  
+//   console.log("sam")
+// }
+
+
+// let h1Elem=document.querySelector('.title');
+
+
+// h1Elem.addEventListener('click',change)
+
+// function change(){
+//   h1Elem.classList.add('red')
+//   h1Elem.classList.remove('sm-wam')
+// }
+
+
+
+// let h1Elem=document.querySelector('.title')
+
+// let body=document.body
+// console.log(body)
+
+
+
+
+
+
+
+
+
+
+
+
+
