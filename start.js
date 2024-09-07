@@ -4050,21 +4050,125 @@ Plain text
 
 
 
-let all=document.body
-console.log(all)
 
-allColor=['yellow','green','red','pink','orange']
 
-setInterval(function(){
+
+
+
+
+
+
+
+// let all=document.body
+// console.log(all)
+
+// allColor=['yellow','green','red','pink','orange']
+
+// setInterval(function(){
   
-let  randomShet1=Math.floor(Math.random()*255)
-let  randomShet2=Math.floor(Math.random()*255)
-let  randomShet3=Math.floor(Math.random()*255)
+// let  randomShet1=Math.floor(Math.random()*255)
+// let  randomShet2=Math.floor(Math.random()*255)
+// let  randomShet3=Math.floor(Math.random()*255)
 
 
-  all.style.backgroundColor='rgb('+randomShet1+','+randomShet2+","+randomShet3+')'
+//   all.style.backgroundColor='rgb('+randomShet1+','+randomShet2+","+randomShet3+')'
 
-},1000)
+// },1000)
+
+
+// let container=document.getElementById('container');
+
+// function print(){
+//   console.log(container.value)
+// }
+// console.log(contai ner)
+
+
+
+
+// let city={
+//  iran:['sadat abad','nezam abad','shemron','jordan'],
+//   zanjan:['abhar','zanjan']
+// }
+
+// let Name=prompt("name:")
+// console.log(city)
+
+// city.forEach(function(event){
+//   if(event[Name]==='iran'){
+// console.log("dss")
+//   }else{
+//     console.log(event.Name)
+//   }
+// });
+// function countrySelectFunction(){
+
+
+// }
+
+let countrySelect=document.querySelector('.countrySelect');
+
+let citySelect=document.querySelector('.citySelect');
+
+let countery={
+
+    Iran:['tehran','zanjan','qazvin','gilan','ilam','esfahan'],
+    Canada:['canada','torento','vankover'],
+    US:['vashington','newyourk','texas']
+
+  }
+
+console.log(countrySelect)
+console.log(citySelect)
+
+  function countrySelectFunction(){
+    
+    // let allcity=countery[countrySelect.value];
+    
+    // let i=0;
+    
+      let longe=countery[countrySelect.value].length
+      
+      
+      let counterySelectCity=countery[countrySelect.value];
+      
+      let newoption=document.createElement('option');
+    
+      citySelect.innerHTML='   '
+      counterySelectCity.forEach(function(city){
+        newoption.value=city;
+        newoption.textContent=city
+        citySelect.innerHTML+='<option>'+ city+'<option>'
+      
+      })
+      
+    console.log(newoption )
+  }
+
+
+
+// var Name= prompt('name :')
+
+// console.log(countery[Name])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
