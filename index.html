@@ -1,44 +1,54 @@
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>SalzLearn| Js | 137</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Converter Celsius to Fahrenheit" />
-    <meta name="keywords" content="converter, calculator, celsius, fahrenheit" />
-    <meta name="author" content="SabzLearn.ir" />
-    <title>SalzLearn| Js | °C to °F</title>
-
-    <link href="style.css" rel="stylesheet">
-
-    <link rel="preconcert" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="img/thermometer.png" type="image/png">
+  <body>
 
     
-</head>
+	<section id="starter">
+		<div id="starter-text">
+			Press any key to get the JavaScript event keycode
+		</div>
+	</section>
 
-<body>
-    <header>
-        <label for="converter">Converter <span class="C">°C</span> to <span class="F">°F</span></label>
-    </header>
+	<div id="heading">
+		<h1>SabzLearn KeyCode</h1>
+	</div>
 
-    <div>
-        <input type="text" id="converter" placeholder="°C">
-    </div>
+	<div id="ascii">
+		<h1 id="keyCode">128</h1>
+	</div>
 
-    <p class="result"></p>
+	<div id="infos">
+		<div class="info-box">
+			<h3>event.key</p>
+				<h2 id="key"></h2>
+		</div>
 
-    <div id="buttons">
-        <button class="convertButton">Convert</button>
-        <button class="resetButton">Reset</button>
-        <button class="changeButton">Change</button>
-    
-      </div>
-      <script src="start.js" defer></script>
-</body>
+		<div class="info-box">
+			<h3>event.location</p>
+				<h2 id="location"></h2>
+		</div>
 
+		<div class="info-box">
+			<h3>event.which</p>
+				<h2 id="which">Alt</h2>
+		</div>
+
+		<div class="info-box">
+			<h3>event.code</p>
+				<h2 id="code">Alt</h2>
+		</div>
+	</div>
+
+      
+    <script src="./start.js"></script>
+  </body>
 </html>

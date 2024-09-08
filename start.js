@@ -1,6 +1,4 @@
 
-// @ -1,718 +1,726 @@
-
 
 // var a=2;
 // var b=3;
@@ -4219,63 +4217,127 @@ Plain text
 
 
 //input
-let textUser=document.getElementById('converter');
+// let textUser=document.getElementById('converter');
 
-//buttons
-let buttonConvert=document.querySelector('.convertButton');
-let buttonReset=document.querySelector('.resetButton');
-let buttonChange=document.querySelector('.changeButton');
+// //buttons
+// let buttonConvert=document.querySelector('.convertButton');
+// let buttonReset=document.querySelector('.resetButton');
+// let buttonChange=document.querySelector('.changeButton');
 
-let degC=document.querySelector('.C');
-let degF=document.querySelector('.F');
-// console.log(degC.textContent)
-// console.log(degF.textContent)
+// let degC=document.querySelector('.C');
+// let degF=document.querySelector('.F');
+// // console.log(degC.textContent)
+// // console.log(degF.textContent)
 
-// work buttons
+// // work buttons
 
-buttonReset.addEventListener('click',function(){
-  textUser.value=' ';
-});
-
-
+// buttonReset.addEventListener('click',function(){
+//   textUser.value=' ';
+// });
 
 
-buttonChange.addEventListener('click',element=>{
-if (degC.textContent==='°C'){
+
+
+// buttonChange.addEventListener('click',element=>{
+// if (degC.textContent==='°C'){
   
-  degC.textContent='°F'
-  degF.textContent='°C'
-  textUser.placeholder='°F'
-  textUser.textContent=''
-}
-  else{
+//   degC.textContent='°F'
+//   degF.textContent='°C'
+//   textUser.placeholder='°F'
+//   textUser.textContent=''
+// }
+//   else{
   
-    degC.textContent='°C'
-    degF.textContent='°F'
-    textUser.placeholder='°C'
-    textUser.value=''
-  }
+//     degC.textContent='°C'
+//     degF.textContent='°F'
+//     textUser.placeholder='°C'
+//     textUser.value=''
+//   }
 
-})
-
-
+// })
 
 
-buttonConvert.addEventListener('click',function(){
+
+
+// buttonConvert.addEventListener('click',function(){
   
-  if(degC.textContent==='°C'){
-  let degConvert=Number(textUser.value)
-  let convertF=(degConvert)*(9/8)+(32)
-  textUser.value=convertF;
-  }
-  else{
+//   if(degC.textContent==='°C'){
+//   let degConvert=Number(textUser.value)
+//   let convertF=(degConvert)*(9/8)+(32)
+//   textUser.value=convertF;
+//   }
+//   else{
 
-    textUser.value=(textUser.value-32)*(8/9)
+//     textUser.value=(textUser.value-32)*(8/9)
     
-  }
+//   }
 
 
-})
+// })
+
+
+
+
+
+// let inputElem=document.getElementById('input') 
+
+// console.log(inputElem.hasAttribute('placeholder'))
+
+
+
+// let username=document.getElementById('user');
+// let passWord=document.getElementById('password');
+
+// function Default(event ){
+  
+//   event.preventDefault()
+//   console.log(event);
+//   console.log(passWord);
+// }
+
+
+  let allData=document.getElementById('infos');
+
+  let button1=document.getElementById('starter')
+
+  let heading=document.getElementById('heading');
+  let ascii=document.getElementById('ascii');
+
+  console.log(allData)
+
+  let key=document.getElementById('key');
+  let LoCation=document.getElementById('location');
+  let whitch=document.getElementById('which');
+  let code=document.getElementById('code');
+  let keyCode=document.getElementById('keyCode')
+  document.body.addEventListener('keydown',function(event){
+
+      event.preventDefault()
+    button1.style.display='none'
+    heading.style.display='flex'
+    ascii.style.display='flex'
+    allData.style.display='flex'
+
+    key.innerHTML=event.key 
+    LoCation.innerHTML=event.location
+    whitch.innerHTML=event.which
+    code.innerHTML=event.code
+    keyCode.innerHTML=event.keyCode
+
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
