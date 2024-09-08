@@ -4165,26 +4165,26 @@ Plain text
 
 
 
-let cityName=document.querySelector('.search-bar');
+// let cityName=document.querySelector('.search-bar');
 
-let DisplyWeather=document.querySelector('.weather.loading');
+// let DisplyWeather=document.querySelector('.weather.loading');
 
-let icon=document.querySelector('.icons')
+// let icon=document.querySelector('.icons')
 
 // console.log(DisplyWeather);
 // console.log(icon);
-let DataCity={
-  tehran:['30°C','Cloudy','Humidity: 30%','wind speed 4.6km/h'],
-  zanjan:['2°C','slowly','Humidity: 50%','nowind speed 8.6km/h'],
-  qazvin:['10°C','rainy','Humidity: 90%','wind speed 9.6km/h'],
-  gilan:['40°C','sunny','Humidity: 10%','nowind speed 6.6km/h'],
+// let DataCity={
+//   tehran:['30°C','Cloudy','Humidity: 30%','wind speed 4.6km/h'],
+//   zanjan:['2°C','slowly','Humidity: 50%','nowind speed 8.6km/h'],
+//   qazvin:['10°C','rainy','Humidity: 90%','wind speed 9.6km/h'],
+//   gilan:['40°C','sunny','Humidity: 10%','nowind speed 6.6km/h'],
 
-}
+// }
 
-let temp =document.querySelector('.temp');
-let description=document.querySelector('.description');
-let humidity=document.querySelector('.humidity');
-let wind=document.querySelector('.wind');
+// let temp =document.querySelector('.temp');
+// let description=document.querySelector('.description');
+// let humidity=document.querySelector('.humidity');
+// let wind=document.querySelector('.wind');
 
 // console.log(temp)
 // console.log(description)
@@ -4193,33 +4193,89 @@ let wind=document.querySelector('.wind');
 
 
 
-icon.addEventListener('click',function(){
+// icon.addEventListener('click',function(){
   
   // console.log(cityName.value)
 
-  DisplyWeather.style.visibility='visible'
-  DisplyWeather.style.maxHeight='35%'
+  // DisplyWeather.style.visibility='visible'
+  // DisplyWeather.style.maxHeight='35%'
   
-  let cityChange=DataCity[cityName.value]
+  // let cityChange=DataCity[cityName.value]
   
   // console.log(cityChange[0])
-  temp.textContent=cityChange [0]; 
-  description.textContent=cityChange[1];
-  humidity.textContent=cityChange[2];
-  wind.textContent= cityChange[3] 
+//   temp.textContent=cityChange [0]; 
+//   description.textContent=cityChange[1];
+//   humidity.textContent=cityChange[2];
+//   wind.textContent= cityChange[3] 
 
   
   
-  cityName.value=''
+//   cityName.value=''
+
+// })
+
+
+
+
+
+//input
+let textUser=document.getElementById('converter');
+
+//buttons
+let buttonConvert=document.querySelector('.convertButton');
+let buttonReset=document.querySelector('.resetButton');
+let buttonChange=document.querySelector('.changeButton');
+
+let degC=document.querySelector('.C');
+let degF=document.querySelector('.F');
+// console.log(degC.textContent)
+// console.log(degF.textContent)
+
+// work buttons
+
+buttonReset.addEventListener('click',function(){
+  textUser.value=' ';
+});
+
+
+
+
+buttonChange.addEventListener('click',element=>{
+if (degC.textContent==='°C'){
+  
+  degC.textContent='°F'
+  degF.textContent='°C'
+  textUser.placeholder='°F'
+  textUser.textContent=''
+}
+  else{
+  
+    degC.textContent='°C'
+    degF.textContent='°F'
+    textUser.placeholder='°C'
+    textUser.value=''
+  }
 
 })
 
 
 
 
+buttonConvert.addEventListener('click',function(){
+  
+  if(degC.textContent==='°C'){
+  let degConvert=Number(textUser.value)
+  let convertF=(degConvert)*(9/8)+(32)
+  textUser.value=convertF;
+  }
+  else{
+
+    textUser.value=(textUser.value-32)*(8/9)
+    
+  }
 
 
-
+})
 
 
 
