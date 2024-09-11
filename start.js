@@ -4296,35 +4296,6 @@ Plain text
 // }
 
 
-  let allData=document.getElementById('infos');
-
-  let button1=document.getElementById('starter')
-
-  let heading=document.getElementById('heading');
-  let ascii=document.getElementById('ascii');
-
-  console.log(allData)
-
-  let key=document.getElementById('key');
-  let LoCation=document.getElementById('location');
-  let whitch=document.getElementById('which');
-  let code=document.getElementById('code');
-  let keyCode=document.getElementById('keyCode')
-  document.body.addEventListener('keydown',function(event){
-
-      event.preventDefault()
-    button1.style.display='none'
-    heading.style.display='flex'
-    ascii.style.display='flex'
-    allData.style.display='flex'
-
-    key.innerHTML=event.key 
-    LoCation.innerHTML=event.location
-    whitch.innerHTML=event.which
-    code.innerHTML=event.code
-    keyCode.innerHTML=event.keyCode
-
-  })
 
 
 
@@ -4335,20 +4306,108 @@ Plain text
 
 
 
+  // let allData=document.getElementById('infos');
+
+  // let button1=document.getElementById('starter')
+
+  // let heading=document.getElementById('heading');
+  // let ascii=document.getElementById('ascii');
+
+  // console.log(allData)
+
+  // let key=document.getElementById('key');
+  // let LoCation=document.getElementById('location');
+  // let whitch=document.getElementById('which');
+  // let code=document.getElementById('code');
+  // let keyCode=document.getElementById('keyCode')
+  // document.body.addEventListener('keydown',function(event){
+
+  //     event.preventDefault()
+  //   button1.style.display='none'
+  //   heading.style.display='flex'
+  //   ascii.style.display='flex'
+  //   allData.style.display='flex'
+
+  //   key.innerHTML=event.key 
+  //   LoCation.innerHTML=event.location
+  //   whitch.innerHTML=event.which
+  //   code.innerHTML=event.code
+  //   keyCode.innerHTML=event.keyCode
+
+  // })
+
+
+
+let head1=document.getElementById('header1')
+let head2=document.getElementById('header2')
+let head3=document.getElementById('header3')
+let head4=document.getElementById('header4')
+let head5=document.getElementById('header5')
+let head6=document.getElementById('header6')
+
+let fatherLi=document.getElementById('list-item')
+
+let listItem=document.getElementsByClassName('list')
+
+
+// console.log(head3.nextElementSibling.nextElementSibling)
+
+// console.log( listItem[2].nextSibling)
+// console.log( listItem[2].nextSibling.nextSibling)
+
+// console.log(listItem[2].previousSibling.previousSibling)
+
+// console.log(listItem[2].previousElementSibling.previousElementSibling)
 
 
 
 
+// console.log(fatherLi.childElementCount)
+
+// console.log(fatherLi.children[2])
+
+// console.log(fatherLi.childNodes)
+
+// console.log(fatherLi.hasChildNodes())
+
+// console.log(fatherLi.firstChild)
+// console.log (fatherLi.lastChild)
+
+// console.log(fatherLi.lastElementChild)
+// console.log(fatherLi.firstElementChild)
+
+let togglePassword=document.querySelector('.toggle-password')
+let openEye=document.getElementById('openeye')
+// console.log(openEye)
+
+let closeEye=document.getElementById('closeeye')
+// console.log(closeEye)
+
+let textUser=document.getElementById('password-field')
+// console.log(textUser)
 
 
 
+isFlag=true
+togglePassword.addEventListener('click',function(){
 
+  if(isFlag===true){
+    
+    textUser.type='text'
+    openEye.style.display='flex'
+    closeEye.style.display='none'
+    isFlag=false
 
+  }else{
+    
+    isFlag=true
+    textUser.type='password'
+    openEye.style.display='none'
+    closeEye.style.display='flex'
+ 
+  }
 
-
-
-
-
+})
 
 
 
