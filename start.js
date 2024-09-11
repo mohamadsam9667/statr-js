@@ -4376,39 +4376,109 @@ let listItem=document.getElementsByClassName('list')
 // console.log(fatherLi.lastElementChild)
 // console.log(fatherLi.firstElementChild)
 
-let togglePassword=document.querySelector('.toggle-password')
-let openEye=document.getElementById('openeye')
-// console.log(openEye)
-
-let closeEye=document.getElementById('closeeye')
-// console.log(closeEye)
-
-let textUser=document.getElementById('password-field')
-// console.log(textUser)
 
 
 
-isFlag=true
-togglePassword.addEventListener('click',function(){
 
-  if(isFlag===true){
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let togglePassword=document.querySelector('.toggle-password')
+// let openEye=document.getElementById('openeye')
+// // console.log(openEye)
+
+// let closeEye=document.getElementById('closeeye')
+// // console.log(closeEye)
+
+// let textUser=document.getElementById('password-field')
+// // console.log(textUser)
+
+
+
+// isFlag=true
+// togglePassword.addEventListener('click',function(){
+
+//   if(isFlag===true){
     
-    textUser.type='text'
-    openEye.style.display='flex'
-    closeEye.style.display='none'
-    isFlag=false
+//     isFlag=false
+//     textUser.type='text'
+//     openEye.style.display='flex'
+//     closeEye.style.display='none'
+
+//   }else{
+    
+//     isFlag=true
+//     textUser.type='password'
+//     openEye.style.display='none'
+//     closeEye.style.display='flex'
+ 
+//   }
+
+// })
+
+
+
+
+
+
+
+
+let todoUser=document.querySelector('.form-control')
+let listGroup =document.querySelector('.list-group')
+
+   
+
+
+// console.log(deletLi)
+todoUser.addEventListener('keydown',function(event){
+  
+  if (event.key==="Enter"){ 
+    
+    event.preventDefault()
+    
+    let textUser= todoUser.value 
+   
+     
+    let newTodo=document.createElement('li')
+    newTodo.innerHTML=`<span>${textUser}</span>  <i class="fa fa-trash-o delete"></i>`;
+    
+    newTodo.classList.add('list-group-item');
+    newTodo.classList.add('d-flex');
+    newTodo.classList.add('justify-content-between');
+    newTodo.classList.add('align-items-center');
+
+    listGroup.append(newTodo)
+    
+    todoUser.value=('')
+    
+  
+    
 
   }else{
-    
-    isFlag=true
-    textUser.type='password'
-    openEye.style.display='none'
-    closeEye.style.display='flex'
- 
-  }
 
+   
+}
+  
 })
 
 
 
 
+
+listGroup.addEventListener('click',function(event ){
+ if (event.target.classList.contains('delete') ){
+
+   event.target.parentElement.remove()
+ }
+})
