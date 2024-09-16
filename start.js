@@ -3891,15 +3891,15 @@ Plain text
 
 //یه تگ میسازیم بهش رنگ و کلاس و آیدی میدیم بعد اونو یکی از آیتم های تگ یو ال میکنیم
 
-  // let valueUser=prompt("چی داخل تگ باشه ")
-  // let newH1Element=document.createElement('h2');
-  // let fatherTag=document.querySelector('ul')
-  // newH1Element.innerHTML=valueUser
-  // newH1Element.style.color='green';
-  // console.log(newH1Element);
-  // newH1Element.setAttribute('class','nameclass');
-  // newH1Element.setAttribute('id','#idy')
-  // fatherTag.append(newH1Element)
+//   let valueUser=prompt("چی داخل تگ باشه ")
+//   let newH1Element=document.createElement('h2');
+//   let fatherTag=document.querySelector('ul')
+//   newH1Element.innerHTML=valueUser
+//   newH1Element.style.color='green';
+//   console.log(newH1Element);
+//   newH1Element.setAttribute('class','nameclass');
+//   newH1Element.setAttribute('id','#idy')
+//   fatherTag.append(newH1Element)
 
 
 
@@ -3911,8 +3911,8 @@ Plain text
 
 
 
- //یک عکس لامپ و یک عکس دکمه داشته باشید
- //با کلیک روی دکمه لامپ روشن وخاموش میشه
+//  یک عکس لامپ و یک عکس دکمه داشته باشید
+//  با کلیک روی دکمه لامپ روشن وخاموش میشه
 
 // let img=document.getElementById('image');
 
@@ -4434,51 +4434,110 @@ let listItem=document.getElementsByClassName('list')
 
 
 
-let todoUser=document.querySelector('.form-control')
-let listGroup =document.querySelector('.list-group')
+// let todoUser=document.querySelector('.form-control')
+// let listGroup =document.querySelector('.list-group')
 
    
 
 
-// console.log(deletLi)
-todoUser.addEventListener('keydown',function(event){
+// // console.log(deletLi)
+// todoUser.addEventListener('keydown',function(event){
   
-  if (event.key==="Enter"){ 
+//   if (event.key==="Enter"){ 
     
-    event.preventDefault()
+//     event.preventDefault()
     
-    let textUser= todoUser.value 
+//     let textUser= todoUser.value 
    
      
-    let newTodo=document.createElement('li')
-    newTodo.innerHTML=`<span>${textUser}</span>  <i class="fa fa-trash-o delete"></i>`;
+//     let newTodo=document.createElement('li')
+//     newTodo.innerHTML=`<span>${textUser}</span>  <i class="fa fa-trash-o delete"></i>`;
     
-    newTodo.classList.add('list-group-item');
-    newTodo.classList.add('d-flex');
-    newTodo.classList.add('justify-content-between');
-    newTodo.classList.add('align-items-center');
+//     newTodo.classList.add('list-group-item');
+//     newTodo.classList.add('d-flex');
+//     newTodo.classList.add('justify-content-between');
+//     newTodo.classList.add('align-items-center');
 
-    listGroup.append(newTodo)
+//     listGroup.append(newTodo)
     
-    todoUser.value=('')
+    
+//     todoUser.value=('')
     
   
     
 
-  }else{
+//   }else{
 
    
-}
+// }
   
-})
+// })
 
 
 
 
 
-listGroup.addEventListener('click',function(event ){
- if (event.target.classList.contains('delete') ){
+// listGroup.addEventListener('click',function(event ){
+//  if (event.target.classList.contains('delete') ){
 
-   event.target.parentElement.remove()
- }
-})
+//    event.target.parentElement.remove()
+//  }
+// })
+
+
+
+
+
+
+
+
+
+
+// let textUser=document.getElementById('text_user')
+// console.log(textUser)
+
+// function copy(){
+//   console.log('copy')
+// }
+
+
+// function cut(){
+//   console.log('cut')
+// }
+
+// function pase(){
+//   console.log('pase')
+// }
+
+// textUser.addEventListener('copy',copy);
+
+// textUser.addEventListener('cut',cut);
+
+// textUser.addEventListener('paste',pase);
+
+// console.log("sajdhjo")
+
+
+
+
+
+
+
+let contextMenu=document.getElementById('contextMenu')
+function rightClick(event){
+  event.preventDefault() 
+  contextMenu.style.display='flex';
+  console.log(event.pageX)
+  contextMenu.style.top=event.pageY
+  contextMenu.style.left=event.pageX
+}
+function leftClick(){
+  contextMenu.style.display='none';
+}
+document.body.addEventListener('contextmenu',rightClick)
+document.body.addEventListener('click',leftClick)
+
+
+
+
+
