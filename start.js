@@ -4338,16 +4338,16 @@ Plain text
 
 
 
-let head1=document.getElementById('header1')
-let head2=document.getElementById('header2')
-let head3=document.getElementById('header3')
-let head4=document.getElementById('header4')
-let head5=document.getElementById('header5')
-let head6=document.getElementById('header6')
+// let head1=document.getElementById('header1')
+// let head2=document.getElementById('header2')
+// let head3=document.getElementById('header3')
+// let head4=document.getElementById('header4')
+// let head5=document.getElementById('header5')
+// let head6=document.getElementById('header6')
 
-let fatherLi=document.getElementById('list-item')
+// let fatherLi=document.getElementById('list-item')
 
-let listItem=document.getElementsByClassName('list')
+// let listItem=document.getElementsByClassName('list')
 
 
 // console.log(head3.nextElementSibling.nextElementSibling)
@@ -4523,19 +4523,244 @@ let listItem=document.getElementsByClassName('list')
 
 
 
-let contextMenu=document.getElementById('contextMenu')
-function rightClick(event){
-  event.preventDefault() 
-  contextMenu.style.display='flex';
-  console.log(event.pageX)
-  contextMenu.style.top=event.pageY
-  contextMenu.style.left=event.pageX
-}
-function leftClick(){
-  contextMenu.style.display='none';
-}
-document.body.addEventListener('contextmenu',rightClick)
-document.body.addEventListener('click',leftClick)
+// let contextMenu=document.getElementById('contextMenu')
+// function rightClick(event){
+//   event.preventDefault() 
+//   contextMenu.style.display='flex';
+//   console.log(event.pageX)
+//   contextMenu.style.top=event.pageY
+//   contextMenu.style.left=event.pageX
+// }
+// function leftClick(){
+//   contextMenu.style.display='none';
+// }
+// document.body.addEventListener('contextmenu',rightClick)
+// document.body.addEventListener('click',leftClick)
+
+// let Imaag=document.querySelector('.picture')
+
+
+// let images=document.querySelector('.content')
+// let loader=document.querySelector('.loader')
+// window.addEventListener('load',loadHandeler)
+// function loadHandeler(){
+  
+//    loader.classList.add('hidden')
+
+
+// }
+
+
+
+
+
+
+// var min=+prompt("چند دقیقه ؟")
+// var secound =+prompt('چند ثانیه ؟')
+
+// var timer=setInterval(function(){
+
+//  if(secound===-1){
+//   min--
+//   secound=59
+//  } 
+ 
+//  if(secound==0&&min==0){
+//   clearInterval(timer)
+//  }
+
+//  if(secound<10){
+//   secound='0'+secound 
+//  }
+
+//  if(min<10&&min.indexOf('0')<=0){
+//   min='0'+min
+//  }
+
+//  console.log('Timer'+min+":"+secound)
+
+ 
+//  secound--;
+
+//  if (typeof secound === "string") {
+//    secound = parseInt(secound);
+//  }
+//  if (typeof min === "string") {
+//    min = parseInt(min);
+//  }
+
+// },1000)
+
+
+
+
+
+
+// var min = +prompt("چند دقیقه؟");
+// var second = +prompt("چند ثانیه؟");
+
+// var timer = setInterval(function() {
+//   if (second === -1) {
+//     min--;
+//     second = 59;
+//   }
+
+//   if (min === 0 && second === 0) {
+//     clearInterval(timer);
+//     console.log("Timer: 00:00");
+//     return;
+//   }
+
+//   if (second < 10) {
+//     second = "0" + second;
+//   }
+//   console.log(min.toString())
+
+//   if (min < 10 && min.toString().indexOf('0')!==0) {
+//     min = "0" + min;
+//   }else{
+//     min;
+//   }
+
+//   console.log("Timer: " + min + ":" + second);
+
+//   second--;
+
+  // if (typeof second === "string") {
+  //   second = parseInt(second);
+  // }
+  // if (typeof min === "string") {
+  //   min = parseInt(min);
+  // }
+// }, 1000); 
+
+
+
+
+
+
+
+// learn removeEventListener()
+
+
+// let box=document.getElementById('box')
+// // console.log(box)
+// let btnElem=document.getElementById('btn')
+// console.log(btnElem)
+// function printHandeler(){
+//   console.log('printer')
+// }
+// function remover(){
+//   box.removeEventListener('mousemove',printHandeler)
+// }
+// btnElem.addEventListener('click',remover)
+// box.addEventListener('mousemove',printHandeler)
+
+
+// let box=document.getElementById('box')
+
+// function printer(event){
+//   console.log(event.target)
+// }
+// box.addEventListener('select',printer)
+
+// console.log("sadoia")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let counterElem=document.querySelector('.counter')
+// let textUser=document.querySelector('input')
+
+
+// let lengthy=textUser.maxLength 
+
+// textUser.addEventListener('keyup',function(){
+  
+
+//    counterElem.innerHTML=lengthy-textUser.value.length
+
+
+// })
+
+
+
+// console.log(counterElem)
+// console.log(textUser)
+
+// console.log(textUser.maxLength)
+// if(<textUser.maxlength)
+// console.log(textUser.value)
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+// let btn=document.querySelector('button')
+// let modalParent=document.querySelector('.modal-parent')
+// let exiteModal=document.querySelector('.X')
+// let sectionElem=document.querySelector('section')
+// exiteModal.addEventListener('click',removeModal); 
+// btn.addEventListener('click',showHandeler);
+// document.body.addEventListener('keyup',escModal)
+
+// function removeModal(){
+  
+//   modalParent.style.display='none'
+//   sectionElem.style.filter='blur(0px)'
+
+// }
+
+
+// function showHandeler(){
+//   modalParent.style.display='block'
+//   sectionElem.style.filter='blur(10px)'
+// }
+
+// function escModal(event){
+//   if(event.keyCode===27){
+//      modalParent.style.display='none'
+//   sectionElem.style.filter='blur(0px)'
+    
+//     }
+// }
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+
+
 
 
 
