@@ -4712,7 +4712,6 @@ Plain text
 
 
 
-
   
 
 
@@ -4733,7 +4732,7 @@ Plain text
 // }
 
 
-// function showHandeler(){
+// function showHandeler()
 //   modalParent.style.display='block'
 //   sectionElem.style.filter='blur(10px)'
 // }
@@ -4759,6 +4758,7 @@ Plain text
 
 
   
+console.log("dsk")
 
 
 
@@ -4766,3 +4766,5 @@ Plain text
 
 
 
+
+  
