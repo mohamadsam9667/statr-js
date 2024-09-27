@@ -4750,16 +4750,44 @@ Plain text
 
 
   
+// function scrolHandeler(event){
+//   console.log(event.target)
+// }
 
 
 
 
+let logo=document.querySelector('img')
+let mainNav=document.getElementById('mainNav')
+let all=document.body
+console.log(all)  
+console.log(all.scrollTop)
 
-
-
+console.log(logo)
+document.addEventListener('scroll', function(){
+  if(document.documentElement.scrollTop>0) {
   
-console.log("dsk")
+    mainNav.classList.add('bg-black')
+    mainNav.classList.add('txt-white')
+    logo.style.height='34px'
+    // mainNav.className='bg-white'
+  }else{
+    logo.style.height='74px'
 
+    mainNav.classList.remove('bg-black')
+    mainNav.classList.remove('txt-white')
+  }
+})
+// console.log("dsk")
+// function changeBackground(){
+//   if(){
+//     console.log("djf")
+//   }else{
+
+//     mainNav.className='bg-black txt-white a'
+//   }
+
+// }
 
 
 
