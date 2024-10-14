@@ -4757,27 +4757,60 @@ Plain text
 
 
 
-let logo=document.querySelector('img')
-let mainNav=document.getElementById('mainNav')
-let all=document.body
-console.log(all)  
-console.log(all.scrollTop)
 
-console.log(logo)
-document.addEventListener('scroll', function(){
-  if(document.documentElement.scrollTop>0) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//on Scroll
+
+
+
+
+
+
+
+// let logo=document.querySelector('img')
+// let mainNav=document.getElementById('mainNav')
+// let all=document.body
+// console.log(all)  
+// console.log(all.scrollTop)
+
+// console.log(logo)
+// document.addEventListener('scroll', function(){
+//   if(document.documentElement.scrollTop>0) {
   
-    mainNav.classList.add('bg-black')
-    mainNav.classList.add('txt-white')
-    logo.style.height='34px'
-    // mainNav.className='bg-white'
-  }else{
-    logo.style.height='74px'
+//     mainNav.classList.add('bg-black')
+//     mainNav.classList.add('txt-white')
+//     logo.style.height='34px'
+//     // mainNav.className='bg-white'
+//   }else{
+//     logo.style.height='74px'
 
-    mainNav.classList.remove('bg-black')
-    mainNav.classList.remove('txt-white')
-  }
-})
+//     mainNav.classList.remove('bg-black')
+//     mainNav.classList.remove('txt-white')
+//   }
+// })
 // console.log("dsk")
 // function changeBackground(){
 //   if(){
@@ -4791,8 +4824,211 @@ document.addEventListener('scroll', function(){
 
 
 
-
-
-
-
+// console.log("%cbcg sam is sigma","color:red ; backgroung-color:green; height:20px;"  )
   
+
+
+
+
+
+
+// let btn=document.getElementById('12')
+// console.log(btn)
+// let flag=true
+// let h1elem=document.createElement('h1')
+// function showTextMe(){
+//   if(flag===true){
+//   h1elem.innerHTML='fwpffnf fjfjs f   iofiwpepff   fksspspx';
+//   document.body.append(h1elem)
+//   flag=false
+//   }else{
+//     h1elem.innerHTML='';
+//     h1elem.style='none'
+//     flag=true
+//   }
+// }
+
+
+
+
+// dataSEt
+
+// function showTextMe(event){
+
+//   console.log(event.target.dataset.id)
+//   console.log(event.target.dataset.name)
+//   console.log(event.target.dataset.rate)
+
+
+// }
+
+
+
+
+
+
+
+
+// function showTextMe(event){
+//   console.log(event.target.dataset.rate)
+// }
+
+
+
+// let audioElem=document.querySelector('audio')
+// console.log(audioElem)
+
+// audioElem.play()
+// audioElem.pause()
+// audioElem.duration()
+// audioElem.currentTime()
+// audioElem.playbackRate()
+
+
+// function showHandeler(){
+//   audioElem.play()
+//   console.log("play")
+// }
+
+
+
+
+
+
+
+// let musicElem=document.querySelector('audio');
+// // console.log(musicElem)
+
+
+// let inexMusicSrc=[
+//   "./music/torkish-sedaye-zan--15-remix(nab-music.ir).mp3",
+//   "./music/torkish-sedaye-zan--13(nab-music.ir).mp3",
+//   "music/torkish-sedaye-zan--16-remix(nab-music.ir).mp3",
+//   "./music/torkish-sedaye-zan--2-remix(nab-music.ir).mp3",
+
+
+// ]
+// let indexSrc=3;
+
+
+
+// function playHndelerMusic(){
+//   musicElem.play();
+//   console.log("play")
+// }
+
+
+
+// function pausHndelerMusic(){
+//   musicElem.pause()
+//   console.log("pause")
+// }
+
+
+
+
+// function periviousHndelerMusic(){
+//   console.log("perivious")
+  
+//   // console.log()
+//   // musicElem.src=inexMusicSrc[indexSrc]
+//   // indexSrc--
+//   // if (musicElem.src===inexMusicSrc[4]){
+//   //   musicElem.src=inexMusicSrc[3]
+//   //   console.log("a")
+//   // }
+//   indexSrc--; 
+//   if (indexSrc < 0) {
+//     indexSrc = inexMusicSrc.length - 1; // Loop back to last song
+//   }
+  
+
+//   musicElem.src = inexMusicSrc[indexSrc];
+//   playHndelerMusic()
+  
+// }
+
+
+
+
+// function currectTime(){
+//   console.log(musicElem.currentTime)
+
+// }
+
+// function nextHndelerMusic(){
+//   console.log('next')
+
+//   indexSrc++;
+//   if(indexSrc>inexMusicSrc.length){
+//     indexSrc=0
+//   }
+//   musicElem.src=inexMusicSrc[indexSrc]
+//   playHndelerMusic()
+
+// }
+
+
+// function fiveSpeed(){
+  
+//       musicElem.currentTime+=5
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// to learn drag and drop  
+
+// go to app.js in sours file name
+
+
+
+
+
+
+
+
+
+
+// learn LocalStorage
+
+
+
+// let h1Elem=document.querySelector('.ali')
+
+// function raterHandeler(){
+  
+//   localStorage.setItem('sam',h1Elem.innerHTML)
+//   // console.log(localStorage.getItem('sam'))
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
