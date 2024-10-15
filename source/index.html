@@ -1,51 +1,38 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    
-    <title>SabzLearn | Js | 184</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="SabzLearn TodoList" />
+    <meta name="author" content="SabzLearn" />
+    <title>SabzLearn | Js | 190</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
-
   <body>
-    
-    
-    <!-- modal -->
-    <div class="modal" id="todo_form">
-      <div class="header">
-        <div class="title">Add Todo</div>
-        <button class="btn close-modal">&times;</button>
+    <div class="container">
+      <h2 class="text-center">Todo List App</h2>
+
+      <div class="form-group">
+        <label for="itemInput">Add Item</label>
+        <input type="text" class="form-control" name="" id="itemInput" />
       </div>
-      <div class="body">
-        <input type="text" id="todo_input" />
-        <input type="submit" value="Add Todo" id="todo_submit" />
-      </div>
-    </div>
-    <!-- todo -->
-    <div class="todo-container">
-      <div class="status" id="no_status">
-        <h1>No Status</h1>
-        <button id="add_btn" data-target-modal="#todo_form">+ Add Todo</button>
-        <div class="todo" draggable="true" >
-          Buy a Pizza
-          <span class="close">&times;</span>
-        </div>
-      </div>
-      <div class="status" >
-        <h1>Not Started</h1>
-      </div>
-      <div class="status">
-        <h1>In Progress</h1>
-      </div>
-      <div class="status">
-        <h1>Completed</h1>
-      </div>
+      <button id="addButton" class="btn btn-primary">Add To List</button>
+      <button id="clearButton" class="btn btn-danger">Clear Todo List</button>
+      <h3>Todo List</h3>
+      <ul id="todoList">
+        <li class="completed well"> <!-- uncompleted for uncompleted todos -->
+          <label>Test</label>
+          <button class="btn btn-success">Complete</button>
+          <button class="btn btn-danger" id="Delete">Delete</button>
+        </li>
+      </ul>
     </div>
 
-    <div id="overlay"></div>
-
-    <script src="js/app.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>
