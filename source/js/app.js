@@ -220,16 +220,155 @@
 
 
 
+let addBtn=document.getElementById('addButton')
+let TextUser=document.getElementById('itemInput')
+let ulFather=document.getElementById('todoList')
+let clearBtn=document.getElementById('clearButton')
+
+
+let arrayTodo=[]
 
 
 
 
+  function adderNewItem(){
+  
+        let todoItem={
+          id:arrayTodo.length+1,
+          title:TextUser.value,
+          complete:false,
+          
+        }
+        
+        arrayTodo.push(todoItem)
+        setLocalstorage(arrayTodo)
+        todoGenerat(arrayTodo)
+        
+        TextUser.value=''
+        TextUser.focus()
+  
+  
+      }
+
+
+      function todoGenerat(arrayTodo){
+        ulFather.innerHTML=''
+        arrayTodo.forEach(function(todo) {
+          
+          let newLi=document.createElement('li')
+  newLi.className='completed well';
+  let Lable=document.createElement('label')
+  let btnComplete=document.createElement('button')
+  let btnDelete=document.createElement('button')
+  Lable.innerHTML=todo.title
+  btnComplete.className="btn btn-success"
+  // if(todo.complete){
+  //   btnComplete='InComplate'
+  // }else{
+  //   btnComplete='Complate'
+  // }
+// btnComplete.addEventListener('click',changeText)
+btnComplete.setAttribute('onclick', 'changeText(' + todo.id + ')');
+btnComplete.textContent = todo.complete ? 'Complete' : 'InComplete';
+// console.log(btnComplete.textContent)
+
+  // btnComplete.setAttribute('onclick', 'changeText(' + todo.id + ')');
+  // btnComplete.setAttribute('onclick','changeText('+todo.id+')');
+  btnDelete.className='btn btn-danger'
+  btnDelete.setAttribute('id','Delet')
+  // valueComplate= btnComplete.innerHTML='Complete'
+  btnDelete.innerHTML='Delete'
+  btnDelete.setAttribute('onclick','removeTodo('+todo.id+')')
+
+  newLi.append(Lable)
+  newLi.append(btnComplete)
+  newLi.append(btnDelete)
+  ulFather.append(newLi)
+  
+});
+} 
 
 
 
+function setLocalstorage(arrayTodo){
+  localStorage.setItem('array',JSON.stringify(arrayTodo))
+  
+}
 
 
 
+function getLocalstorage(){
+  
+  let localStorageTodo=JSON.parse(localStorage.getItem('array'));
+  console.log(localStorageTodo)
+  if(localStorageTodo){
+    arrayTodo=localStorageTodo
+  }else{
+    arrayTodo=[]
+  }
+  todoGenerat(arrayTodo)
+}
+
+
+function clearItem(){
+  arrayTodo = []; // خالی کردن آرایه
+  localStorage.removeItem('array'); // حذف از localStorage
+  console.log(localStorage.getItem('array'))
+  todoGenerat(arrayTodo); // به‌روزرسانی رابط کاربری
+  console.log(arrayTodo)
+
+
+}
+
+
+function removeTodo(todoId){
+
+  let localStorageLog=JSON.parse(localStorage.getItem('array'))
+
+  arrayTodo=localStorageLog
+  let indexForRemove=arrayTodo.findIndex(function(todo){
+    return (todoId===todo.id)
+  })
+
+  arrayTodo.splice(indexForRemove,1)
+  console.log(arrayTodo)
+  setLocalstorage(arrayTodo)
+  todoGenerat(arrayTodo)
+
+}
+
+
+function changeText(todoid){  
+
+  arrayTodo.forEach(function(todo){
+    if(todo.id===todoid){
+
+      todo.complete=!todo.complete
+      
+    }
+    return todo; 
+  });
+
+    // console.log(Text)
+  setLocalstorage(arrayTodo)
+  todoGenerat(arrayTodo)
+
+
+
+}
+TextUser.addEventListener('keydown',function(event){
+
+  if(event.code==='Enter'){
+    adderNewItem()
+  }
+  // if()
+})
+
+
+addBtn.addEventListener('click',adderNewItem)
+clearBtn.addEventListener('click',clearItem)
+window.addEventListener('load',getLocalstorage)
+// localStorage.clear()
 
 
 
