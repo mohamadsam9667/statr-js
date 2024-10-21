@@ -1,60 +1,15 @@
-* {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+body{
+   display: flex;
+   justify-content: center;
+}
+.title{
+   margin: 40% 5%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 300px;
+   background-color: rgba(250, 235, 215);
+   height: 300px;
+   /* scroll-timeline: --custom_name_for_timeline y; */
 }
 
-.container {
-   background:url(../images/city.jpg) no-repeat center;
-   background-size:cover;
-   
-   min-height:100vh;
-   
-   display:flex;
-   align-items:center;
-   justify-content:center;
-}
-
-.brightness-box {
-   width:400px;
-   height:60px;
-   
-   background:#f9f9f9;
-   
-   border-radius:8px;
-   
-   padding:0 20px;
-
-   display:flex;
-   align-items:center;
-   justify-content:space-between;
-}
-
-.brightness-box i {
-   margin:0 10px;
-}
-
-#range {
-   width:100%;
-   height:3px;
-   
-   /*tira a barra do input range*/
-   -webkit-appearance:none;
-   
-   background:#0a85ff;
-   
-   outline:none;
-}
-
-#range::-webkit-slider-thumb {
-   -webkit-appearance:none;
-   
-   background:#333;
-   
-   width:22px;
-   height:22px;
-   
-   border-radius:50%;
-   
-   cursor:pointer;
-}
