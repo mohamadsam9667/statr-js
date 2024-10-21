@@ -1,52 +1,54 @@
-/*
-برنامه حرکت اسلاید
-const $ = document;
-const prev = $.querySelector(".prev");
-const next = $.querySelector(".next");
-let image=$.querySelector('.img-slider')
-let sliderItem = $.querySelectorAll(".slider-item");
-let imageSrc=[
-    "./image/1.jpg",
-    "./image/2.png",
-    "./image/3.jpg",
+let $=document
+let rangeWeight=$.getElementById("weight")
+let rangeHeight=$.getElementById('height')
+let heightH=$.getElementById('height-val')
+let weightH=$.getElementById('weight-val')
+let resault=$.getElementById('result')
 
-]
-console.log(imageSrc)
-// image.src=imageSrc[1]
-// console.log(image.src=`${imageSrc[1]}`)
 
-let index = 0;
+let colorResault=$.getElementById('category')
+let heightVal
+let weightVal
+weightVal=rangeWeight.value
+heightVal=rangeHeight.value
+let BMI;
 
-function prevItem(){
+
+
+function calculateBmi(){
+
+    heightVal=rangeHeight.value
+    weightVal=rangeWeight.value
+
+    BMI=(weightVal)/((heightVal*heightVal)/10000) 
+
+    heightH.innerHTML=rangeHeight.value+ ' cm'
+
+    weightH.innerHTML=rangeWeight.value+'  kg'
+    // console.log(BMI)
+    resault.innerHTML=BMI.toFixed(1)
+ 
+    if(resault.innerHTML<18.5){
+        colorResault.innerHTML='skinny'
+        colorResault.style.cssText='color:orange;'
+    }else if(resault.innerHTML>18.5 && resault.innerHTML<31){
+        colorResault.innerHTML='Normal Weight'
+        colorResault.style.color='green'
+        console.log("sam")
     
-    index--;
-    if(index<0){
-        index=2;
-    }
-    image.src=imageSrc[index]
-    console.log(image)
+    }else {
+        colorResault.innerHTML='Over Weight'
+        colorResault.style.cssText='color:red;'
+    
+    }   
 }
 
-function nextItem(){
-    if(index>=3){
-        index=0
-    
-    }else{
-        image.src=imageSrc[index]
-        index++;
-    }
-
-}
-
-// console.log(sliderItem);
-
-setInterval(nextItem , 1000)
-prev.addEventListener("click", prevItem);
-next.addEventListener("click", nextItem);
+console.log(colorResault.innerHTML)
 
 
 
-*/
+rangeHeight.addEventListener('input',calculateBmi)
+rangeWeight.addEventListener('input',calculateBmi)
 
 
 
