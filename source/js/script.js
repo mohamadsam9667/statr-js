@@ -25,29 +25,60 @@
 
 
 
-let btn=document.getElementById('btn')
-let title=document.getElementById('title')
+// let btn=document.getElementById('btn')
+// let title=document.getElementById('title')
 
-function handel(){
-try{
-    // x=v
-if(title.value===18){
-throw '18'
-}else{
-    throw 'not 18'
-}
+// function handel(){
+// try{
+//     // x=v
+// if(title.value===18){
+// throw '18'
+// }else{
+//     throw 'not 18'
+// }
 
 
-    console.log('sam')
-}catch(eeror){
-    title.innerHTML=eeror
-}
-}
-btn.addEventListener('click',handel)
+//     console.log('sam')
+// }catch(eeror){
+//     title.innerHTML=eeror
+// }
+// }
+// btn.addEventListener('click',handel)
 
 
 
 // console.log(btn,'\n',title)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let btn=document.getElementById('btn')
+let title=document.getElementById('title')
+
+// console.log(btn,title)
+
+
+btn.addEventListener('click',addCss)
+
+
+function addCss(){
+    title.style.cssText='background:#000;width:300px;color:red;'
+}
+
+
+
+
+
 
 
 

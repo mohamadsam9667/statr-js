@@ -1,8 +1,13 @@
 body{
    display: flex;
+   flex-direction: column;
+   
    justify-content: center;
 }
+
+
 .title{
+   padding: 20px;
    margin: 40% 5%;
    display: flex;
    justify-content: center;
@@ -11,5 +16,13 @@ body{
    background-color: rgba(250, 235, 215);
    height: 300px;
    /* scroll-timeline: --custom_name_for_timeline y; */
+   flex-wrap: wrap;
+   margin: 10px;
 }
 
+
+
+#btn{
+   
+   padding: 20px;
+}
