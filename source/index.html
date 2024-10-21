@@ -1,38 +1,19 @@
-
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="SabzLearn TodoList" />
-    <meta name="author" content="SabzLearn" />
-    <title>SabzLearn | Js | 190</title>
+<html>
+    <head>
+        <title>Sabzlearn | Js | 195</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="brightness-box">
+                <i class="far fa-sun"></i>
+                <input type="range" id="range" min="10" max="100" value="100">
+                <i class="fas fa-sun"></i>
+            </div>
+        </div>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="container">
-      <h2 class="text-center">Todo List App</h2>
-
-      <div class="form-group">
-        <label for="itemInput">Add Item</label>
-        <input type="text" class="form-control" name="" id="itemInput" />
-      </div>
-      <button id="addButton" class="btn btn-primary">Add To List</button>
-      <button id="clearButton" class="btn btn-danger">Clear Todo List</button>
-      <h3>Todo List</h3>
-      <ul id="todoList">  
-        <li class="completed well"> <!-- uncompleted for uncompleted todos -->
-          <label>Test</label>
-          <button class="btn btn-success">Complete</button>
-          <button class="btn btn-danger" id="Delete">Delete</button>
-        </li>
-      </ul>
-    </div>
-
-    <script type="text/javascript" src="js/app.js"></script>
-  </body>
+        <script src="/source/js/script.js"></script>
+    </body>
 </html>
