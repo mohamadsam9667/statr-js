@@ -62,18 +62,24 @@
 
 
 
-let btn=document.getElementById('btn')
-let title=document.getElementById('title')
+// let btn=document.getElementById('btn')
+// let title=document.getElementById('title')
 
-// console.log(btn,title)
-
-
-btn.addEventListener('click',addCss)
+// // console.log(btn,title)
 
 
-function addCss(){
-    title.style.cssText='background:#000;width:300px;color:red;'
-}
+// btn.addEventListener('click',addCss)
+
+
+// function addCss(){
+//     title.style.cssText='background:#000;width:300px;color:red;'
+// }
+
+
+
+
+
+
 
 
 
