@@ -1,97 +1,19 @@
+// 
+// console.log("sam")
 
-// project BMI
-
-// let $=document
-// let rangeWeight=$.getElementById("weight")
-// let rangeHeight=$.getElementById('height')
-// let heightH=$.getElementById('height-val')
-// let weightH=$.getElementById('weight-val')
-// let resault=$.getElementById('result')
-
-
-// let colorResault=$.getElementById('category')
-// let heightVal
-// let weightVal
-// weightVal=rangeWeight.value
-// heightVal=rangeHeight.value
-// let BMI;
+let thems=document.querySelectorAll('.themes button')
+console.log(thems)
 
 
 
-// function calculateBmi(){
-
-//     heightVal=rangeHeight.value
-//     weightVal=rangeWeight.value
-
-//     BMI=(weightVal)/((heightVal*heightVal)/10000) 
-
-//     heightH.innerHTML=rangeHeight.value+ ' cm'
-
-//     weightH.innerHTML=rangeWeight.value+'  kg'
-   
-//     resault.innerHTML=BMI.toFixed(1)
- 
-//     if(resault.innerHTML<18.5){
-//         colorResault.innerHTML='skinny'
-//         colorResault.style.cssText='color:orange;'
-//     }else if(resault.innerHTML>18.5 && resault.innerHTML<31){
-//         colorResault.innerHTML='Normal Weight'
-//         colorResault.style.color='green'
-//         // console.log("sam")
+thems.forEach(function(item){
+    item.addEventListener('click',function(){
     
-//     }else {
-//         colorResault.innerHTML='Over Weight'
-//         colorResault.style.cssText='color:red;'
-    
-//     }   
-// }
+    let  codeColor=item.dataset.color;
+        document.documentElement.style.setProperty('--theme-color',codeColor)
+    })
 
-
-
-
-
-// rangeHeight.addEventListener('input',calculateBmi)
-// rangeWeight.addEventListener('input',calculateBmi)
-
-
-
-
-
-
-let bElem=document.getElementById('btn')
-
-
-function changeColor(){
-    document.documentElement.style.setProperty('--text-color','yellow')
-
-    document.documentElement.style.setProperty('--test-color','green')
-console.log(document.documentElement.style.getPropertyValue('--text-color')
-)
-
-}
-bElem.addEventListener('click',changeColor)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+})
 
 
 
