@@ -47,7 +47,9 @@
 let MyTime=new Date()
 
 console.log(MyTime.getHours())
-
+console.log(MyTime.getMinutes())
+console.log(MyTime.getSeconds())
+console.log(MyTime.getFullYear())
 
 
 
