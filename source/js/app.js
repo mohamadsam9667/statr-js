@@ -44,12 +44,12 @@
 // console.log("sam")
 
 
-let MyTime=new Date()
+// let MyTime=new Date()
 
-console.log(MyTime.getHours())
-console.log(MyTime.getMinutes())
-console.log(MyTime.getSeconds())
-console.log(MyTime.getFullYear())
+// console.log(MyTime.getHours())
+// console.log(MyTime.getMinutes())
+// console.log(MyTime.getSeconds())
+// console.log(MyTime.getFullYear())
 
 
 
