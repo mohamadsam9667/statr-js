@@ -16,3 +16,8 @@ let ARRy=[
     clgNumber:"bzte"
 }]
 console.table(ARRy)
+
+
+
+
+console.log("%ci'm sigma tomas shalbly","color:red;background-color:blue")
