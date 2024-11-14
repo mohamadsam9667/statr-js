@@ -139,6 +139,50 @@
 
 
 
+const btn=document.querySelector('button')
+btn.addEventListener('click',function(){
+    fetch('https://randomuser.me/api/',{method:'GET'})
+    .then(res=>{
+        if(res.status===200){
+            return  res.json()
+
+        }
+        return new Error("errrorr")
+    }).then(data=>{
+        console.log(data.results[0].location)
+    })
+    // .then(data=>{
+    //     console.log(data)
+    // })
+
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
