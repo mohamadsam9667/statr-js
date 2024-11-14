@@ -149,11 +149,11 @@ btn.addEventListener('click',function(){
         }
         return new Error("errrorr")
     }).then(data=>{
-        console.log(data.results[0].location)
+        console.log( data.results[0].location)
     })
-    // .then(data=>{
-    //     console.log(data)
-    // })
+    .catch(err=>{
+        console.log(err)
+    })
 
 })
 
