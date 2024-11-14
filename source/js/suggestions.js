@@ -105,25 +105,29 @@
 
 
 
-window.addEventListener('load',function(){
+// window.addEventListener('load',function(){
 
-    let indexDB=indexedDB.open('user',3)
+//     let indexDB=indexedDB.open('user',3)
 
-    indexDB.addEventListener('error',(error)=>{
-        console.log(error)
-    })
+//     indexDB.addEventListener('error',(error)=>{
+//         console.log(error)
+//     })
 
-    indexDB.addEventListener('success',(event)=>{
-        console.log(event.target.result)
-    })
+//     indexDB.addEventListener('success',(event)=>{
+//         console.log(event.target.result)
+//     })
 
-    indexDB.addEventListener("upgradeneeded",function(event){
-        console.log("new V",event.newVersion)
-        console.log(event)
-        console.log("old V",event.oldVersion)
-    })
+//     indexDB.addEventListener("upgradeneeded",function(event){
+//         console.log("new V",event.newVersion)
+//         console.log(event)
+//         console.log("old V",event.oldVersion)
+//     })
 
-});
+// });
+
+
+
+
 
 
 
