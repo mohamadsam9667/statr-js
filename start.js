@@ -5022,7 +5022,226 @@ Plain text
 
 
 
-console.log("sam")
+// console.log("sam")
+
+// console.log('sami')
+
+
+
+
+// const naem="sam"
+
+// const typeName=(data)=>console.log(data)
+
+
+
+
+
+// const nAme=require('./logger')
+
+// nAme.log(nAme.name='lka')
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import of module
+
+//PATH
+
+// const path=require('node:path')
+
+// path.basename('C:\\temp\\myfile.html');
+
+// console.log(path.parse(__filename))
+
+
+
+
+//OS
+
+
+
+// const operatingSystem=require('node:os')
+// console.log(operatingSystem.machine())
+
+
+// const totalSpace=operatingSystem.totalmem()
+// const freSpace=operatingSystem.freemem()
+// console.log(totalSpace,freSpace)
+
+// console.log(operatingSystem.hostname())
+
+
+
+
+
+//FS
+
+// const fs=require('node:fs')
+
+
+// const methodeAsynce=fs.readdirSync("./")
+// console.log(methodeAsynce)
+
+
+// fs.readdir('./',(err,file)=>{
+//   if(err){
+//     console.log('errrorr')
+//   }
+//   else{
+
+//     console.log(file)
+//   }
+// })
+
+
+
+
+
+
+//EVENTS
+
+// const eventEmiter=require('node:events')
+// const emiter=new eventEmiter()
+
+// emiter.on("sam is sigma",(data)=>{
+//   console.log('listener',data)
+// })
+
+
+// emiter.emit("sam is sigma",{id:1,name:"god"})
+
+
+
+
+
+
+
+
+
+
+//HTTP
+
+
+// part 1
+// const http=require('http')
+// const server=http.createServer()
+
+// server.on("conection",(socket)=>{
+//   console.log(socket)
+// })
+
+// server.listen(3000)
+// console.log("server listen ")
+
+
+
+
+
+// part2
+
+
+const http=require('http');
+// const server=http.createServer()
+
+// const server=http.createServer((req,res)=>{
+
+
+//   if(req.url==='/sam'){
+//     res.write("sam");
+//     res.end()
+//   }else{
+//     res.write("darad , nefrin");
+//     res.end()
+//   }
+// });
+
+
+// server.listen(3000,()=>{
+
+//   console.log("server listen ")
+// });
+
+
+// const http = require('http');
+
+// ایجاد سرور
+// const server = http.createServer((req, res) => {
+//   if (req.url === '/sam') {
+//     res.write("sam");
+//     res.end();
+    
+//   } else {
+//     res.write("darad , nefrin");
+//     res.end(); // اینجا باید res.end باشد نه req.end
+//   }
+// });
+
+// // تنظیم پورت و شروع سرور
+// server.listen(3000, () => {
+//   console.log("Server is listening on port 3000");
+// });
+
+// module.exports.log=log()
+
+
+
+
+// const unirest = require('unirest');
+// const req = unirest('GET', 'https://google.serper.dev/maps?q=apple+inc&f3bc22c1b91cc165a98502ad022fc22ba62e0145=f3bc22c1b91cc165a98502ad022fc22ba62e0145')
+//   .end((res) => { 
+//     if (res.error) throw new Error(res.error); 
+//     console.log(res.raw_body);
+//   });
+
+
+
+
+
+const express=require('express')
+const app=express()
+
+// app.get()
+// app.post()
+// app.put()
+// app.delete()
+
+app.get("/",(req,res)=>{
+  if(req.url==='/alireza'){
+    res.send("sam is sigma ")
+  }else{
+    res.send("sigma removed") 
+  }
+})
+
+app.listen(3000,()=>{
+  console.log("sam")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

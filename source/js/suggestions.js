@@ -139,23 +139,45 @@
 
 
 
-const btn=document.querySelector('button')
-btn.addEventListener('click',function(){
-    fetch('https://randomuser.me/api/',{method:'GET'})
-    .then(res=>{
-        if(res.status===200){
-            return  res.json()
+// const btn=document.querySelector('button')
+// btn.addEventListener('click',function(){
+//     fetch('https://randomuser.me/api/',{method:'GET'})
+//     .then(res=>{
+//         if(res.status===200){
+//             return  res.json()
 
-        }
-        return new Error("errrorr")
-    }).then(data=>{
-        console.log( data.results[0].location)
-    })
-    .catch(err=>{
-        console.log(err)
-    })
+//         }
+//         return new Error("errrorr")
+//     }).then(data=>{
+//         console.log( data.results[0].location)
+//     })
+//     .catch(err=>{
+//         console.log(err)
+//     })
 
-})
+// })
+
+
+
+// fetch('https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}',{
+//     method:'GET'    
+// }).then(res=>{
+//     if(res.status===401){
+//         console.log(res)
+
+//     }
+// })
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
