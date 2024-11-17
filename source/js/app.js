@@ -1,19 +1,15 @@
-const btn = document.querySelector('button')
 
-btn.addEventListener('click', () => {
-    fetch('https://randomuser.me/api/', {
-        method: 'GET'
-    }) // Get
-        .then(res => {
-            if (res.status === 200) {
-                return res.json()
-            }
-            return new Error('Error :/')
-        })
-        .then(data => {
-            console.log("Data:", data.results[0]);
-        })
-        .catch(err => {
-            console.log(err);
-        })
+
+const express=require('express')
+const app=express()
+
+
+app.get('/',(req,res)=>{
+  res.send("sam is");
 })
+const port=process.env.APP_PORT || 2000
+
+app.listen(port,()=>{
+  console.log("sam")
+})
+

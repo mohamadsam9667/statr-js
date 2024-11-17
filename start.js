@@ -5207,25 +5207,160 @@ const http=require('http');
 
 
 
-const express=require('express')
-const app=express()
+// const express=require('express')
+// const app=express()
 
 // app.get()
 // app.post()
 // app.put()
 // app.delete()
 
-app.get("/",(req,res)=>{
-  if(req.url==='/alireza'){
-    res.send("sam is sigma ")
-  }else{
-    res.send("sigma removed") 
-  }
+// app.get('/amir', (req, res) => {
+  
+//   res.send("amir kos lise");
+
+
+// });
+
+
+
+// app.get('/morteza', (req, res) => {
+  
+//   res.send("mamad kos lise");
+
+
+// });
+
+
+
+// app.get('/alireza', (req, res) => {
+  
+//   res.send("عاشق انجام وضیفه بدون دست مزد");
+
+
+// });
+
+
+// app.get('/', (req, res) => {
+  
+//   res.send("bashir and khominy");
+
+
+// });
+
+
+
+
+
+// app.get("/",(req,res)=>{
+//   if(req.url==='/alireza'){
+//     res.send( "is sigma ")
+//   }else{
+//     res.send("sigma removed") 
+//   }
+// })
+
+
+
+// const express=require('express')
+// const app=express()
+// require('dotenv').config();
+
+// app.get('/',(req,res)=>{
+//   res.send("sam is");
+// })
+ 
+// const port=process.env.APP_PORT || 2100
+ 
+// app.listen(port,()=>{
+//   console.log(`sam ${port}`)
+
+// })
+
+
+
+
+
+const express=require('express')
+const app=express()
+require('dotenv').config();
+
+app.get('/',(req,res)=>{
+  res.send("sam is");
+})
+ 
+
+app.get('/api/courses ',(req,res)=>{
+  res.send(['sam','amir'])
 })
 
-app.listen(3000,()=>{
-  console.log("sam")
+const port=process.env.APP_PORT || 2100
+ 
+
+
+
+
+app.listen(port,()=>{
+
+  console.log(`sam ${port}`)
+
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
