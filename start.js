@@ -5409,90 +5409,87 @@ const http=require('http');
 
 
 
-
-
-
 //part5 Express
 
 // work for methode POST PUT DELETE 
 
 
 
-const express=require('express')
-const app=express()
-require('dotenv').config();
-app.use(express.json())
+// const express=require('express')
+// const app=express()
+// require('dotenv').config();
+// app.use(express.json())
 
-let array=[
-  {id:1,name:"sam",age:27},
-  {id:2,name:"mamad",age:22},
-  {id:3,name:"alireza",age:19},
-  {id:4,name:"ahmad",age:59},
-  {id:5,name:"sara",age:39},
+// let array=[
+//   {id:1,name:"sam",age:27},
+//   {id:2,name:"mamad",age:22},
+//   {id:3,name:"alireza",age:19},
+//   {id:4,name:"ahmad",age:59},
+//   {id:5,name:"sara",age:39},
 
-]
+// ]
 
 
-app.get('/',(req,res)=>{
-  res.send("sam is");
-})
+// app.get('/',(req,res)=>{
+//   res.send("sam is");
+// })
  
 
-app.post('/api/courses',(req,res)=>{
+// app.post('/api/courses',(req,res)=>{
 
-    if(!req.body.name||req.body.name.length<3){
-      res.status(400).send("found not");
-      return 
-    }
+//     if(!req.body.name||req.body.name.length<3){
+//       res.status(400).send("found not");
+//       return 
+//     }
     
-  const course={
-    id:array.length+1,
-    name:req.body.name,
+//   const course={
+//     id:array.length+1,
+//     name:req.body.name,
 
-  }
-  array.push(course)
-  // res.send(course)
-  let i=0
-  for (i;i<=array.length;i++){
-    res.send(array)
-  }
+//   }
+//   array.push(course)
+//   // res.send(course)
+//   let i=0
+//   for (i;i<=array.length;i++){
+//     res.send(array)
+//   }
 
-})
+// })
 
 
-app.put('/api/courses/:id',(req,res)=>{
-  const newCourse=array.find(item=>item.id===parseInt(req.params.id))
-  if(!newCourse)return res.status(404).send("not existe")
+// app.put('/api/courses/:id',(req,res)=>{
+//   const newCourse=array.find(item=>item.id===parseInt(req.params.id))
+//   if(!newCourse)return res.status(404).send("not existe")
     
-    if(!req.body.name || req.body.name.length<3)
-     return res.status(404).send("not ")
+//     if(!req.body.name || req.body.name.length<3)
+//      return res.status(404).send("not ")
 
 
-    newCourse.name=req.body.name
-    res.send(newCourse)
-})
+//     newCourse.name=req.body.name
+//     res.send(newCourse)
+// })
 
 
-app.delete('/api/courses/:id',(req,res)=>{
+// app.delete('/api/courses/:id',(req,res)=>{
 
-    const newItemArray=array.find(item=>item.id===parseInt(req.params.id))
-    if(!newItemArray)return res.status(404).send("not found")
+//     const newItemArray=array.find(item=>item.id===parseInt(req.params.id))
+//     if(!newItemArray)return res.status(404).send("not found")
 
-    const index=  array.indexOf(newItemArray)
-    array.splice(index,1)
-    res.send(array)
-})
-
-
+//     const index=  array.indexOf(newItemArray)
+//     array.splice(index,1)
+//     res.send(array)
+// })
 
 
-const port=process.env.APP_PORT || 2000
 
-app.listen(port,()=>{
 
-  console.log(`sam ${port}`)
+// const port=process.env.APP_PORT || 2000
 
-})
+// app.listen(port,()=>{
+
+//   console.log(`sam ${port}`)
+
+// })
 
 
 
@@ -5503,6 +5500,11 @@ app.listen(port,()=>{
 
 
 //prst 6 Express 
+
+const express=require('express')
+const app=express()
+
+
 
 
 
