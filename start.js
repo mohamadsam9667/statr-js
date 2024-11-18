@@ -5500,24 +5500,119 @@ const http=require('http');
 
 
 //prst 6 Express 
+//
+// const urlStart=require('./logger')
+
+// const express=require('express')
+// const app=express()
+// require('dotenv').config()
+// app.use(express.json())
+
+// app.use(urlStart.start)
+// app.use(urlStart.countinue)
+
+// app.get('/',(req,res)=>{
+//   res.send("start project")
+// })
+
+// app.get('/api/learn',(req,res)=>{
+//   res.send('api active part learn')
+// })
+
+
+// const port=process.env.APP_PORT||3000
+
+// app.listen(port,()=>{
+//   console.log(`active server port:${port}`)
+// })
+
+
+
+
+
+
+
+//Express part 7
+
+
+
 
 const express=require('express')
 const app=express()
+require('dotenv').config();
+app.use(express.json())
+
+let array=[
+  {id:1,name:"sam"},
+  {id:2,name:"mamad"},
+  {id:3,name:"alireza"},
+  {id:4,name:"ahmad"},
+  {id:5,name:"sara"},
+
+]
+
+app.use(express.urlencoded({extends:true}))
+
+app.get('/',(req,res)=>{
+  res.send("sam is");
+})
+ 
+
+app.post('/api/courses/:name',(req,res)=>{
+
+  
+  // if(!req.body.name||req.body.name.length<3){
+  //   res.status(400).send("found not");
+  //   return 
+  // }
+  const course={
+    id:array.length+1,
+    name:req.body.name,
+
+  }
+  array.push(course)
+  res.send(course)
+  // let i=0
+  // for (i;i<=array.length;i++){
+  //   res.send(array)
+  // }
+
+})
+
+
+app.put('/api/courses/:id',(req,res)=>{
+  const newCourse=array.find(item=>item.id===parseInt(req.params.id))
+  if(!newCourse)return res.status(404).send("not existe")
+    
+    if(!req.body.name || req.body.name.length<3)
+     return res.status(404).send("not ")
+
+
+    newCourse.name=req.body.name
+    res.send(newCourse)
+})
+
+
+app.delete('/api/courses/:id',(req,res)=>{
+
+    const newItemArray=array.find(item=>item.id===parseInt(req.params.id))
+    if(!newItemArray)return res.status(404).send("not found")
+
+    const index=  array.indexOf(newItemArray)
+    array.splice(index,1)
+    res.send(array)
+})
 
 
 
 
+const port=process.env.APP_PORT || 2000
 
+app.listen(port,()=>{
 
+  console.log(`sam ${port}`)
 
-
-
-
-
-
-
-
-
+})
 
 
 
