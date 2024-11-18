@@ -5281,24 +5281,212 @@ const http=require('http');
 
 
 
+
+
+// part 2 Express
+
+// const express=require('express')
+// const app=express()
+// require('dotenv').config();
+
+// app.get('/',(req,res)=>{
+//   res.send("sam is");
+// })
+ 
+
+// app.get('/api/courses',(req,res)=>{
+//   res.send(['sam','amir'])
+// })
+
+// app.get("/api/courses/:id",(req,res)=>{
+//   res.send(req.params.id)
+// })
+
+// const port=process.env.APP_PORT || 2000
+
+// app.listen(port,()=>{
+
+//   console.log(`sam ${port}`)
+
+// })
+
+
+
+
+
+
+
+
+
+//part 3 Express
+// const express=require('express')
+// const app=express()
+// require('dotenv').config();
+
+
+// app.get('/',(req,res)=>{
+//   res.send("sam")
+// })
+
+// app.get('/api/:id/?:name/?:family',(req,res)=>{
+
+//     res.send([req.params.id,req.params.name,req.params.family,req.query.sort])
+
+// })
+
+
+// const port=process.env.APP_PORT || 3200
+
+// app.listen(port,()=>{
+// console.log(`port:${port}`)
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//part4 Express
+
+
+
+
+// const express=require('express')
+// const app=express()
+// require('dotenv').config();
+
+// let array=[
+//   {id:1,name:"sam",age:27},
+//   {id:2,name:"mamad",age:22},
+//   {id:3,name:"alireza",age:19}
+// ]
+
+
+// app.get('/',(req,res)=>{
+//   res.send("sam is");
+// })
+ 
+
+// app.get('/api/courses',(req,res)=>{
+//   res.send(['sam','amir'])
+// })
+
+
+// app.get("/api/courses/:id",(req,res)=>{
+//  const isExiste= res.send(array.find(item=>item.id===parseInt(req.params.id, 10)))
+//  if(isExiste)
+// {  res.status(401).send("not found 404")
+//   res.send("not found")
+// }
+  
+//  res.send(isExiste)
+// });
+
+
+
+// const port=process.env.APP_PORT || 2000
+
+// app.listen(port,()=>{
+
+//   console.log(`sam ${port}`)
+
+// })
+
+
+
+
+
+
+
+
+//part5 Express
+
+// work for methode POST PUT DELETE 
+
+
+
 const express=require('express')
 const app=express()
 require('dotenv').config();
+app.use(express.json())
+
+let array=[
+  {id:1,name:"sam",age:27},
+  {id:2,name:"mamad",age:22},
+  {id:3,name:"alireza",age:19},
+  {id:4,name:"ahmad",age:59},
+  {id:5,name:"sara",age:39},
+
+]
+
 
 app.get('/',(req,res)=>{
   res.send("sam is");
 })
  
 
-app.get('/api/courses ',(req,res)=>{
-  res.send(['sam','amir'])
+app.post('/api/courses',(req,res)=>{
+
+    if(!req.body.name||req.body.name.length<3){
+      res.status(400).send("found not");
+      return 
+    }
+    
+  const course={
+    id:array.length+1,
+    name:req.body.name,
+
+  }
+  array.push(course)
+  // res.send(course)
+  let i=0
+  for (i;i<=array.length;i++){
+    res.send(array)
+  }
+
 })
 
-const port=process.env.APP_PORT || 2100
- 
+
+app.put('/api/courses/:id',(req,res)=>{
+  const newCourse=array.find(item=>item.id===parseInt(req.params.id))
+  if(!newCourse)return res.status(404).send("not existe")
+    
+    if(!req.body.name || req.body.name.length<3)
+     return res.status(404).send("not ")
+
+
+    newCourse.name=req.body.name
+    res.send(newCourse)
+})
+
+
+app.delete('/api/courses/:id',(req,res)=>{
+
+    const newItemArray=array.find(item=>item.id===parseInt(req.params.id))
+    if(!newItemArray)return res.status(404).send("not found")
+
+    const index=  array.indexOf(newItemArray)
+    array.splice(index,1)
+    res.send(array)
+})
 
 
 
+
+const port=process.env.APP_PORT || 2000
 
 app.listen(port,()=>{
 
@@ -5314,14 +5502,7 @@ app.listen(port,()=>{
 
 
 
-
-
-
-
-
-
-
-
+//prst 6 Express 
 
 
 
