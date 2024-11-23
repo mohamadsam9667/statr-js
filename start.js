@@ -5536,87 +5536,147 @@ const http=require('http');
 
 
 
+// const express=require('express')
+// const app=express()
+// require('dotenv').config();
+// app.use(express.json())
+// app.use(express.static('public'))
+
+// let array=[
+//   {id:1,name:"sam"},
+//   {id:2,name:"mamad"},
+//   {id:3,name:"alireza"},
+//   {id:4,name:"ahmad"},
+//   {id:5,name:"sara"},
+
+// ]
+
+// app.use(express.urlencoded({extends:true}))
+
+// app.get('/',(req,res)=>{
+//   res.send("sam is");
+// })
+ 
+
+// app.post('/api/courses/',(req,res)=>{
+
+//  const corse=array.find(item=>item.id===parseInt(req.body.id))
+
+//  if(corse)return res.status(404).send("error")
+ 
+//   const newCoures = {
+//     id:  parseInt(req.body.id),
+//     name: req.body.name,
+//   };
+
+//   array.push(newCoures)
+//   res.send(array)
+
+
+
+
+
+
+
+
+
+
+
+
+
+// })
+
+
+// // app.put('/api/courses/:id',(req,res)=>{
+// //   const newCourse=array.find(item=>item.id===parseInt(req.params.id))
+// //   if(!newCourse)return res.status(404).send("not existe")
+    
+// //     if(!req.body.name || req.body.name.length<3)
+// //      return res.status(404).send("not ")
+
+
+// //     newCourse.name=req.body.name
+// //     res.send(newCourse)
+// // })
+
+
+// // app.delete('/api/courses/:id',(req,res)=>{
+
+// //     const newItemArray=array.find(item=>item.id===parseInt(req.params.id))
+// //     if(!newItemArray)return res.status(404).send("not found")
+
+// //     const index=  array.indexOf(newItemArray)
+// //     array.splice(index,1)
+// //     res.send(array)
+// // })
+
+
+
+
+// const port=process.env.APP_PORT || 2000
+
+// app.listen(port,()=>{
+
+//   console.log(`sam ${port}`)
+
+// })
+
+
+
+//part 8 express
 
 const express=require('express')
 const app=express()
-require('dotenv').config();
-app.use(express.json())
+const helnet=require('helmet')
+const morgan=require('morgan')
+require('dotenv').config()
 
-let array=[
-  {id:1,name:"sam"},
-  {id:2,name:"mamad"},
-  {id:3,name:"alireza"},
-  {id:4,name:"ahmad"},
-  {id:5,name:"sara"},
+const startupDebug=require("debug")("startup")
 
-]
+startupDebug("test part debug")
 
-app.use(express.urlencoded({extends:true}))
+
+app.get('/sam/sigma',(req,res)=>{
+  // console.log(`start :${req}: end`)
+
+  res.send("sam is smarter i'm better")
+
+})
+
+
+app.use(helnet())
+// app.use(morgan("tiny"))
+// 
+
+
+if(app.get("env")==='development')  // console.log("ali sigma ")
+  app.use(morgan("tiny"));
+
 
 app.get('/',(req,res)=>{
-  res.send("sam is");
-})
- 
-
-app.post('/api/courses/:name',(req,res)=>{
-
   
-  // if(!req.body.name||req.body.name.length<3){
-  //   res.status(400).send("found not");
-  //   return 
-  // }
-  const course={
-    id:array.length+1,
-    name:req.body.name,
-
-  }
-  array.push(course)
-  res.send(course)
-  // let i=0
-  // for (i;i<=array.length;i++){
-  //   res.send(array)
-  // }
+  res.send("hi ")
 
 })
 
 
-app.put('/api/courses/:id',(req,res)=>{
-  const newCourse=array.find(item=>item.id===parseInt(req.params.id))
-  if(!newCourse)return res.status(404).send("not existe")
-    
-    if(!req.body.name || req.body.name.length<3)
-     return res.status(404).send("not ")
+app.get('/sam',(req,res)=>{
+  
+  res.send("hi sam")
 
-
-    newCourse.name=req.body.name
-    res.send(newCourse)
 })
 
-
-app.delete('/api/courses/:id',(req,res)=>{
-
-    const newItemArray=array.find(item=>item.id===parseInt(req.params.id))
-    if(!newItemArray)return res.status(404).send("not found")
-
-    const index=  array.indexOf(newItemArray)
-    array.splice(index,1)
-    res.send(array)
-})
-
-
-
-
-const port=process.env.APP_PORT || 2000
+const port=process.env.APP_PORT||3000
 
 app.listen(port,()=>{
-
-  console.log(`sam ${port}`)
-
+  console.log(`server run ${port}`)
 })
 
 
 
 
+
+// start learn js again fetch
 
 
 

@@ -1,21 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f3f4f6;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .city-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
+<header>
+    <h1>Weather App</h1>
+    <p>Check weather updates and manage your searches</p>
+</header>
 
-<h1>sam</h1>
+<main>
+    <!-- User Section -->
+    <section>
+        <h2>User Information</h2>
+        <div class="form-group">
+            <label for="user-name">Name:</label>
+            <input type="text" id="user-name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="user-email">Email:</label>
+            <input type="email" id="user-email" placeholder="Enter your email">
+        </div>
+    </section>
 
+    <!-- City Section -->
+    <section>
+        <h2>Search for a City</h2>
+        <div class="form-group">
+            <label for="city-name">City Name:</label>
+            <input type="text" id="city-name" placeholder="Enter city name">
+        </div>
+        <button onclick="searchCity()">Search</button>
+    </section>
 
+    <!-- Weather Section -->
+    <section>
+        <h2>Weather Information</h2>
+        <div class="city-card">
+            <p><strong>City:</strong> <span id="weather-city">-</span></p>
+            <p><strong>Temperature:</strong> <span id="weather-temp">-</span> °C</p>
+            <p><strong>Condition:</strong> <span id="weather-condition">-</span></p>
+        </div>
+    </section>
 
+    <!-- Search History Section -->
+    <section>
+        <h2>Search History</h2>
+        <ul id="search-history">
+            <li>No search history yet.</li>
+        </ul>
+    </section>
 
+    <!-- Settings Section -->
+    <section>
+        <h2>Settings</h2>
+        <div class="form-group">
+            <label for="unit">Unit:</label>
+            <select id="unit">
+                <option value="metric">Celsius</option>
+                <option value="imperial">Fahrenheit</option>
+            </select>
+        </div>
+    </section>
+</main>
 
+<script>
+    // Placeholder functions for interactivity
+    function searchCity() {
+        const city = document.getElementById('city-name').value;
+        const historyList = document.getElementById('search-history');
+        const newHistoryItem = document.createElement('li');
+        newHistoryItem.textContent = city;
+        historyList.appendChild(newHistoryItem);
 
- <script src=""></script> 
+        // Update weather data (mock data for now)
+        document.getElementById('weather-city').textContent = city;
+        document.getElementById('weather-temp').textContent = '25';
+        document.getElementById('weather-condition').textContent = 'Clear';
+    }
+</script>
+
 </body>
 </html>

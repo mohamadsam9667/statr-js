@@ -5,7 +5,7 @@
   "main": "start.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node start.js"
+    "start": "nodemon start.js"
   },
   "repository": {
     "type": "git",
@@ -18,8 +18,13 @@
   },
   "homepage": "https://github.com/mohamadsam9667/statr-js#readme",
   "dependencies": {
+    "debug": "^4.3.7",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.7"
   }
 }
