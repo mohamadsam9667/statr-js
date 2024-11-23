@@ -5625,62 +5625,89 @@ const http=require('http');
 
 //part 8 express
 
+// const express=require('express')
+// const app=express()
+// const helnet=require('helmet')
+// const morgan=require('morgan')
+// require('dotenv').config()
+
+// const startupDebug=require("debug")("startup")
+
+// startupDebug("test part debug")
+
+
+// app.get('/sam/sigma',(req,res)=>{
+//   // console.log(`start :${req}: end`)
+
+//   res.send("sam is smarter i'm better")
+
+// })
+
+
+// app.use(helnet())
+// // app.use(morgan("tiny"))
+// // 
+
+
+// if(app.get("env")==='development')  // console.log("ali sigma ")
+//   app.use(morgan("tiny"));
+
+
+// app.get('/',(req,res)=>{
+  
+//   res.send("hi ")
+
+// })
+
+
+// app.get('/sam',(req,res)=>{
+  
+//   res.send("hi sam")
+
+// })
+
+// const port=process.env.APP_PORT||3000
+
+// app.listen(port,()=>{
+//   console.log(`server run ${port}`)
+// })
+
+
+
+
+
+
+
+
+
+
+// part 10    structure file 
+
+
+
 const express=require('express')
 const app=express()
-const helnet=require('helmet')
-const morgan=require('morgan')
-require('dotenv').config()
+require('dotenv').config();
+app.use(express.json())
+const coursesRout=require('./routes/courses-rout')
+app.use('/api/courses',coursesRout)
 
-const startupDebug=require("debug")("startup")
-
-startupDebug("test part debug")
-
-
-app.get('/sam/sigma',(req,res)=>{
-  // console.log(`start :${req}: end`)
-
-  res.send("sam is smarter i'm better")
-
-})
+// app.get('/',(req,res)=>{
+  //   res.send("sam is");
+  // })
+  // bottom inside top
+  const routHome=require("./routes/home-rout")
+app.use('/',routHome)
+ 
 
 
-app.use(helnet())
-// app.use(morgan("tiny"))
-// 
-
-
-if(app.get("env")==='development')  // console.log("ali sigma ")
-  app.use(morgan("tiny"));
-
-
-app.get('/',(req,res)=>{
-  
-  res.send("hi ")
-
-})
-
-
-app.get('/sam',(req,res)=>{
-  
-  res.send("hi sam")
-
-})
-
-const port=process.env.APP_PORT||3000
+const port=process.env.APP_PORT || 2000
 
 app.listen(port,()=>{
-  console.log(`server run ${port}`)
+
+  console.log(`sam ${port}`)
+
 })
-
-
-
-
-
-// start learn js again fetch
-
-
-
-
 
 
 
