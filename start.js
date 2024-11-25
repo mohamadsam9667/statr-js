@@ -5150,6 +5150,575 @@ Plain text
 // part2
 
 
+// const http=require('http');
+// // const server=http.createServer()
+
+// // const server=http.createServer((req,res)=>{
+
+
+// //   if(req.url==='/sam'){
+// //     res.write("sam");
+// //     res.end()
+// //   }else{
+// //     res.write("darad , nefrin");
+// //     res.end()
+// //   }
+// // });
+
+
+// // server.listen(3000,()=>{
+
+// //   console.log("server listen ")
+// // });
+
+
+// // const http = require('http');
+
+// // ایجاد سرور
+// // const server = http.createServer((req, res) => {
+// //   if (req.url === '/sam') {
+// //     res.write("sam");
+// //     res.end();
+    
+// //   } else {
+// //     res.write("darad , nefrin");
+// //     res.end(); // اینجا باید res.end باشد نه req.end
+// //   }
+// // });
+
+// // // تنظیم پورت و شروع سرور
+// // server.listen(3000, () => {
+// //   console.log("Server is listening on port 3000");
+// // });
+
+// // module.exports.log=log()
+
+
+
+
+// // const unirest = require('unirest');
+// // const req = unirest('GET', 'https://google.serper.dev/maps?q=apple+inc&f3bc22c1b91cc165a98502ad022fc22ba62e0145=f3bc22c1b91cc165a98502ad022fc22ba62e0145')
+// //   .end((res) => { 
+// //     if (res.error) throw new Error(res.error); 
+// //     console.log(res.raw_body);
+// //   });
+
+
+
+
+
+// // const express=require('express')
+// // const app=express()
+
+// // app.get()
+// // app.post()
+// // app.put()
+// // app.delete()
+
+// // app.get('/amir', (req, res) => {
+  
+// //   res.send("amir kos lise");
+
+
+// // });
+
+
+
+// // app.get('/morteza', (req, res) => {
+  
+// //   res.send("mamad kos lise");
+
+
+// // });
+
+
+
+// // app.get('/alireza', (req, res) => {
+  
+// //   res.send("عاشق انجام وضیفه بدون دست مزد");
+
+
+// // });
+
+
+// // app.get('/', (req, res) => {
+  
+// //   res.send("bashir and khominy");
+
+
+// // });
+
+
+
+
+
+// // app.get("/",(req,res)=>{
+// //   if(req.url==='/alireza'){
+// //     res.send( "is sigma ")
+// //   }else{
+// //     res.send("sigma removed") 
+// //   }
+// // })
+
+
+
+// // const express=require('express')
+// // const app=express()
+// // require('dotenv').config();
+
+// // app.get('/',(req,res)=>{
+// //   res.send("sam is");
+// // })
+ 
+// // const port=process.env.APP_PORT || 2100
+ 
+// // app.listen(port,()=>{
+// //   console.log(`sam ${port}`)
+
+// // })
+
+
+
+
+
+
+
+// // part 2 Express
+
+// // const express=require('express')
+// // const app=express()
+// // require('dotenv').config();
+
+// // app.get('/',(req,res)=>{
+// //   res.send("sam is");
+// // })
+ 
+
+// // app.get('/api/courses',(req,res)=>{
+// //   res.send(['sam','amir'])
+// // })
+
+// // app.get("/api/courses/:id",(req,res)=>{
+// //   res.send(req.params.id)
+// // })
+
+// // const port=process.env.APP_PORT || 2000
+
+// // app.listen(port,()=>{
+
+// //   console.log(`sam ${port}`)
+
+// // })
+
+
+
+
+
+
+
+
+
+// //part 3 Express
+// // const express=require('express')
+// // const app=express()
+// // require('dotenv').config();
+
+
+// // app.get('/',(req,res)=>{
+// //   res.send("sam")
+// // })
+
+// // app.get('/api/:id/?:name/?:family',(req,res)=>{
+
+// //     res.send([req.params.id,req.params.name,req.params.family,req.query.sort])
+
+// // })
+
+
+// // const port=process.env.APP_PORT || 3200
+
+// // app.listen(port,()=>{
+// // console.log(`port:${port}`)
+// // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //part4 Express
+
+
+
+
+// // const express=require('express')
+// // const app=express()
+// // require('dotenv').config();
+
+// // let array=[
+// //   {id:1,name:"sam",age:27},
+// //   {id:2,name:"mamad",age:22},
+// //   {id:3,name:"alireza",age:19}
+// // ]
+
+
+// // app.get('/',(req,res)=>{
+// //   res.send("sam is");
+// // })
+ 
+
+// // app.get('/api/courses',(req,res)=>{
+// //   res.send(['sam','amir'])
+// // })
+
+
+// // app.get("/api/courses/:id",(req,res)=>{
+// //  const isExiste= res.send(array.find(item=>item.id===parseInt(req.params.id, 10)))
+// //  if(isExiste)
+// // {  res.status(401).send("not found 404")
+// //   res.send("not found")
+// // }
+  
+// //  res.send(isExiste)
+// // });
+
+
+
+// // const port=process.env.APP_PORT || 2000
+
+// // app.listen(port,()=>{
+
+// //   console.log(`sam ${port}`)
+
+// // })
+
+
+
+
+
+// //part5 Express
+
+// // work for methode POST PUT DELETE 
+
+
+
+// // const express=require('express')
+// // const app=express()
+// // require('dotenv').config();
+// // app.use(express.json())
+
+// // let array=[
+// //   {id:1,name:"sam",age:27},
+// //   {id:2,name:"mamad",age:22},
+// //   {id:3,name:"alireza",age:19},
+// //   {id:4,name:"ahmad",age:59},
+// //   {id:5,name:"sara",age:39},
+
+// // ]
+
+
+// // app.get('/',(req,res)=>{
+// //   res.send("sam is");
+// // })
+ 
+
+// // app.post('/api/courses',(req,res)=>{
+
+// //     if(!req.body.name||req.body.name.length<3){
+// //       res.status(400).send("found not");
+// //       return 
+// //     }
+    
+// //   const course={
+// //     id:array.length+1,
+// //     name:req.body.name,
+
+// //   }
+// //   array.push(course)
+// //   // res.send(course)
+// //   let i=0
+// //   for (i;i<=array.length;i++){
+// //     res.send(array)
+// //   }
+
+// // })
+
+
+// // app.put('/api/courses/:id',(req,res)=>{
+// //   const newCourse=array.find(item=>item.id===parseInt(req.params.id))
+// //   if(!newCourse)return res.status(404).send("not existe")
+    
+// //     if(!req.body.name || req.body.name.length<3)
+// //      return res.status(404).send("not ")
+
+
+// //     newCourse.name=req.body.name
+// //     res.send(newCourse)
+// // })
+
+
+// // app.delete('/api/courses/:id',(req,res)=>{
+
+// //     const newItemArray=array.find(item=>item.id===parseInt(req.params.id))
+// //     if(!newItemArray)return res.status(404).send("not found")
+
+// //     const index=  array.indexOf(newItemArray)
+// //     array.splice(index,1)
+// //     res.send(array)
+// // })
+
+
+
+
+// // const port=process.env.APP_PORT || 2000
+
+// // app.listen(port,()=>{
+
+// //   console.log(`sam ${port}`)
+
+// // })
+
+
+
+
+
+
+
+
+
+// //prst 6 Express 
+// //
+// // const urlStart=require('./logger')
+
+// // const express=require('express')
+// // const app=express()
+// // require('dotenv').config()
+// // app.use(express.json())
+
+// // app.use(urlStart.start)
+// // app.use(urlStart.countinue)
+
+// // app.get('/',(req,res)=>{
+// //   res.send("start project")
+// // })
+
+// // app.get('/api/learn',(req,res)=>{
+// //   res.send('api active part learn')
+// // })
+
+
+// // const port=process.env.APP_PORT||3000
+
+// // app.listen(port,()=>{
+// //   console.log(`active server port:${port}`)
+// // })
+
+
+
+
+
+
+
+// //Express part 7
+
+
+
+// // const express=require('express')
+// // const app=express()
+// // require('dotenv').config();
+// // app.use(express.json())
+// // app.use(express.static('public'))
+
+// // let array=[
+// //   {id:1,name:"sam"},
+// //   {id:2,name:"mamad"},
+// //   {id:3,name:"alireza"},
+// //   {id:4,name:"ahmad"},
+// //   {id:5,name:"sara"},
+
+// // ]
+
+// // app.use(express.urlencoded({extends:true}))
+
+// // app.get('/',(req,res)=>{
+// //   res.send("sam is");
+// // })
+ 
+
+// // app.post('/api/courses/',(req,res)=>{
+
+// //  const corse=array.find(item=>item.id===parseInt(req.body.id))
+
+// //  if(corse)return res.status(404).send("error")
+ 
+// //   const newCoures = {
+// //     id:  parseInt(req.body.id),
+// //     name: req.body.name,
+// //   };
+
+// //   array.push(newCoures)
+// //   res.send(array)
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // })
+
+
+// // // app.put('/api/courses/:id',(req,res)=>{
+// // //   const newCourse=array.find(item=>item.id===parseInt(req.params.id))
+// // //   if(!newCourse)return res.status(404).send("not existe")
+    
+// // //     if(!req.body.name || req.body.name.length<3)
+// // //      return res.status(404).send("not ")
+
+
+// // //     newCourse.name=req.body.name
+// // //     res.send(newCourse)
+// // // })
+
+
+// // // app.delete('/api/courses/:id',(req,res)=>{
+
+// // //     const newItemArray=array.find(item=>item.id===parseInt(req.params.id))
+// // //     if(!newItemArray)return res.status(404).send("not found")
+
+// // //     const index=  array.indexOf(newItemArray)
+// // //     array.splice(index,1)
+// // //     res.send(array)
+// // // })
+
+
+
+
+// // const port=process.env.APP_PORT || 2000
+
+// // app.listen(port,()=>{
+
+// //   console.log(`sam ${port}`)
+
+// // })
+
+
+
+// //part 8 express
+
+// // const express=require('express')
+// // const app=express()
+// // const helnet=require('helmet')
+// // const morgan=require('morgan')
+// // require('dotenv').config()
+
+// // const startupDebug=require("debug")("startup")
+
+// // startupDebug("test part debug")
+
+
+// // app.get('/sam/sigma',(req,res)=>{
+// //   // console.log(`start :${req}: end`)
+
+// //   res.send("sam is smarter i'm better")
+
+// // })
+
+
+// // app.use(helnet())
+// // // app.use(morgan("tiny"))
+// // // 
+
+
+// // if(app.get("env")==='development')  // console.log("ali sigma ")
+// //   app.use(morgan("tiny"));
+
+
+// // app.get('/',(req,res)=>{
+  
+// //   res.send("hi ")
+
+// // })
+
+
+// // app.get('/sam',(req,res)=>{
+  
+// //   res.send("hi sam")
+
+// // })
+
+// // const port=process.env.APP_PORT||3000
+
+// // app.listen(port,()=>{
+// //   console.log(`server run ${port}`)
+// // })
+
+
+
+
+
+
+
+
+
+
+// // part 10    structure file 
+
+
+
+// const express=require('express')
+// const sql = require("./config")
+// const app=express()
+// require('dotenv').config();
+// app.use(express.json())
+
+
+
+// const coursesRout=require('./routes/courses-rout')
+// app.use('/api/courses',coursesRout)
+
+
+// const routHome=require("./routes/home-rout")
+// app.use('/',routHome)
+
+// const port=process.env.APP_PORT || 2000
+// app.listen(port,async ()=>{
+//   // sql.insert("users",{'name': "ali"});
+//   // sql.update("users", {id:2}, {"name":"ali"});
+//   // var count = await sql.count("users",{"name":"hello"});
+//   // console.log(count);
+//   // const obj = await sql.find("users",{id:2});
+//   // console.log(obj);
+//   const users = await sql.find("users", {});
+//   users.forEach(async user => {
+//     await sql.increment("users", {id:user.id},"balance",10);
+//     console.log(`${user.name} balance is ${user.balance}`);
+//   });
+//   console.log(`sam ${port}`)
+
+// })
+
+
+
 const http=require('http');
 // const server=http.createServer()
 
@@ -5681,36 +6250,33 @@ const http=require('http');
 
 
 
-// part 10    structure file 
+// part 11    sql database 
 
 
 
 const express=require('express')
+// const sql = require("./config")
 const app=express()
 require('dotenv').config();
 app.use(express.json())
+
+
+
 const coursesRout=require('./routes/courses-rout')
 app.use('/api/courses',coursesRout)
 
-// app.get('/',(req,res)=>{
-  //   res.send("sam is");
-  // })
-  // bottom inside top
-  const routHome=require("./routes/home-rout")
+
+const routHome=require("./routes/home-rout")
 app.use('/',routHome)
- 
 
 
 const port=process.env.APP_PORT || 2000
 
 app.listen(port,()=>{
-
   console.log(`sam ${port}`)
 
+
 })
-
-
-
 
 
 

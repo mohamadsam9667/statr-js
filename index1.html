@@ -1,79 +1,52 @@
-
 <!DOCTYPE html>
-<html>
-
+<html lang="fa">
 <head>
-  <meta charset='utf-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="style/bootstrap.min.css">
-  <link rel='stylesheet' href="style/style.css">
-
-  <title>SabzLearn | Js | 166</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروژه آب و هوا</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div>
-
-    <!-- INPUT -->
-    <section id="home">
-      <div class="container">
-        <div class="header upper">SabzLearn Note App</div>
-    
-        <br><br>
-        <div class="flex row-gt-sm">
-          <div class="flex flex-50-gt-sm">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
-              <input id="input-field" class="form-control" type="text" placeholder="Something here..">
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto">
-              <div id='color-select'>
-                <div class='color-box' style="background-color: #fff;"></div>
-                <div class='color-box' style="background-color: #FFD37F;"></div>
-                <div class='color-box' style="background-color: #FFFA81;"></div>
-                <div class='color-box' style="background-color: #D5FA80;"></div>
-                <div class='color-box' style="background-color: #78F87F;"></div>
-                <div class='color-box' style="background-color: #79FBD6;"></div>
-                <div class='color-box' style="background-color: #79FDFE;"></div>
-                <div class='color-box' style="background-color: #7AD6FD;"></div>
-                <div class='color-box' style="background-color: #7B84FC;"></div>
-                <div class='color-box' style="background-color: #D687FC;"></div>
-                <div class='color-box' style="background-color: #FF89FD;"></div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mx-auto my-1 text-right">
-              <button id="btn-save" type="button" class="btn btn-outline-info"><span class="fa fa-plus"></span></button>
-              <button id="btn-delete" type="button" class="btn btn-outline-danger"><span id="btn-icon"
-                  class="fa fa-eraser"></span></button>
-            </div>
-          </div>
+    <header>
+        <div class="container">
+            <h1>پروژه پیش‌بینی وضعیت آب و هوا</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="login.html">ورود / ثبت‌نام</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <!-- TASKS -->
-        <div class="flex row-gt-sm">
-
-          <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-            <div class="container">
-              <div class="row">
-                <div id='listed' class="col-11 col-sm-11 col-md-11 col-lg-11 col-xl-11 p-3 card-columns">
-                  <div class="card shadow-sm rounded">
-                    <p class="card-text p-3">TEST</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+    <section class="search">
+        <div class="container">
+            <h2>جستجوی وضعیت آب و هوا</h2>
+            <form id="search-form">
+                <input type="text" id="city-name" placeholder="نام شهر را وارد کنید" required>
+                <button type="submit">جستجو</button>
+            </form>
         </div>
-
-
-
-      </div>
     </section>
-  </div>
 
-  <script src="js/2483004d01.js"></script>
-  <script type='text/javascript' src='js/app.js'></script>
+    <section class="weather-info" id="weather-info">
+        <!-- اطلاعات وضعیت آب و هوا اینجا نمایش داده می‌شود -->
+    </section>
+
+    <section class="forecast" id="forecast">
+        <!-- پیش‌بینی وضعیت آب و هوا نمایش داده می‌شود -->
+    </section>
+
+    <section class="alerts" id="weather-alerts">
+        <!-- اعلان‌های وضعیت آب و هوا اینجا نمایش داده می‌شود -->
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>تمامی حقوق محفوظ است &copy; 2024</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
-
 </html>
